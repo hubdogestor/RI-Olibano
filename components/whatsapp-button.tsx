@@ -15,12 +15,13 @@ export default function WhatsAppButton() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label="Entrar em contato via WhatsApp"
       initial={{ scale: 0, y: 20 }}
       animate={{ scale: 1, y: 0 }}
       transition={{ delay: 0.5, duration: 0.4 }}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-8 right-8 z-40 flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#25D366] to-[#1EA854] text-white rounded-full shadow-lg shadow-green-500/40 hover:shadow-green-500/60 transition-shadow duration-300 group"
+      className="fixed bottom-8 right-8 z-40 flex items-center justify-center w-14 h-14 bg-gradient-to-br from-[#25D366] to-[#1EA854] text-white rounded-full shadow-lg shadow-green-500/40 hover:shadow-green-500/60 transition-shadow duration-300 group focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
     >
       <motion.div animate={{ y: [0, -3, 0] }} transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}>
         <MessageCircle className="w-6 h-6" />
