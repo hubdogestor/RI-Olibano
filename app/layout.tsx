@@ -9,6 +9,7 @@ const geistSans = Geist({ subsets: ["latin"], variable: "--font-sans" })
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ri.olibanovip.com.br"),
   title: "OLÍBANO - Relações com Investidores",
   description:
     "Centro premium de terapias integrativas com modelo escalável. Oportunidade de investimento em bem-estar de alto padrão.",
@@ -16,7 +17,6 @@ export const metadata: Metadata = {
   authors: [{ name: "OLÍBANO" }],
   creator: "OLÍBANO",
   publisher: "OLÍBANO",
-  metadataBase: new URL("https://ri.olibanovip.com.br"),
   alternates: {
     canonical: "/",
   },
@@ -55,9 +55,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "google-site-verification-code", // Adicionar código real quando disponível
-  },
 }
 
 export default function RootLayout({
@@ -67,9 +64,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        <meta charSet="utf-8" />
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
         <a
           href="#main-content"
