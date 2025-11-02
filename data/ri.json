@@ -1,633 +1,317 @@
-{
-
-  "hero": {
-
-    "title": "O OlÃ­bano",
-
-    "subtitle": "Transformando o bem-estar premium em Porto Alegre",
-
-    "description": "Centro inovador de terapias integrativas com modelo escalÃ¡vel, traÃ§Ã£o validada e margem saudÃ¡vel. Uma oportunidade de investimento em um mercado premium em expansÃ£o.",
-
-    "ctas": [
-
-      {
-
-        "label": "Falar com RI",
-
-        "href": "mailto:ri@olibanovip.com.br",
-
-        "variant": "outline"
-
-      }
-
-    ],
-
-    "stats": [
-
-      {
-
-        "label": "NPS",
-
-        "value": "92",
-
-        "unit": ""
-
-      },
-
-      {
-
-        "label": "Taxa de RetenÃ§Ã£o",
-
-        "value": "78%",
-
-        "unit": ""
-
-      },
-
-      {
-
-        "label": "Receita MVP (3 meses)",
-
-        "value": "R$18.9k",
-
-        "unit": ""
-
-      },
-
-      {
-
-        "label": "Ticket MÃ©dio",
-
-        "value": "R$799",
-
-        "unit": ""
-
-      }
-
-    ]
-
-  },
-
-  "highlights": [
-
-    "Pioneirismo na AmÃ©rica Latina em experiÃªncia sensorial imersiva",
-
-    "Protocolos personalizados com diagnÃ³stico individual detalhado",
-
-    "LocalizaÃ§Ã£o estratÃ©gica no hub de saÃºde premium (Medplex Santana)",
-
-    "Modelo de negÃ³cio diversificado com mÃºltiplas fontes de receita",
-
-    "ValidaÃ§Ã£o de mercado jÃ¡ realizada com MVP (Q1 2025)",
-
-    "Equipe fundadora com expertise complementar (CEO tech, COO mÃ©dica, CPO estratÃ©gia)"
-
-  ],
-
-  "market": {
-
-    "tam": "R$ 2 Bi",
-
-    "tamDescription": "Mercado total de bem-estar premium no Brasil",
-
-    "sam": "500k",
-
-    "samDescription": "PopulaÃ§Ã£o A/B em Porto Alegre",
-
-    "som": "6k",
-
-    "somDescription": "Meta de clientes qualificados (3 anos)",
-
-    "methodology": "Baseado em anÃ¡lise de mercado de saÃºde integrativa, dados de renda da regiÃ£o e benchmarks de centros wellness premium internacionais."
-
-  },
-
-  "businessModel": {
-
-    "title": "Modelo de NegÃ³cio EscalÃ¡vel",
-
-    "revenueStreams": [
-
-      {
-
-        "name": "SessÃµes Premium",
-
-        "description": "SessÃµes avulsas a partir de R$799",
-
-        "margin": "Alto"
-
-      },
-
-      {
-
-        "name": "Pacotes Recorrentes",
-
-        "description": "Protocolos 3-5 sessÃµes (R$2.157-R$3.196)",
-
-        "margin": "Muito Alto"
-
-      },
-
-      {
-
-        "name": "Parcerias B2B",
-
-        "description": "Bem-estar corporativo e nutriÃ§Ã£o funcional",
-
-        "margin": "Alto"
-
-      },
-
-      {
-
-        "name": "Produtos PrÃ³prios",
-
-        "description": "Linha exclusiva digital e fÃ­sica",
-
-        "margin": "MÃ¡ximo"
-
-      }
-
-    ],
-
-    "unitEconomics": {
-
-      "LTV": "R$ 3.2k",
-
-      "CAC": "R$ 450",
-
-      "ratio": "7:1"
-
-    }
-
-  },
-
-  "traction": {
-
-    "title": "ValidaÃ§Ã£o de Mercado",
-
-    "milestones": [
-
-      {
-
-        "period": "2023 Q1",
-
-        "title": "Modelagem do NegÃ³cio",
-
-        "desc": "Conceito e validaÃ§Ã£o inicial"
-
-      },
-
-      {
-
-        "period": "2023 Q2",
-
-        "title": "InÃ­cio da Obra",
-
-        "desc": "ConstruÃ§Ã£o da infraestrutura"
-
-      },
-
-      {
-
-        "period": "2024 Q2",
-
-        "title": "Enchentes - Pausa",
-
-        "desc": "Impacto nas operaÃ§Ãµes"
-
-      },
-
-      {
-
-        "period": "2024 Q4",
-
-        "title": "Retomada",
-
-        "desc": "Retorno Ã s atividades de construÃ§Ã£o"
-
-      },
-
-      {
-
-        "period": "2025 Q1",
-
-        "title": "MVP LanÃ§ado",
-
-        "desc": "TraÃ§Ã£o inicial validada com clientes pagos"
-
-      },
-
-      {
-
-        "period": "2025 Q2",
-
-        "title": "EstruturaÃ§Ã£o de Canais",
-
-        "desc": "ExpansÃ£o de vendas e parcerias"
-
-      }
-
-    ],
-
-    "metrics": [
-
-      {
-
-        "name": "Clientes no MVP",
-
-        "value": "24",
-
-        "growth": "100%/mÃªs"
-
-      },
-
-      {
-
-        "name": "Receita Mensal (Atual)",
-
-        "value": "R$ 6.3k",
-
-        "growth": "+35% (trend)"
-
-      },
-
-      {
-
-        "name": "Taxa de RetenÃ§Ã£o",
-
-        "value": "78%",
-
-        "growth": "Acima da meta"
-
-      },
-
-      {
-
-        "name": "NPS",
-
-        "value": "92",
-
-        "growth": "Excelente"
-
-      }
-
-    ]
-
-  },
-
-  "roadmap": [
-
-    {
-
-      "quarter": "Q3 2025",
-
-      "items": [
-
-        "LanÃ§amento da plataforma digital de agendamento",
-
-        "ExpansÃ£o para 50+ clientes ativos",
-
-        "Parcerias com 3+ empresas B2B"
-
-      ]
-
-    },
-
-    {
-
-      "quarter": "Q4 2025",
-
-      "items": [
-
-        "Linha de produtos lanÃ§ada (40+ SKUs)",
-
-        "Atingir R$30k/mÃªs receita recorrente",
-
-        "AlcanÃ§ar 80% de ocupaÃ§Ã£o mÃ©dia"
-
-      ]
-
-    },
-
-    {
-
-      "quarter": "Q1 2026",
-
-      "items": [
-
-        "Estrutura de franquia validada",
-
-        "Primeira unidade franqueada em expansÃ£o",
-
-        "Marca nacional consolidada"
-
-      ]
-
-    },
-
-    {
-
-      "quarter": "2026+",
-
-      "items": [
-
-        "ExpansÃ£o para 3+ cidades",
-
-        "ReplicaÃ§Ã£o do modelo de franquia",
-
-        "Potencial IPO ou exit estratÃ©gico"
-
-      ]
-
-    }
-
-  ],
-
-  "governance": {
-
-    "team": [
-
-      {
-
-        "name": "Alexandre Freire",
-
-        "role": "CEO & Co-Founder",
-
-        "bio": "Especialista em gestÃ£o, transformaÃ§Ã£o digital e scaling de negÃ³cios. Background em tech e empreendedorismo.",
-
-        "email": "alexandre@olibanovip.com.br",
-
-        "image": "/team/alexandre.jpg",
-
-        "links": [
-
-          {
-
-            "label": "Instagram",
-
-            "href": "https://www.instagram.com/alexandreolibano/",
-
-            "type": "instagram"
-
-          }
-
-        ]
-
-      },
-
-      {
-
-        "name": "Betusa Kramer",
-
-        "role": "COO & Co-Founder",
-
-        "bio": "MÃ©dica, idealizadora do conceito OLÃBANO. Especialista em saÃºde integrativa, prÃ¡ticas complementares e bem-estar holÃ­stico.",
-
-        "email": "betusa@olibanovip.com.br",
-
-        "image": "/team/betusa.jpg",
-
-        "links": [
-
-          {
-
-            "label": "LinkedIn",
-
-            "href": "https://www.linkedin.com/in/betusa-kramer-435b062b/",
-
-            "type": "linkedin"
-
-          },
-
-          {
-
-            "label": "Instagram",
-
-            "href": "https://www.instagram.com/drabetusakramer/",
-
-            "type": "instagram"
-
-          }
-
-        ]
-
-      },
-
-      {
-
-        "name": "Leonardo Menezes",
-
-        "role": "CPO & Co-Founder",
-
-        "bio": "Especialista em planejamento estratÃ©gico, gestÃ£o de produtos e inovaÃ§Ã£o. Expertise em operaÃ§Ãµes de saÃºde e tech.",
-
-        "email": "leonardo@olibanovip.com.br",
-
-        "image": "/team/leonardo.jpg",
-
-        "links": [
-
-          {
-
-            "label": "LinkedIn",
-
-            "href": "https://www.linkedin.com/in/menezesleonardo/",
-
-            "type": "linkedin"
-
-          }
-
-        ]
-
-      }
-
-    ]
-
-  },
-
-  "esg": {
-
-    "title": "Compromisso com Impacto",
-
-    "initiatives": [
-
-      {
-
-        "title": "SaÃºde Preventiva",
-
-        "desc": "Promovendo bem-estar integral e prevenÃ§Ã£o de doenÃ§as crÃ´nicas"
-
-      },
-
-      {
-
-        "title": "EducaÃ§Ã£o Continuada",
-
-        "desc": "CertificaÃ§Ã£o e desenvolvimento profissional da equipe terapÃªutica"
-
-      },
-
-      {
-
-        "title": "PrÃ¡ticas SustentÃ¡veis",
-
-        "desc": "Uso de materiais eco-friendly e reduÃ§Ã£o de pegada de carbono"
-
-      },
-
-      {
-
-        "title": "InclusÃ£o Social",
-
-        "desc": "Programas de acesso a bem-estar para comunidades"
-
-      }
-
-    ],
-
-    "kpis": [
-
-      {
-
-        "metric": "SessÃµes de saÃºde comunitÃ¡ria",
-
-        "target": "10+ por ano"
-
-      },
-
-      {
-
-        "metric": "CertificaÃ§Ã£o profissional",
-
-        "target": "100% do time"
-
-      },
-
-      {
-
-        "metric": "SatisfaÃ§Ã£o do cliente",
-
-        "target": "NPS 85+"
-
-      }
-
-    ]
-
-  },
-
-  "press": [
-
-    {
-
-      "title": "OLÃBANO: Centro Premium de Bem-Estar Integra Tecnologia e Terapias HolÃ­sticas",
-
-      "date": "2025-01-15",
-
-      "source": "Revista Bem-Estar RS"
-
-    },
-
-    {
-
-      "title": "Startups de SaÃºde Integral em ExpansÃ£o em Porto Alegre",
-
-      "date": "2024-11-20",
-
-      "source": "Jornal do Empreendedor"
-
-    },
-
-    {
-
-      "title": "Medplex Santana: Novo Hub de SaÃºde Premium",
-
-      "date": "2024-09-10",
-
-      "source": "MÃ­dia Local"
-
-    }
-
-  ],
-
-  "faq": [
-
-    {
-
-      "q": "Qual Ã© a proposta de captaÃ§Ã£o e valuation?",
-
-      "a": "Estamos buscando R$ 1.000.000 por 25% do equity (Valuation pre-money: R$ 3.000.000). Os recursos serÃ£o alocados em: Marketing 35%, Equipe 25%, Produtos 20%, Tecnologia 15%, Capital de Giro 5%."
-
-    },
-
-    {
-
-      "q": "Como foi validado o mercado?",
-
-      "a": "AtravÃ©s do MVP realizado em Q1 2025, alcanÃ§amos 24 clientes pagos, receita de R$18.9k em 3 meses, NPS de 92 e taxa de retenÃ§Ã£o de 78%. A demanda por bem-estar premium em Porto Alegre foi confirmada."
-
-    },
-
-    {
-
-      "q": "Qual Ã© o diferencial competitivo?",
-
-      "a": "Somos pioneiros na AmÃ©rica Latina em oferecer experiÃªncia sensorial imersiva com protocolos personalizados. Nossa localizaÃ§Ã£o estratÃ©gica, equipe multidisciplinar e modelo escalÃ¡vel nos destacam."
-
-    },
-
-    {
-
-      "q": "Quais sÃ£o as metas pÃ³s-investimento?",
-
-      "a": "Atingir R$30k/mÃªs de receita recorrente em 6 meses, 80% de ocupaÃ§Ã£o, lanÃ§ar plataforma digital, estruturar linha de produtos e validar modelo de franquia para expansÃ£o."
-
-    },
-
-    {
-
-      "q": "Como Ã© a estrutura societÃ¡ria atual?",
-
-      "a": "OLÃBANO Ã© constituÃ­da como empresa privada com 3 co-founders (Alexandre, Betusa e Leonardo) detendo 100% do capital social atual. Estrutura societÃ¡ria serÃ¡ ajustada conforme acordo de investimento."
-
-    },
-
-    {
-
-      "q": "Qual Ã© o plano de saÃ­da para investidores?",
-
-      "a": "Buscamos crescimento acelerado com potencial IPO, fusÃ£o com grupo de saÃºde maior ou venda estratÃ©gica para fundo de private equity em 5-7 anos."
-
-    },
-
-    {
-
-      "q": "Como serÃ¡ alocado o capital de investimento?",
-
-      "a": "35% em marketing/aquisiÃ§Ã£o de clientes, 25% em equipe especializada, 20% em tecnologia (plataforma digital), 15% em desenvolvimento de produtos e 5% em capital de giro operacional."
-
-    },
-
-    {
-
-      "q": "Quais sÃ£o os riscos principais?",
-
-      "a": "Riscos incluem: sensibilidade econÃ´mica de pÃºblico premium, concorrÃªncia crescente, capacidade operacional limitada e dependÃªncia de localizaÃ§Ã£o. Mitigamos com modelo diversificado e planejamento estratÃ©gico."
-
-    }
-
-  ],
-
-  "contact": {
-
-    "email": "ri@olibanovip.com.br",
-
-    "phone": "+55 (51) 99362-2621",
-
-    "address": "Rua Gomes Jardim, 201 - Medplex Santana, Torre Norte, Sala 1015, Porto Alegre-RS",
-
-    "cta": "Agendar ReuniÃ£o com RI"
-
-  }
-
+{
+  "hero": {
+    "title": "O OlÃÂ­bano",
+    "subtitle": "Transformando o bem-estar premium em Porto Alegre",
+    "description": "Centro inovador de terapias integrativas com modelo escalÃÂ¡vel, traÃÂ§ÃÂ£o validada e margem saudÃÂ¡vel. Uma oportunidade de investimento em um mercado premium em expansÃÂ£o.",
+    "ctas": [
+      {
+        "label": "Falar com RI",
+        "href": "mailto:ri@olibanovip.com.br",
+        "variant": "outline"
+      }
+    ],
+    "stats": [
+      {
+        "label": "NPS",
+        "value": "92",
+        "unit": ""
+      },
+      {
+        "label": "Taxa de RetenÃÂ§ÃÂ£o",
+        "value": "78%",
+        "unit": ""
+      },
+      {
+        "label": "Receita MVP (3 meses)",
+        "value": "R$18.9k",
+        "unit": ""
+      },
+      {
+        "label": "Ticket MÃÂ©dio",
+        "value": "R$799",
+        "unit": ""
+      }
+    ]
+  },
+  "highlights": [
+    "Pioneirismo na AmÃÂ©rica Latina em experiÃÂªncia sensorial imersiva",
+    "Protocolos personalizados com diagnÃÂ³stico individual detalhado",
+    "LocalizaÃÂ§ÃÂ£o estratÃÂ©gica no hub de saÃÂºde premium (Medplex Santana)",
+    "Modelo de negÃÂ³cio diversificado com mÃÂºltiplas fontes de receita",
+    "ValidaÃÂ§ÃÂ£o de mercado jÃÂ¡ realizada com MVP (Q1 2025)",
+    "Equipe fundadora com expertise complementar (CEO tech, COO mÃÂ©dica, CPO estratÃÂ©gia)"
+  ],
+  "market": {
+    "tam": "R$ 2 Bi",
+    "tamDescription": "Mercado total de bem-estar premium no Brasil",
+    "sam": "500k",
+    "samDescription": "PopulaÃÂ§ÃÂ£o A/B em Porto Alegre",
+    "som": "6k",
+    "somDescription": "Meta de clientes qualificados (3 anos)",
+    "methodology": "Baseado em anÃÂ¡lise de mercado de saÃÂºde integrativa, dados de renda da regiÃÂ£o e benchmarks de centros wellness premium internacionais."
+  },
+  "businessModel": {
+    "title": "Modelo de NegÃÂ³cio EscalÃÂ¡vel",
+    "revenueStreams": [
+      {
+        "name": "SessÃÂµes Premium",
+        "description": "SessÃÂµes avulsas a partir de R$799",
+        "margin": "Alto"
+      },
+      {
+        "name": "Pacotes Recorrentes",
+        "description": "Protocolos 3-5 sessÃÂµes (R$2.157-R$3.196)",
+        "margin": "Muito Alto"
+      },
+      {
+        "name": "Parcerias B2B",
+        "description": "Bem-estar corporativo e nutriÃÂ§ÃÂ£o funcional",
+        "margin": "Alto"
+      },
+      {
+        "name": "Produtos PrÃÂ³prios",
+        "description": "Linha exclusiva digital e fÃÂ­sica",
+        "margin": "MÃÂ¡ximo"
+      }
+    ],
+    "unitEconomics": {
+      "LTV": "R$ 3.2k",
+      "CAC": "R$ 450",
+      "ratio": "7:1"
+    }
+  },
+  "traction": {
+    "title": "ValidaÃÂ§ÃÂ£o de Mercado",
+    "milestones": [
+      {
+        "period": "2023 Q1",
+        "title": "Modelagem do NegÃÂ³cio",
+        "desc": "Conceito e validaÃÂ§ÃÂ£o inicial"
+      },
+      {
+        "period": "2023 Q2",
+        "title": "InÃÂ­cio da Obra",
+        "desc": "ConstruÃÂ§ÃÂ£o da infraestrutura"
+      },
+      {
+        "period": "2024 Q2",
+        "title": "Enchentes - Pausa",
+        "desc": "Impacto nas operaÃÂ§ÃÂµes"
+      },
+      {
+        "period": "2024 Q4",
+        "title": "Retomada",
+        "desc": "Retorno ÃÂ s atividades de construÃÂ§ÃÂ£o"
+      },
+      {
+        "period": "2025 Q1",
+        "title": "MVP LanÃÂ§ado",
+        "desc": "TraÃÂ§ÃÂ£o inicial validada com clientes pagos"
+      },
+      {
+        "period": "2025 Q2",
+        "title": "EstruturaÃÂ§ÃÂ£o de Canais",
+        "desc": "ExpansÃÂ£o de vendas e parcerias"
+      }
+    ],
+    "metrics": [
+      {
+        "name": "Clientes no MVP",
+        "value": "24",
+        "growth": "100%/mÃÂªs"
+      },
+      {
+        "name": "Receita Mensal (Atual)",
+        "value": "R$ 6.3k",
+        "growth": "+35% (trend)"
+      },
+      {
+        "name": "Taxa de RetenÃÂ§ÃÂ£o",
+        "value": "78%",
+        "growth": "Acima da meta"
+      },
+      {
+        "name": "NPS",
+        "value": "92",
+        "growth": "Excelente"
+      }
+    ]
+  },
+  "roadmap": [
+    {
+      "quarter": "Q3 2025",
+      "items": [
+        "LanÃÂ§amento da plataforma digital de agendamento",
+        "ExpansÃÂ£o para 50+ clientes ativos",
+        "Parcerias com 3+ empresas B2B"
+      ]
+    },
+    {
+      "quarter": "Q4 2025",
+      "items": [
+        "Linha de produtos lanÃÂ§ada (40+ SKUs)",
+        "Atingir R$30k/mÃÂªs receita recorrente",
+        "AlcanÃÂ§ar 80% de ocupaÃÂ§ÃÂ£o mÃÂ©dia"
+      ]
+    },
+    {
+      "quarter": "Q1 2026",
+      "items": [
+        "Estrutura de franquia validada",
+        "Primeira unidade franqueada em expansÃÂ£o",
+        "Marca nacional consolidada"
+      ]
+    },
+    {
+      "quarter": "2026+",
+      "items": [
+        "ExpansÃÂ£o para 3+ cidades",
+        "ReplicaÃÂ§ÃÂ£o do modelo de franquia",
+        "Potencial IPO ou exit estratÃÂ©gico"
+      ]
+    }
+  ],
+  "governance": {
+    "team": [
+      {
+        "name": "Alexandre Freire",
+        "role": "CEO & Co-Founder",
+        "bio": "Especialista em gestÃÂ£o, transformaÃÂ§ÃÂ£o digital e scaling de negÃÂ³cios. Background em tech e empreendedorismo.",
+        "email": "alexandre@olibanovip.com.br",
+        "image": "/team/alexandre.jpg",
+        "links": [
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/alexandreolibano/",
+            "type": "instagram"
+          }
+        ]
+      },
+      {
+        "name": "Betusa Kramer",
+        "role": "COO & Co-Founder",
+        "bio": "MÃÂ©dica, idealizadora do conceito OLÃÂBANO. Especialista em saÃÂºde integrativa, prÃÂ¡ticas complementares e bem-estar holÃÂ­stico.",
+        "email": "betusa@olibanovip.com.br",
+        "image": "/team/betusa.jpg",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/betusa-kramer-435b062b/",
+            "type": "linkedin"
+          },
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/drabetusakramer/",
+            "type": "instagram"
+          }
+        ]
+      },
+      {
+        "name": "Leonardo Menezes",
+        "role": "CPO & Co-Founder",
+        "bio": "Especialista em planejamento estratÃÂ©gico, gestÃÂ£o de produtos e inovaÃÂ§ÃÂ£o. Expertise em operaÃÂ§ÃÂµes de saÃÂºde e tech.",
+        "email": "leonardo@olibanovip.com.br",
+        "image": "/team/leonardo.jpg",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/menezesleonardo/",
+            "type": "linkedin"
+          }
+        ]
+      }
+    ]
+  },
+  "esg": {
+    "title": "Compromisso com Impacto",
+    "initiatives": [
+      {
+        "title": "SaÃÂºde Preventiva",
+        "desc": "Promovendo bem-estar integral e prevenÃÂ§ÃÂ£o de doenÃÂ§as crÃÂ´nicas"
+      },
+      {
+        "title": "EducaÃÂ§ÃÂ£o Continuada",
+        "desc": "CertificaÃÂ§ÃÂ£o e desenvolvimento profissional da equipe terapÃÂªutica"
+      },
+      {
+        "title": "PrÃÂ¡ticas SustentÃÂ¡veis",
+        "desc": "Uso de materiais eco-friendly e reduÃÂ§ÃÂ£o de pegada de carbono"
+      },
+      {
+        "title": "InclusÃÂ£o Social",
+        "desc": "Programas de acesso a bem-estar para comunidades"
+      }
+    ],
+    "kpis": [
+      {
+        "metric": "SessÃÂµes de saÃÂºde comunitÃÂ¡ria",
+        "target": "10+ por ano"
+      },
+      {
+        "metric": "CertificaÃÂ§ÃÂ£o profissional",
+        "target": "100% do time"
+      },
+      {
+        "metric": "SatisfaÃÂ§ÃÂ£o do cliente",
+        "target": "NPS 85+"
+      }
+    ]
+  },
+  "press": [
+    {
+      "title": "OLÃÂBANO: Centro Premium de Bem-Estar Integra Tecnologia e Terapias HolÃÂ­sticas",
+      "date": "2025-01-15",
+      "source": "Revista Bem-Estar RS"
+    },
+    {
+      "title": "Startups de SaÃÂºde Integral em ExpansÃÂ£o em Porto Alegre",
+      "date": "2024-11-20",
+      "source": "Jornal do Empreendedor"
+    },
+    {
+      "title": "Medplex Santana: Novo Hub de SaÃÂºde Premium",
+      "date": "2024-09-10",
+      "source": "MÃÂ­dia Local"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Qual ÃÂ© a proposta de captaÃÂ§ÃÂ£o e valuation?",
+      "a": "Estamos buscando R$ 1.000.000 por 25% do equity (Valuation pre-money: R$ 3.000.000). Os recursos serÃÂ£o alocados em: Marketing 35%, Equipe 25%, Produtos 20%, Tecnologia 15%, Capital de Giro 5%."
+    },
+    {
+      "q": "Como foi validado o mercado?",
+      "a": "AtravÃÂ©s do MVP realizado em Q1 2025, alcanÃÂ§amos 24 clientes pagos, receita de R$18.9k em 3 meses, NPS de 92 e taxa de retenÃÂ§ÃÂ£o de 78%. A demanda por bem-estar premium em Porto Alegre foi confirmada."
+    },
+    {
+      "q": "Qual ÃÂ© o diferencial competitivo?",
+      "a": "Somos pioneiros na AmÃÂ©rica Latina em oferecer experiÃÂªncia sensorial imersiva com protocolos personalizados. Nossa localizaÃÂ§ÃÂ£o estratÃÂ©gica, equipe multidisciplinar e modelo escalÃÂ¡vel nos destacam."
+    },
+    {
+      "q": "Quais sÃÂ£o as metas pÃÂ³s-investimento?",
+      "a": "Atingir R$30k/mÃÂªs de receita recorrente em 6 meses, 80% de ocupaÃÂ§ÃÂ£o, lanÃÂ§ar plataforma digital, estruturar linha de produtos e validar modelo de franquia para expansÃÂ£o."
+    },
+    {
+      "q": "Como ÃÂ© a estrutura societÃÂ¡ria atual?",
+      "a": "OLÃÂBANO ÃÂ© constituÃÂ­da como empresa privada com 3 co-founders (Alexandre, Betusa e Leonardo) detendo 100% do capital social atual. Estrutura societÃÂ¡ria serÃÂ¡ ajustada conforme acordo de investimento."
+    },
+    {
+      "q": "Qual ÃÂ© o plano de saÃÂ­da para investidores?",
+      "a": "Buscamos crescimento acelerado com potencial IPO, fusÃÂ£o com grupo de saÃÂºde maior ou venda estratÃÂ©gica para fundo de private equity em 5-7 anos."
+    },
+    {
+      "q": "Como serÃÂ¡ alocado o capital de investimento?",
+      "a": "35% em marketing/aquisiÃÂ§ÃÂ£o de clientes, 25% em equipe especializada, 20% em tecnologia (plataforma digital), 15% em desenvolvimento de produtos e 5% em capital de giro operacional."
+    },
+    {
+      "q": "Quais sÃÂ£o os riscos principais?",
+      "a": "Riscos incluem: sensibilidade econÃÂ´mica de pÃÂºblico premium, concorrÃÂªncia crescente, capacidade operacional limitada e dependÃÂªncia de localizaÃÂ§ÃÂ£o. Mitigamos com modelo diversificado e planejamento estratÃÂ©gico."
+    }
+  ],
+  "contact": {
+    "email": "ri@olibanovip.com.br",
+    "phone": "+55 (51) 99362-2621",
+    "address": "Rua Gomes Jardim, 201 - Medplex Santana, Torre Norte, Sala 1015, Porto Alegre-RS",
+    "cta": "Agendar ReuniÃÂ£o com RI"
+  }
 }
