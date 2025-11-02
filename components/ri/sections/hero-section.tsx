@@ -76,7 +76,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 + i * 0.1, duration: 0.5 }}
-              whileHover={{ y: -4, shadow: "0 20px 40px rgba(200, 135, 21, 0.15)" }}
+              whileHover={{ y: -4, boxShadow: "0 20px 40px rgba(200, 135, 21, 0.15)" }}
               className="bg-white rounded-2xl p-6 border border-gray-100 hover:border-[#C88715]/30 transition-all duration-300 backdrop-blur-sm"
             >
               <div className="flex items-start justify-between mb-3">

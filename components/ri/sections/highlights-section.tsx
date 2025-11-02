@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import type { Variants } from "framer-motion"
 import { Zap, Award, MapPin, Layers, TrendingUp, Users } from "lucide-react"
 
 interface HighlightsSectionProps {
@@ -10,7 +11,7 @@ interface HighlightsSectionProps {
 const icons = [Zap, Award, MapPin, Layers, TrendingUp, Users]
 
 export default function HighlightsSection({ highlights }: HighlightsSectionProps) {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -18,12 +19,12 @@ export default function HighlightsSection({ highlights }: HighlightsSectionProps
     },
   }
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" },
+      transition: { duration: 0.6, ease: "easeOut" as const },
     },
   }
 
@@ -38,7 +39,7 @@ export default function HighlightsSection({ highlights }: HighlightsSectionProps
           Por que OLÍBANO?
         </motion.h2>
         <motion.p variants={itemVariants} className="text-lg text-gray-600 mb-12">
-          Seis diferenciais que posicionam OLÍBANO como lider em bem-estar premium
+          Seis diferenciais que posicionam OLÍBANO como líder em bem-estar premium
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

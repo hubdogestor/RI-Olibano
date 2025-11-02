@@ -1,6 +1,8 @@
 "use client"
 
 import { motion, AnimatePresence } from "framer-motion"
+import type { LucideIcon } from "lucide-react"
+import type riJson from "@/data/ri.json"
 import HeroSection from "./sections/hero-section"
 import HighlightsSection from "./sections/highlights-section"
 import MarketSection from "./sections/market-section"
@@ -13,10 +15,18 @@ import PressSection from "./sections/press-section"
 import FAQSection from "./sections/faq-section"
 import ContactSection from "./sections/contact-section"
 
+type SectionMeta = {
+  id: string
+  title: string
+  icon: LucideIcon
+}
+
+type RiData = typeof riJson
+
 interface PitchContainerProps {
   activeSection: string
-  data: any
-  sections: Array<{ id: string; title: string; icon: string }>
+  data: RiData
+  sections: SectionMeta[]
 }
 
 export default function PitchContainer({ activeSection, data, sections }: PitchContainerProps) {

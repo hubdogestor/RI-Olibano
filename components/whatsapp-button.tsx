@@ -3,9 +3,12 @@
 import { motion } from "framer-motion"
 import { MessageCircle } from "lucide-react"
 
+const PHONE_NUMBER = "5551993622621"
+const MESSAGE =
+  "Olá! Gostaria de saber mais sobre as oportunidades de investimento da OLÍBANO."
+
 export default function WhatsAppButton() {
-  const whatsappUrl =
-    "https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre as oportunidades de investimento da OLÍBANO."
+  const whatsappUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(MESSAGE)}`
 
   return (
     <motion.a
