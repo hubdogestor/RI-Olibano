@@ -51,34 +51,30 @@ export default function TractionSection({ traction }: TractionSectionProps) {
 
         {/* Timeline */}
         <div className="mb-16">
-          <h3 className="text-xl font-semibold mb-8 text-[#354037]">Timeline</h3>
-          <div className="space-y-4">
-            {traction.milestones.map((milestone, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 + i * 0.1 }}
-                className="group flex gap-6 hover:pl-2 transition-all"
-              >
-                <div className="flex flex-col items-center flex-shrink-0">
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ delay: 0.3 + i * 0.1 }}
-                    className="w-5 h-5 rounded-full bg-gradient-to-br from-[#C88715] to-[#AC4E15] ring-4 ring-[#C88715]/30 group-hover:ring-[#C88715]/60 transition-all"
-                  />
-                  {i < traction.milestones.length - 1 && (
-                    <div className="w-1 h-12 bg-gradient-to-b from-[#C88715]/50 to-transparent mt-1" />
-                  )}
-                </div>
-                <div className="flex-1 bg-white border border-gray-200 rounded-2xl p-6 hover:border-[#C88715]/30 hover:shadow-lg transition-all">
-                  <p className="text-xs font-bold text-[#C88715] mb-2 uppercase tracking-wider">{milestone.period}</p>
-                  <p className="text-lg font-semibold text-[#354037] mb-2">{milestone.title}</p>
-                  <p className="text-sm text-gray-600">{milestone.desc}</p>
-                </div>
-              </motion.div>
-            ))}
+          <h3 className="text-xl font-semibold mb-8 text-[#354037]">Linha do Tempo</h3>
+          <div className="relative">
+            <div className="absolute left-10 right-10 top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] via-[#D59D40] to-transparent lg:block" />
+            <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-6 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#d59d40]/40">
+              {traction.milestones.map((milestone, i) => (
+                <motion.div
+                  key={milestone.period}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.35 }}
+                  transition={{ duration: 0.4, delay: i * 0.08 }}
+                  className="group relative flex w-72 min-w-[18rem] snap-center flex-col rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
+                >
+                  <div className="mb-4 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]">
+                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/40">
+                      {milestone.period}
+                    </span>
+                    Trajetória
+                  </div>
+                  <h4 className="text-lg font-semibold text-[#354037]">{milestone.title}</h4>
+                  <p className="mt-3 text-sm text-[#4a463f]/75">{milestone.desc}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
 

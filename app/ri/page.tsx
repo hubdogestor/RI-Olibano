@@ -20,7 +20,7 @@ import {
 } from "lucide-react"
 
 const sections = [
-  { id: "hero", title: "OLÍBANO", icon: Target },
+  { id: "hero", title: "O Olíbano", icon: Target },
   { id: "highlights", title: "Destaques", icon: Star },
   { id: "market", title: "Mercado", icon: TrendingUp },
   { id: "business", title: "Modelo de Negócio", icon: Briefcase },
@@ -40,7 +40,12 @@ export default function PitchDeckPage() {
     <div className="relative flex min-h-[calc(100vh-var(--header-height))] flex-col bg-transparent lg:flex-row">
       <Sidebar sections={sections} activeSection={activeSection} onSectionChange={setActiveSection} />
       <div className="flex-1 lg:ml-72">
-        <PitchContainer activeSection={activeSection} data={riData} sections={sections} />
+        <PitchContainer
+          activeSection={activeSection}
+          data={riData}
+          sections={sections}
+          onSectionChange={setActiveSection}
+        />
       </div>
       <WhatsAppButton />
     </div>

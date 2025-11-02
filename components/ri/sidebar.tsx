@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { AnimatePresence, motion } from "framer-motion"
 import type { LucideIcon } from "lucide-react"
-import { ChevronRight, Home, Menu, X } from "lucide-react"
+import { ChevronRight, Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface SidebarProps {
@@ -103,17 +103,6 @@ export default function Sidebar({ sections, activeSection, onSectionChange }: Si
             <nav className="flex-1 space-y-2 overflow-y-auto px-4 py-2">{renderButtons(true)}</nav>
 
             <div className="grid gap-3 border-t border-[var(--sidebar-border)] p-4">
-              <button
-                type="button"
-                onClick={() => {
-                  handleSectionClick("hero")
-                  setIsMobileOpen(false)
-                }}
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#ac4e15]/30 bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#ac4e15] shadow-sm shadow-[#ac4e15]/15"
-              >
-                <Home className="h-4 w-4" />
-                Início
-              </button>
               <Link
                 href="/"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-[#ac4e15]/30 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#4a463f]"
@@ -132,19 +121,6 @@ export default function Sidebar({ sections, activeSection, onSectionChange }: Si
             <p className="text-xs uppercase tracking-[0.36em] text-[#ac4e15]/80">Sala do investidor</p>
             <p className="text-xl font-serif font-semibold text-[#354037]">OLÍBANO</p>
           </div>
-          <motion.button
-            whileTap={{ scale: 0.94 }}
-            onClick={() => handleSectionClick("hero")}
-            className={cn(
-              "inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#ac4e15]/30 transition-all",
-              activeSection === "hero"
-                ? "bg-gradient-to-br from-[#ac4e15] via-[#d59d40] to-[#69683b] text-white shadow-lg shadow-[#ac4e15]/25"
-                : "text-[#ac4e15] hover:bg-[#ac4e15]/10",
-            )}
-            aria-label="Ir para início"
-          >
-            <Home className="h-5 w-5" />
-          </motion.button>
         </div>
 
         <nav className="flex-1 space-y-2 overflow-y-auto px-4 py-2">{renderButtons()}</nav>

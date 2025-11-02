@@ -1,17 +1,36 @@
 {
   "hero": {
-    "title": "OLÍBANO",
+    "title": "O Olíbano",
     "subtitle": "Transformando o bem-estar premium em Porto Alegre",
     "description": "Centro inovador de terapias integrativas com modelo escalável, tração validada e margem saudável. Uma oportunidade de investimento em um mercado premium em expansão.",
     "ctas": [
-      { "label": "Baixar Pitch", "href": "/docs/pitch.pdf", "variant": "default" },
-      { "label": "Falar com RI", "href": "mailto:ri@olibanovip.com.br", "variant": "outline" }
+      {
+        "label": "Falar com RI",
+        "href": "mailto:ri@olibanovip.com.br",
+        "variant": "outline"
+      }
     ],
     "stats": [
-      { "label": "NPS", "value": "92", "unit": "" },
-      { "label": "Taxa de Retenção", "value": "78%", "unit": "" },
-      { "label": "Receita MVP (3m)", "value": "R$18.9k", "unit": "" },
-      { "label": "Ticket Médio", "value": "R$799", "unit": "" }
+      {
+        "label": "NPS",
+        "value": "92",
+        "unit": ""
+      },
+      {
+        "label": "Taxa de Retenção",
+        "value": "78%",
+        "unit": ""
+      },
+      {
+        "label": "Receita MVP (3 meses)",
+        "value": "R$18.9k",
+        "unit": ""
+      },
+      {
+        "label": "Ticket Médio",
+        "value": "R$799",
+        "unit": ""
+      }
     ]
   },
   "highlights": [
@@ -34,14 +53,26 @@
   "businessModel": {
     "title": "Modelo de Negócio Escalável",
     "revenueStreams": [
-      { "name": "Sessões Premium", "description": "Sessões avulsas a partir de R$799", "margin": "Alto" },
+      {
+        "name": "Sessões Premium",
+        "description": "Sessões avulsas a partir de R$799",
+        "margin": "Alto"
+      },
       {
         "name": "Pacotes Recorrentes",
         "description": "Protocolos 3-5 sessões (R$2.157-R$3.196)",
         "margin": "Muito Alto"
       },
-      { "name": "Parcerias B2B", "description": "Bem-estar corporativo e nutrição funcional", "margin": "Alto" },
-      { "name": "Produtos Próprios", "description": "Linha exclusiva digital e física", "margin": "Máximo" }
+      {
+        "name": "Parcerias B2B",
+        "description": "Bem-estar corporativo e nutrição funcional",
+        "margin": "Alto"
+      },
+      {
+        "name": "Produtos Próprios",
+        "description": "Linha exclusiva digital e física",
+        "margin": "Máximo"
+      }
     ],
     "unitEconomics": {
       "LTV": "R$ 3.2k",
@@ -52,18 +83,58 @@
   "traction": {
     "title": "Validação de Mercado",
     "milestones": [
-      { "period": "2023 Q1", "title": "Modelagem do Negócio", "desc": "Conceito e validação inicial" },
-      { "period": "2023 Q2", "title": "Início da Obra", "desc": "Construção da infraestrutura" },
-      { "period": "2024 Q2", "title": "Enchentes - Pausa", "desc": "Impacto nas operações" },
-      { "period": "2024 Q4", "title": "Retomada", "desc": "Retorno às atividades de construção" },
-      { "period": "2025 Q1", "title": "MVP Lançado", "desc": "Tração inicial validada com clientes pagos" },
-      { "period": "2025 Q2", "title": "Estruturação de Canais", "desc": "Expansão de vendas e parcerias" }
+      {
+        "period": "2023 Q1",
+        "title": "Modelagem do Negócio",
+        "desc": "Conceito e validação inicial"
+      },
+      {
+        "period": "2023 Q2",
+        "title": "Início da Obra",
+        "desc": "Construção da infraestrutura"
+      },
+      {
+        "period": "2024 Q2",
+        "title": "Enchentes - Pausa",
+        "desc": "Impacto nas operações"
+      },
+      {
+        "period": "2024 Q4",
+        "title": "Retomada",
+        "desc": "Retorno às atividades de construção"
+      },
+      {
+        "period": "2025 Q1",
+        "title": "MVP Lançado",
+        "desc": "Tração inicial validada com clientes pagos"
+      },
+      {
+        "period": "2025 Q2",
+        "title": "Estruturação de Canais",
+        "desc": "Expansão de vendas e parcerias"
+      }
     ],
     "metrics": [
-      { "name": "Clientes no MVP", "value": "24", "growth": "100%/mês" },
-      { "name": "Receita Mensal (Atual)", "value": "R$ 6.3k", "growth": "+35% (trend)" },
-      { "name": "Taxa de Retenção", "value": "78%", "growth": "Acima da meta" },
-      { "name": "NPS", "value": "92", "growth": "Excelente" }
+      {
+        "name": "Clientes no MVP",
+        "value": "24",
+        "growth": "100%/mês"
+      },
+      {
+        "name": "Receita Mensal (Atual)",
+        "value": "R$ 6.3k",
+        "growth": "+35% (trend)"
+      },
+      {
+        "name": "Taxa de Retenção",
+        "value": "78%",
+        "growth": "Acima da meta"
+      },
+      {
+        "name": "NPS",
+        "value": "92",
+        "growth": "Excelente"
+      }
     ]
   },
   "roadmap": [
@@ -93,7 +164,11 @@
     },
     {
       "quarter": "2026+",
-      "items": ["Expansão para 3+ cidades", "Replicação do modelo de franquia", "Potencial IPO ou exit estratégico"]
+      "items": [
+        "Expansão para 3+ cidades",
+        "Replicação do modelo de franquia",
+        "Potencial IPO ou exit estratégico"
+      ]
     }
   ],
   "governance": {
@@ -101,32 +176,85 @@
       {
         "name": "Alexandre Freire",
         "role": "CEO & Co-Founder",
-        "bio": "Especialista em gestão, transformação digital e scaling de negócios. Background em tech e empreendedorismo."
+        "bio": "Especialista em gestão, transformação digital e scaling de negócios. Background em tech e empreendedorismo.",
+        "email": "alexandre@olibanovip.com.br",
+        "image": "/team/alexandre.jpg",
+        "links": [
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/alexandreolibano/",
+            "type": "instagram"
+          }
+        ]
       },
       {
         "name": "Betusa Kramer",
         "role": "COO & Co-Founder",
-        "bio": "Médica, idealizadora do conceito OLÍBANO. Especialista em saúde integrativa, práticas complementares e bem-estar holístico."
+        "bio": "Médica, idealizadora do conceito OLÍBANO. Especialista em saúde integrativa, práticas complementares e bem-estar holístico.",
+        "email": "betusa@olibanovip.com.br",
+        "image": "/team/betusa.jpg",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/betusa-kramer-435b062b/",
+            "type": "linkedin"
+          },
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/drabetusakramer/",
+            "type": "instagram"
+          }
+        ]
       },
       {
         "name": "Leonardo Menezes",
         "role": "CPO & Co-Founder",
-        "bio": "Especialista em planejamento estratégico, gestão de produtos e inovação. Expertise em operações de saúde e tech."
+        "bio": "Especialista em planejamento estratégico, gestão de produtos e inovação. Expertise em operações de saúde e tech.",
+        "email": "leonardo@olibanovip.com.br",
+        "image": "/team/leonardo.jpg",
+        "links": [
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/menezesleonardo/",
+            "type": "linkedin"
+          }
+        ]
       }
     ]
   },
   "esg": {
     "title": "Compromisso com Impacto",
     "initiatives": [
-      { "title": "Saúde Preventiva", "desc": "Promovendo bem-estar integral e prevenção de doenças crônicas" },
-      { "title": "Educação Continuada", "desc": "Certificação e desenvolvimento profissional da equipe terapêutica" },
-      { "title": "Práticas Sustentáveis", "desc": "Uso de materiais eco-friendly e redução de pegada de carbono" },
-      { "title": "Inclusão Social", "desc": "Programas de acesso a bem-estar para comunidades" }
+      {
+        "title": "Saúde Preventiva",
+        "desc": "Promovendo bem-estar integral e prevenção de doenças crônicas"
+      },
+      {
+        "title": "Educação Continuada",
+        "desc": "Certificação e desenvolvimento profissional da equipe terapêutica"
+      },
+      {
+        "title": "Práticas Sustentáveis",
+        "desc": "Uso de materiais eco-friendly e redução de pegada de carbono"
+      },
+      {
+        "title": "Inclusão Social",
+        "desc": "Programas de acesso a bem-estar para comunidades"
+      }
     ],
     "kpis": [
-      { "metric": "Sessões de saúde comunitária", "target": "10+ por ano" },
-      { "metric": "Certificação profissional", "target": "100% do time" },
-      { "metric": "Satisfação do cliente", "target": "NPS 85+" }
+      {
+        "metric": "Sessões de saúde comunitária",
+        "target": "10+ por ano"
+      },
+      {
+        "metric": "Certificação profissional",
+        "target": "100% do time"
+      },
+      {
+        "metric": "Satisfação do cliente",
+        "target": "NPS 85+"
+      }
     ]
   },
   "press": [
@@ -140,7 +268,11 @@
       "date": "2024-11-20",
       "source": "Jornal do Empreendedor"
     },
-    { "title": "Medplex Santana: Novo Hub de Saúde Premium", "date": "2024-09-10", "source": "Mídia Local" }
+    {
+      "title": "Medplex Santana: Novo Hub de Saúde Premium",
+      "date": "2024-09-10",
+      "source": "Mídia Local"
+    }
   ],
   "faq": [
     {

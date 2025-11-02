@@ -1,80 +1,127 @@
 "use client"
 
+import type { ReactNode } from "react"
+import Image from "next/image"
 import { motion } from "framer-motion"
-import { Linkedin, Mail } from "lucide-react"
+import { Globe, Instagram, Linkedin, Mail } from "lucide-react"
+
+type ContactKind = "email" | "linkedin" | "instagram" | "website"
+
+type ContactLink = {
+  label: string
+  href: string
+  type: ContactKind
+}
 
 interface TeamSectionProps {
   team: Array<{
     name: string
     role: string
     bio: string
+    image?: string
+    email?: string
+    links?: Array<{ label: string; href: string; type: string }>
   }>
+}
+
+const iconMap: Record<ContactKind, ReactNode> = {
+  email: <Mail className="h-4 w-4" />,
+  linkedin: <Linkedin className="h-4 w-4" />,
+  instagram: <Instagram className="h-4 w-4" />,
+  website: <Globe className="h-4 w-4" />,
 }
 
 export default function TeamSection({ team }: TeamSectionProps) {
   return (
-    <div className="h-full overflow-y-auto flex flex-col justify-center p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#69683B]/5">
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl">
-        <div className="mb-8">
+    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-[#f5f3f0] via-white to-[#69683B]/5 p-12">
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-6xl">
+        <div className="mb-10">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl font-serif font-bold mb-2 bg-gradient-to-r from-[#354037] to-[#69683B] bg-clip-text text-transparent"
+            className="bg-gradient-to-r from-[#354037] to-[#69683B] bg-clip-text text-5xl font-serif font-bold text-transparent"
           >
             Equipe Fundadora
           </motion.h2>
-          <p className="text-[#354037]/70 mt-3">
-            Especialistas complementares com visão compartilhada para transformar bem-estar premium
+          <p className="mt-3 max-w-3xl text-[#354037]/70">
+            Especialistas complementares com visão compartilhada para transformar o bem-estar premium em uma operação
+            escalável, humana e desejada.
           </p>
-          <div className="h-1 w-16 bg-gradient-to-r from-[#69683B] to-[#C88715] rounded-full mt-4" />
+          <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-[#69683B] to-[#C88715]" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          {team.map((member, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, scale: 0.8, y: 30 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ delay: 0.15 * i }}
-              className="group"
-            >
-              <motion.div
-                whileHover={{ translateY: -12 }}
-                className="relative bg-white border border-[#354037]/10 rounded-2xl p-8 overflow-hidden hover:border-[#C88715]/50 hover:shadow-2xl hover:shadow-[#C88715]/10 transition-all duration-300"
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          {team.map((member, index) => {
+            const socialLinks = (member.links ?? []).map((link) => {
+              const allowed: ContactKind[] = ["email", "linkedin", "instagram", "website"]
+              const type = allowed.includes(link.type as ContactKind) ? (link.type as ContactKind) : "website"
+              return { ...link, type }
+            })
+
+            return (
+              <motion.article
+                key={member.name}
+                initial={{ opacity: 0, y: 32 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.12 * index }}
+                className="group relative overflow-hidden rounded-3xl border border-[#d9cbbb]/60 bg-white/85 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
               >
-                {/* Background accent */}
-                <div className="absolute -top-20 -right-20 w-40 h-40 bg-gradient-to-br from-[#C88715]/10 to-transparent rounded-full blur-3xl" />
-
-                {/* Avatar */}
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className="relative w-24 h-24 rounded-full bg-gradient-to-br from-[#C88715] to-[#AC4E15] mb-6 flex items-center justify-center text-white text-3xl font-bold shadow-lg shadow-[#C88715]/30"
-                >
-                  {member.name.charAt(0)}
-                </motion.div>
-
-                <h3 className="text-xl font-serif font-bold text-[#354037] mb-1">{member.name}</h3>
-                <p className="text-sm font-semibold text-[#C88715] mb-4 inline-block px-2 py-1 bg-[#C88715]/10 rounded-lg">
-                  {member.role}
-                </p>
-                <p className="text-sm text-[#354037]/70 leading-relaxed group-hover:text-[#354037] transition-colors mb-6">
-                  {member.bio}
-                </p>
-
-                {/* Social links */}
-                <div className="flex gap-3 pt-4 border-t border-[#C88715]/20">
-                  <button className="flex-1 flex items-center justify-center gap-2 p-2 rounded-lg bg-[#C88715]/5 text-[#C88715] hover:bg-[#C88715]/15 transition-colors text-sm">
-                    <Linkedin className="w-4 h-4" />
-                    LinkedIn
-                  </button>
-                  <button className="flex-1 flex items-center justify-center gap-2 p-2 rounded-lg bg-[#C88715]/5 text-[#C88715] hover:bg-[#C88715]/15 transition-colors text-sm">
-                    <Mail className="w-4 h-4" />
-                    Email
-                  </button>
+                <div className="absolute -left-24 -top-24 h-40 w-40 rounded-full bg-gradient-to-br from-[#ac4e15]/12 to-transparent blur-3xl" />
+                <div className="relative flex flex-col gap-6 p-8">
+                  <div className="relative h-28 w-28 self-start overflow-hidden rounded-3xl border border-white/50 shadow-lg shadow-[#ac4e15]/30">
+                  {member.image ? (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                      sizes="112px"
+                    />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-3xl font-serif text-white">
+                      {member.name.charAt(0)}
+                    </div>
+                  )}
                 </div>
-              </motion.div>
-            </motion.div>
-          ))}
+
+                <div>
+                  <h3 className="text-xl font-serif font-semibold text-[#354037]">{member.name}</h3>
+                  <p className="mt-1 inline-flex rounded-full bg-[#ac4e15]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-[#ac4e15]">
+                    {member.role}
+                  </p>
+                </div>
+
+                <p className="text-sm leading-relaxed text-[#4a463f]/80">{member.bio}</p>
+
+                <div className="grid gap-3 border-t border-[#d9cbbb]/60 pt-4">
+                  {member.email && (
+                    <a
+                      href={`mailto:${member.email}`}
+                      className="inline-flex items-center gap-2 rounded-full border border-[#ac4e15]/30 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/10"
+                    >
+                      <Mail className="h-4 w-4" />
+                      {member.email}
+                    </a>
+                  )}
+                  <div className="flex flex-wrap gap-2">
+                    {socialLinks.map((link) => (
+                      <a
+                        key={link.href}
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-1 min-w-[8rem] items-center justify-center gap-2 rounded-full bg-[#ac4e15]/8 px-3 py-2 text-xs font-medium uppercase tracking-[0.2em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/15"
+                      >
+                        {iconMap[link.type]}
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+                </div>
+              </motion.article>
+            )
+          })}
         </div>
       </motion.div>
     </div>

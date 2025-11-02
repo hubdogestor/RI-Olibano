@@ -9,7 +9,8 @@ import { Menu, X, Home, ArrowUpRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navLinks = [
-  { label: "Experiência", href: "/#experiencia" },
+  { label: "Home", href: "/" },
+  { label: "Experiências", href: "/#experiencia" },
   { label: "Protocolos", href: "/#protocolos" },
   { label: "Equipe", href: "/#equipe" },
   { label: "Contato", href: "/#contato" },

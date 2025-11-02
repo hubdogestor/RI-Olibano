@@ -26,48 +26,40 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
         </div>
 
         <div className="relative mt-12">
-          {/* Timeline connector */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#C88715] via-[#AC4E15] to-transparent" />
+          <div className="absolute left-0 right-0 top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] via-[#AC4E15] to-transparent lg:block" />
 
-          <div className="space-y-8">
+          <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#d59d40]/40">
             {roadmap.map((phase, i) => (
               <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -30 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.1 * i }}
-                className="relative pl-24"
+                key={phase.quarter}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.45, delay: i * 0.1 }}
+                className="group relative flex w-80 min-w-[20rem] snap-center flex-col rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-7 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
               >
-                {/* Timeline dot */}
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ delay: 0.1 * i + 0.2 }}
-                  className="absolute left-0 top-0 w-16 h-16 bg-gradient-to-br from-[#C88715] to-[#AC4E15] rounded-full flex items-center justify-center shadow-lg shadow-[#C88715]/40"
-                >
-                  <span className="text-white font-bold text-sm">{phase.quarter}</span>
-                </motion.div>
+                <div className="mb-5 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]">
+                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white text-sm font-semibold shadow-lg shadow-[#ac4e15]/30">
+                    {phase.quarter}
+                  </span>
+                  Marco estratégico
+                </div>
 
-                {/* Content card */}
-                <motion.div
-                  whileHover={{ translateX: 8, boxShadow: "0 20px 40px rgba(200, 135, 21, 0.15)" }}
-                  className="bg-white border border-[#C88715]/20 rounded-2xl p-6 hover:border-[#C88715]/50 transition-all duration-300"
-                >
-                  <ul className="space-y-3">
-                    {phase.items.map((item, j) => (
-                      <motion.li
-                        key={j}
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.15 * i + 0.05 * j }}
-                        className="flex gap-3 text-sm text-[#354037]"
-                      >
-                        <CheckCircle2 className="w-5 h-5 text-[#C88715] flex-shrink-0 mt-0.5" />
-                        <span>{item}</span>
-                      </motion.li>
-                    ))}
-                  </ul>
-                </motion.div>
+                <ul className="space-y-3">
+                  {phase.items.map((item, j) => (
+                    <motion.li
+                      key={item}
+                      initial={{ opacity: 0, x: -12 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true, amount: 0.6 }}
+                      transition={{ duration: 0.3, delay: j * 0.08 }}
+                      className="flex gap-3 text-sm text-[#354037]"
+                    >
+                      <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#ac4e15]" />
+                      <span>{item}</span>
+                    </motion.li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>
