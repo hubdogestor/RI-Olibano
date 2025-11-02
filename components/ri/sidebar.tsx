@@ -1,10 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import { AnimatePresence, motion } from "framer-motion"
 import Link from "next/link"
+import { AnimatePresence, motion } from "framer-motion"
 import type { LucideIcon } from "lucide-react"
-import { Gem, Menu, X, ChevronRight } from "lucide-react"
+import { ChevronRight, Home, Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface SidebarProps {
@@ -14,170 +14,168 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ sections, activeSection, onSectionChange }: SidebarProps) {
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [isMobileOpen, setIsMobileOpen] = useState(false)
   const activeIndex = sections.findIndex((section) => section.id === activeSection)
 
-  const handleChange = (sectionId: string) => {
+  const handleSectionClick = (sectionId: string) => {
     onSectionChange(sectionId)
   }
 
-  const renderSectionButtons = (closeAfterSelect = false) =>
-    sections.map((section, index) => (
-      <motion.button
-        key={section.id}
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.05 * index }}
-        onClick={() => {
-          handleChange(section.id)
-          if (closeAfterSelect) {
-            setIsExpanded(false)
-          }
-        }}
-        className={cn(
-          "w-full text-left px-3.5 py-2.5 rounded-lg font-medium transition-all duration-300 flex items-center gap-3",
-          activeSection === section.id
-            ? "bg-gradient-to-r from-[#C88715] to-[#AC4E15] text-white shadow-lg shadow-[#C88715]/30"
-            : "text-gray-400 hover:text-[#C88715] hover:bg-[#C88715]/10",
-        )}
-      >
-        <section.icon className="w-4 h-4 flex-shrink-0" />
-        <span className="text-xs flex-1">{section.title}</span>
-        {activeSection === section.id && (
-          <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="w-1.5 h-1.5 rounded-full bg-white" />
-        )}
-      </motion.button>
-    ))
+  const renderButtons = (collapseAfterClick = false) =>
+    sections.map((section, index) => {
+      const isActive = activeSection === section.id
+      return (
+        <motion.button
+          key={section.id}
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: index * 0.04 }}
+          onClick={() => {
+            handleSectionClick(section.id)
+            if (collapseAfterClick) {
+              setIsMobileOpen(false)
+            }
+          }}
+          className={cn(
+            "flex w-full items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium uppercase tracking-[0.24em] transition-all",
+            isActive
+              ? "bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b] text-white shadow-lg shadow-[#ac4e15]/30"
+              : "text-[#4a463f] hover:bg-[#ac4e15]/10 hover:text-[#ac4e15]",
+          )}
+        >
+          <section.icon className="h-4 w-4 flex-shrink-0" />
+          <span className="flex-1 text-left text-[11px]">{section.title}</span>
+          {isActive && <motion.span layoutId="sidebar-active-dot" className="h-1.5 w-1.5 rounded-full bg-white" />}
+        </motion.button>
+      )
+    })
 
   return (
     <>
-      {/* Barra superior móvel minimalista */}
-      <div className="lg:hidden fixed top-0 left-0 right-0 h-16 bg-gradient-to-r from-[#354037] to-[#2a3430] border-b border-[#C88715]/20 flex items-center justify-between px-4 z-50">
-        <motion.button
-          onClick={() => setIsExpanded((prev) => !prev)}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#C88715] text-white shadow-lg shadow-[#C88715]/40 transition-colors"
-          whileTap={{ scale: 0.94 }}
-          aria-label="Abrir menu de seções"
-        >
-          {isExpanded ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-        </motion.button>
+      <motion.button
+        initial={{ opacity: 0, y: -12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4, duration: 0.4 }}
+        onClick={() => setIsMobileOpen(true)}
+        className="lg:hidden fixed left-4 top-[calc(var(--header-height)+1rem)] z-40 inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#ac4e15]/30 bg-[#f8f1e8]/95 text-[#ac4e15] shadow-lg shadow-[#ac4e15]/20 backdrop-blur"
+        aria-label="Abrir menu de seções"
+      >
+        <Menu className="h-5 w-5" />
+      </motion.button>
 
-        <div className="text-lg font-serif font-bold bg-gradient-to-r from-[#C88715] to-[#AC4E15] bg-clip-text text-transparent">
-          OLÍBANO
-        </div>
-
-        <motion.button
-          onClick={() => {
-            handleChange("hero")
-            setIsExpanded(false)
-          }}
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#C88715]/40 text-[#C88715] transition-all hover:bg-[#C88715]/10"
-          whileTap={{ scale: 0.94 }}
-          aria-label="Ir para início"
-        >
-          <Gem className="w-5 h-5" />
-        </motion.button>
-      </div>
-
-      {/* Overlay móvel */}
       <AnimatePresence>
-        {isExpanded && (
+        {isMobileOpen && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setIsExpanded(false)}
-            className="fixed inset-0 bg-black/50 z-30 lg:hidden"
+            transition={{ duration: 0.2 }}
+            onClick={() => setIsMobileOpen(false)}
+            className="fixed inset-0 z-40 bg-black/50 backdrop-blur-sm lg:hidden"
           />
         )}
       </AnimatePresence>
 
-      {/* Gaveta lateral móvel */}
       <AnimatePresence>
-        {isExpanded && (
+        {isMobileOpen && (
           <motion.aside
-            initial={{ x: -320 }}
+            initial={{ x: "-100%" }}
             animate={{ x: 0 }}
-            exit={{ x: -320 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden fixed left-0 top-16 h-[calc(100vh-64px)] w-64 bg-gradient-to-b from-[#354037] to-[#2a3430] border-r border-[#C88715]/20 flex flex-col z-40 overflow-y-auto"
+            exit={{ x: "-100%" }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="lg:hidden fixed left-0 top-[var(--header-height)] z-50 flex h-[calc(100vh-var(--header-height))] w-72 flex-col border-r border-[var(--sidebar-border)] bg-[var(--sidebar-surface)] backdrop-blur"
           >
-            <div className="px-6 pt-6 pb-4 border-b border-[#C88715]/20">
-              <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
-                <p className="text-xs text-gray-400 uppercase tracking-[0.2em]">Investor Relations</p>
-                <div className="h-1 w-12 bg-gradient-to-r from-[#C88715] to-[#AC4E15] rounded-full mt-3" />
-              </motion.div>
+            <div className="flex items-center justify-between px-5 py-4">
+              <div className="flex flex-col">
+                <span className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">Sala do investidor</span>
+                <span className="text-lg font-serif font-semibold text-[#354037]">OLÍBANO</span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsMobileOpen(false)}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#ac4e15]/30 text-[#ac4e15]"
+                aria-label="Fechar menu"
+              >
+                <X className="h-5 w-5" />
+              </button>
             </div>
 
-            <nav className="flex-1 py-4 space-y-0.5 px-3">{renderSectionButtons(true)}</nav>
+            <nav className="flex-1 space-y-2 overflow-y-auto px-4 py-2">{renderButtons(true)}</nav>
 
-            <div className="p-3 border-t border-[#C88715]/20 bg-[#2a3430]/50 space-y-3">
+            <div className="grid gap-3 border-t border-[var(--sidebar-border)] p-4">
+              <button
+                type="button"
+                onClick={() => {
+                  handleSectionClick("hero")
+                  setIsMobileOpen(false)
+                }}
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#ac4e15]/30 bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#ac4e15] shadow-sm shadow-[#ac4e15]/15"
+              >
+                <Home className="h-4 w-4" />
+                Início
+              </button>
               <Link
                 href="/"
-                onClick={() => setIsExpanded(false)}
-                className="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-[#C88715]/10 text-[#C88715] hover:bg-[#C88715]/20 transition-all duration-300 text-xs font-medium"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-[#ac4e15]/30 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#4a463f]"
               >
-                <ChevronRight className="w-3.5 h-3.5" />
-                Voltar para o site
+                <ChevronRight className="h-4 w-4" />
+                Voltar ao site
               </Link>
             </div>
           </motion.aside>
         )}
       </AnimatePresence>
 
-      {/* Sidebar desktop fixa */}
-      <aside className="hidden lg:flex w-72 bg-gradient-to-b from-[#354037] to-[#2a3430] border-r border-[#C88715]/20 flex-col overflow-hidden fixed left-0 top-0 h-screen z-40">
-        <div className="p-6 pb-4 border-b border-[#C88715]/20 flex items-center justify-between">
+      <aside className="hidden lg:flex fixed left-0 top-[var(--header-height)] z-40 h-[calc(100vh-var(--header-height))] w-72 flex-col border-r border-[var(--sidebar-border)] bg-[var(--sidebar-surface)] backdrop-blur-xl">
+        <div className="flex items-center justify-between px-6 py-5">
           <div>
-            <p className="text-xs text-gray-400 uppercase tracking-[0.2em]">Investor Relations</p>
-            <div className="text-2xl font-serif font-bold bg-gradient-to-r from-[#C88715] to-[#AC4E15] bg-clip-text text-transparent">
-              OLÍBANO
-            </div>
+            <p className="text-xs uppercase tracking-[0.36em] text-[#ac4e15]/80">Sala do investidor</p>
+            <p className="text-xl font-serif font-semibold text-[#354037]">OLÍBANO</p>
           </div>
           <motion.button
             whileTap={{ scale: 0.94 }}
-            onClick={() => handleChange("hero")}
+            onClick={() => handleSectionClick("hero")}
             className={cn(
-              "inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#C88715]/40 transition-all",
+              "inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#ac4e15]/30 transition-all",
               activeSection === "hero"
-                ? "bg-gradient-to-br from-[#C88715] to-[#AC4E15] text-white shadow-lg shadow-[#C88715]/40"
-                : "text-[#C88715] hover:bg-[#C88715]/10",
+                ? "bg-gradient-to-br from-[#ac4e15] via-[#d59d40] to-[#69683b] text-white shadow-lg shadow-[#ac4e15]/25"
+                : "text-[#ac4e15] hover:bg-[#ac4e15]/10",
             )}
             aria-label="Ir para início"
           >
-            <Gem className="w-5 h-5" />
+            <Home className="h-5 w-5" />
           </motion.button>
         </div>
 
-        <nav className="flex-1 overflow-y-auto py-4 space-y-0.5 px-3">{renderSectionButtons()}</nav>
+        <nav className="flex-1 space-y-2 overflow-y-auto px-4 py-2">{renderButtons()}</nav>
 
-        <div className="px-4 py-4 border-t border-[#C88715]/20 space-y-4 bg-[#2a3430]/40">
+        <div className="space-y-4 border-t border-[var(--sidebar-border)] px-6 py-6">
           <div>
             <div className="flex items-center justify-between">
-              <span className="text-xs text-gray-400 uppercase tracking-[0.2em]">Progresso</span>
-              <span className="text-xs text-[#C88715] font-semibold">
+              <span className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">Progresso</span>
+              <span className="text-xs font-semibold text-[#ac4e15]">
                 {activeIndex + 1}/{sections.length}
               </span>
             </div>
-            <div className="w-full h-1.5 bg-[#C88715]/15 rounded-full overflow-hidden mt-2">
+            <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-[#ac4e15]/10">
               <motion.div
                 key={activeSection}
                 initial={{ width: 0 }}
                 animate={{ width: `${((activeIndex + 1) / sections.length) * 100}%` }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                className="h-full bg-gradient-to-r from-[#C88715] to-[#AC4E15]"
+                className="h-full rounded-full bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b]"
               />
             </div>
           </div>
 
           <Link
             href="/"
-            className="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-lg bg-[#C88715]/10 text-[#C88715] hover:bg-[#C88715]/20 transition-all duration-300 text-xs font-medium"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-[#ac4e15]/30 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#4a463f] transition-colors hover:bg-[#ac4e15]/10"
           >
-            <ChevronRight className="w-3.5 h-3.5" />
-            Voltar para o site
+            <ChevronRight className="h-4 w-4" />
+            Voltar ao site
           </Link>
-          <p className="text-xs text-gray-500 text-center">© 2025 OLÍBANO</p>
+          <p className="text-center text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]/60">© 2025 OLÍBANO</p>
         </div>
       </aside>
     </>

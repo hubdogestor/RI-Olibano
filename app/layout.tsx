@@ -2,10 +2,11 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import SiteHeader from "@/components/site-header"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const geistSans = Geist({ subsets: ["latin"], variable: "--font-sans" })
+const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 export const metadata: Metadata = {
   title: "OLÍBANO - Relações com Investidores",
@@ -21,8 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`font-sans antialiased`}>
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+        <SiteHeader />
+        <main className="min-h-screen pt-[var(--header-height)]">{children}</main>
         <Analytics />
       </body>
     </html>

@@ -63,31 +63,29 @@ export default function PitchContainer({ activeSection, data, sections }: PitchC
   }
 
   return (
-    <main className="flex-1 flex flex-col lg:h-screen lg:overflow-hidden">
-      {/* Cabeçalho fixo */}
-      <div className="sticky top-16 lg:top-0 z-30 h-16 sm:h-20 border-b border-gray-200 bg-white/90 backdrop-blur flex items-center px-4 sm:px-8 lg:px-12">
+    <main className="flex max-h-full flex-1 flex-col">
+      <div className="sticky top-[var(--header-height)] z-30 flex h-16 items-center border-b border-[#d9cbbb]/60 bg-[#f8f1e8]/85 px-4 backdrop-blur sm:h-20 sm:px-8 lg:px-12">
         <motion.div
           key={activeSection}
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <p className="text-xs text-gray-400 uppercase tracking-[0.2em]">Seção</p>
+          <p className="text-xs uppercase tracking-[0.28em] text-[#ac4e15]/80">Seção</p>
           <h2 className="text-2xl font-serif font-bold text-[#354037] leading-tight">{currentSectionData?.title}</h2>
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-[#4a463f]/70">
             {currentIndex + 1} de {sections.length} seções
           </p>
         </motion.div>
       </div>
 
-      {/* Conteúdo */}
-      <div className="flex-1 bg-gradient-to-br from-white via-gray-50 to-[#C88715]/5 lg:overflow-y-auto">
+      <div className="flex-1 bg-gradient-to-br from-white via-[#f6eee2] to-[#d59d40]/15 lg:overflow-y-auto">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeSection}
-            initial={{ opacity: 0, x: 60 }}
+            initial={{ opacity: 0, x: 64 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -60 }}
+            exit={{ opacity: 0, x: -64 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
             className="min-h-full"
           >
