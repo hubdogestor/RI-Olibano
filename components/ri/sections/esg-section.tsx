@@ -1,93 +1,73 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Leaf, Heart, Sprout, UsersIcon } from "lucide-react"
+import type { LucideIcon } from "lucide-react"
+import { Globe, Heart, Leaf } from "lucide-react"
 
 interface ESGSectionProps {
   esg: {
-    title: string
-    initiatives: Array<{
+    headline: string
+    pillars: Array<{
       title: string
-      desc: string
+      description: string
     }>
-    kpis: Array<{
-      metric: string
-      target: string
-    }>
+    certifications: string[]
   }
 }
 
-export default function ESGSection({ esg }: ESGSectionProps) {
-  const iconMap: { [key: string]: any } = {
-    "Saúde Preventiva": Heart,
-    "Educação Continuada": Sprout,
-    "Práticas Sustentáveis": Leaf,
-    "Inclusão Social": UsersIcon,
-  }
+const iconMap: Record<string, LucideIcon> = {
+  Ambiental: Leaf,
+  Social: Heart,
+  Governança: Globe,
+}
 
+export default function ESGSection({ esg }: ESGSectionProps) {
   return (
-    <div className="h-full overflow-y-auto flex flex-col justify-center p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#69683B]/5">
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl">
-        <div className="mb-8">
+    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-[#f5f3f0] via-white to-[#69683b]/5 p-12">
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-5xl space-y-12">
+        <div className="space-y-4">
           <motion.h2
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl font-serif font-bold mb-2 bg-gradient-to-r from-[#69683B] to-[#354037] bg-clip-text text-transparent"
+            className="text-4xl font-serif font-bold text-[#354037]"
           >
-            {esg.title}
+            {esg.headline}
           </motion.h2>
-          <p className="text-[#354037]/70 mt-2">Impacto positivo em saúde, meio ambiente e comunidade</p>
-          <div className="h-1 w-16 bg-gradient-to-r from-[#69683B] to-[#C88715] rounded-full mt-4" />
+          <p className="text-[#4a463f] text-lg">Governança com propósito regenerativo e métricas transparentes.</p>
         </div>
 
-        <div className="mb-12">
-          <h3 className="text-xl font-serif font-bold text-[#354037] mb-6">Nossas Iniciativas</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {esg.initiatives.map((initiative, i) => {
-              const IconComponent = iconMap[initiative.title] || Leaf
-              return (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 * i }}
-                  whileHover={{ translateY: -4 }}
-                  className="bg-white border border-[#C88715]/20 rounded-2xl p-6 hover:border-[#C88715]/50 hover:shadow-lg hover:shadow-[#C88715]/10 transition-all duration-300"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 rounded-lg bg-gradient-to-br from-[#C88715]/20 to-[#AC4E15]/10">
-                      <IconComponent className="w-6 h-6 text-[#C88715]" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-serif font-bold text-[#354037] mb-2">{initiative.title}</h4>
-                      <p className="text-sm text-[#354037]/70">{initiative.desc}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              )
-            })}
-          </div>
-        </div>
-
-        {/* KPIs */}
-        <div>
-          <h3 className="text-xl font-serif font-bold text-[#354037] mb-6">Metas ESG</h3>
-          <div className="space-y-3">
-            {esg.kpis.map((kpi, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.2 + 0.1 * i }}
-                className="flex justify-between items-center bg-white border border-[#C88715]/20 rounded-xl p-4 hover:border-[#C88715]/50 hover:bg-gradient-to-r hover:from-[#C88715]/5 hover:to-transparent transition-all duration-300"
+        <div className="grid gap-6 lg:grid-cols-3">
+          {esg.pillars.map((pillar) => {
+            const Icon = iconMap[pillar.title.split(" ")[0]] ?? Leaf
+            return (
+              <motion.article
+                key={pillar.title}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.4 }}
+                transition={{ duration: 0.45 }}
+                className="flex h-full flex-col gap-3 rounded-3xl border border-[#d9cbbb]/60 bg-white/85 p-6 shadow-lg shadow-[#ac4e15]/10"
               >
-                <span className="text-[#354037] font-medium">{kpi.metric}</span>
-                <span className="font-serif font-bold text-[#C88715] bg-[#C88715]/10 px-3 py-1 rounded-lg">
-                  {kpi.target}
-                </span>
-              </motion.div>
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#ac4e15]/12 text-[#ac4e15]">
+                  <Icon className="h-5 w-5" />
+                </div>
+                <h3 className="text-lg font-semibold text-[#354037]">{pillar.title}</h3>
+                <p className="text-sm text-[#4a463f]/80">{pillar.description}</p>
+              </motion.article>
+            )
+          })}
+        </div>
+
+        <div className="rounded-3xl border border-[#ac4e15]/20 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10">
+          <p className="text-sm uppercase tracking-[0.36em] text-[#ac4e15]">Compromissos em andamento</p>
+          <ul className="mt-4 space-y-2 text-sm text-[#4a463f]/80">
+            {esg.certifications.map((item) => (
+              <li key={item} className="flex items-start gap-2">
+                <span className="mt-1 inline-block h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#ac4e15]" />
+                <span>{item}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </motion.div>
     </div>

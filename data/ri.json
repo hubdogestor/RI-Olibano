@@ -1,13 +1,18 @@
 {
   "hero": {
     "title": "O Olíbano",
-    "subtitle": "Transformando o bem-estar premium em Porto Alegre",
-    "description": "Centro inovador de terapias integrativas com modelo escalável, tração validada e margem saudável. Uma oportunidade de investimento em um mercado premium em expansão.",
+    "subtitle": "Bem-estar científico com alma brasileira",
+    "description": "Centro premium de terapias integrativas com modelo replicável, métricas validadas e governança preparada para expansão nacional. Transformamos pressão urbana em equilíbrio tangível por meio de protocolos multisensoriais proprietários.",
     "ctas": [
       {
         "label": "Falar com RI",
         "href": "mailto:ri@olibanovip.com.br",
         "variant": "outline"
+      },
+      {
+        "label": "Agendar Imersão",
+        "href": "https://wa.me/5551993622621",
+        "variant": "default"
       }
     ],
     "stats": [
@@ -17,180 +22,218 @@
         "unit": ""
       },
       {
-        "label": "Taxa de Retenção",
+        "label": "Taxa de retenção",
         "value": "78%",
         "unit": ""
       },
       {
         "label": "Receita MVP (3 meses)",
-        "value": "R$18.9k",
+        "value": "R$ 18,9 mil",
         "unit": ""
       },
       {
-        "label": "Ticket Médio",
-        "value": "R$799",
+        "label": "Ticket médio",
+        "value": "R$ 799",
         "unit": ""
       }
     ]
   },
   "highlights": [
-    "Pioneirismo na América Latina em experiência sensorial imersiva",
-    "Protocolos personalizados com diagnóstico individual detalhado",
-    "Localização estratégica no hub de saúde premium (Medplex Santana)",
-    "Modelo de negócio diversificado com múltiplas fontes de receita",
-    "Validação de mercado já realizada com MVP (Q1 2025)",
-    "Equipe fundadora com expertise complementar (CEO tech, COO médica, CPO estratégia)"
+    "Diagnóstico individual com trilha sensorial calibrada em dados biométricos e histórico emocional.",
+    "Estrutura premium no Medplex Santana com cápsula de flutuação, cromoterapia e protocolo concierge.",
+    "Protocolos recorrentes que combinam ciência integrativa, psicoaromaterapia e hospitalidade boutique.",
+    "Linha proprietária de produtos e gift experience que estende o ritual para casa e presentes corporativos.",
+    "Operação enxuta validada com 24 clientes fundadores, ocupação crescente e CAC controlado.",
+    "Blueprint replicável com playbook arquitetônico, sensorial e operacional pronto para novas unidades."
   ],
   "market": {
-    "tam": "R$ 2 Bi",
-    "tamDescription": "Mercado total de bem-estar premium no Brasil",
-    "sam": "500k",
-    "samDescription": "População A/B em Porto Alegre",
-    "som": "6k",
-    "somDescription": "Meta de clientes qualificados (3 anos)",
-    "methodology": "Baseado em análise de mercado de saúde integrativa, dados de renda da região e benchmarks de centros wellness premium internacionais."
+    "tam": "R$ 2 bi",
+    "tamDescription": "Mercado nacional de wellness premium, crescendo 8,5% a.a.",
+    "sam": "500 mil",
+    "samDescription": "Adultos A/B em Porto Alegre com gasto recorrente em autocuidado.",
+    "som": "6 mil",
+    "somDescription": "Clientes qualificados para duas unidades em 3 anos (1,2% do SAM).",
+    "methodology": "Cruzamos dados do Global Wellness Institute, IBGE, pesquisas locais de consumo A/B e benchmarks de spas médicos norte-americanos para projetar demanda, ticket e retenção."
   },
   "businessModel": {
     "title": "Modelo de Negócio Escalável",
     "revenueStreams": [
       {
-        "name": "Sessões Premium",
-        "description": "Sessões avulsas a partir de R$799",
+        "name": "Sessões assinatura",
+        "description": "Jornadas individuais a partir de R$ 799 com overdelivery sensorial e upsell em produtos.",
         "margin": "Alto"
       },
       {
-        "name": "Pacotes Recorrentes",
-        "description": "Protocolos 3-5 sessões (R$2.157-R$3.196)",
+        "name": "Pacotes recorrentes",
+        "description": "Protocolos de 3 a 5 sessões (R$ 2.157 - R$ 3.196) que elevam LTV e ocupação previsível.",
         "margin": "Muito Alto"
       },
       {
-        "name": "Parcerias B2B",
-        "description": "Bem-estar corporativo e nutrição funcional",
+        "name": "Corporate & parcerias",
+        "description": "Programas para executivos, Medplex e empresas com kits exclusivos e membership.",
         "margin": "Alto"
       },
       {
-        "name": "Produtos Próprios",
-        "description": "Linha exclusiva digital e física",
+        "name": "Produtos proprietários",
+        "description": "Blends, difusores e conteúdos digitais integrados ao ritual para recorrência diária.",
         "margin": "Máximo"
       }
     ],
     "unitEconomics": {
-      "LTV": "R$ 3.2k",
+      "LTV": "R$ 3,2 mil",
       "CAC": "R$ 450",
       "ratio": "7:1"
     }
   },
   "traction": {
-    "title": "Validação de Mercado",
+    "title": "Validação de mercado",
     "milestones": [
       {
         "period": "2023 Q1",
-        "title": "Modelagem do Negócio",
-        "desc": "Conceito e validação inicial"
+        "title": "Modelagem do negócio",
+        "desc": "Pesquisa de mercado e prototipagem da jornada."
       },
       {
-        "period": "2023 Q2",
-        "title": "Início da Obra",
-        "desc": "Construção da infraestrutura"
+        "period": "2023 Q4",
+        "title": "Arquitetura assinada",
+        "desc": "Projeto sensorial e executivo da casa no Medplex."
       },
       {
         "period": "2024 Q2",
-        "title": "Enchentes - Pausa",
-        "desc": "Impacto nas operações"
+        "title": "Pausa forçada",
+        "desc": "Ajustes pós-enchentes e reforço de resiliência operacional."
       },
       {
         "period": "2024 Q4",
-        "title": "Retomada",
-        "desc": "Retorno às atividades de construção"
+        "title": "Retomada estratégica",
+        "desc": "Playbook revisado e rotina de testes dos protocolos."
       },
       {
         "period": "2025 Q1",
-        "title": "MVP Lançado",
-        "desc": "Tração inicial validada com clientes pagos"
+        "title": "MVP lançado",
+        "desc": "24 clientes fundadores, NPS 92 e 78% de retenção mensal."
       },
       {
         "period": "2025 Q2",
-        "title": "Estruturação de Canais",
-        "desc": "Expansão de vendas e parcerias"
+        "title": "Canais em expansão",
+        "desc": "Integração CRM + e-commerce e novas parcerias corporativas."
       }
     ],
     "metrics": [
       {
-        "name": "Clientes no MVP",
+        "name": "Clientes fundadores",
         "value": "24",
-        "growth": "100%/mês"
+        "growth": "+100% ao mês no ciclo MVP"
       },
       {
-        "name": "Receita Mensal (Atual)",
-        "value": "R$ 6.3k",
-        "growth": "+35% (trend)"
+        "name": "Receita atual",
+        "value": "R$ 6,3 mil/mês",
+        "growth": "+35% com capacidade reduzida"
       },
       {
-        "name": "Taxa de Retenção",
-        "value": "78%",
-        "growth": "Acima da meta"
+        "name": "Ocupação concierge",
+        "value": "72%",
+        "growth": "Meta de 80% até agosto/25"
       },
       {
-        "name": "NPS",
-        "value": "92",
-        "growth": "Excelente"
+        "name": "Mix produtos",
+        "value": "18 itens",
+        "growth": "Blends e presentes corporativos em rollout"
       }
     ]
   },
   "roadmap": [
     {
-      "quarter": "Q3 2025",
+      "quarter": "2025 Q3",
       "items": [
-        "Lançamento da plataforma digital de agendamento",
-        "Expansão para 50+ clientes ativos",
-        "Parcerias com 3+ empresas B2B"
+        "Lançar e-commerce integrado a Tray e automações.",
+        "Content hub com vídeos imersivos e depoimentos guiados.",
+        "Programa corporate piloto com empresas do Medplex."
       ]
     },
     {
-      "quarter": "Q4 2025",
+      "quarter": "2025 Q4",
       "items": [
-        "Linha de produtos lançada (40+ SKUs)",
-        "Atingir R$30k/mês receita recorrente",
-        "Alcançar 80% de ocupação média"
+        "Segunda sala sensorial ativa ampliando capacidade em 40%.",
+        "Gift experience e membership digital com recorrência trimestral.",
+        "KPIs financeiros em dashboard (CAC, LTV, churn, margem)."
       ]
     },
     {
-      "quarter": "Q1 2026",
+      "quarter": "2026 Q1",
       "items": [
-        "Estrutura de franquia validada",
-        "Primeira unidade franqueada em expansão",
-        "Marca nacional consolidada"
+        "Roadshow para segunda unidade (Porto Alegre ou Florianópolis).",
+        "Lançamento da linha home wellness e aromaterapia licenciada.",
+        "Parcerias com healthtechs e marketplaces premium."
       ]
     },
     {
-      "quarter": "2026+",
+      "quarter": "2026 Q2",
       "items": [
-        "Expansão para 3+ cidades",
-        "Replicação do modelo de franquia",
-        "Potencial IPO ou exit estratégico"
+        "Estruturação de franquia/licenciamento com playbook completo.",
+        "Plataforma digital com acompanhamento pós-sessão e comunidade.",
+        "Captação Série A para expansão multiunidade."
       ]
     }
   ],
+  "goToMarket": {
+    "headline": "Go-to-market e motor de crescimento",
+    "narrative": "Combinamos presença orgânica premium, influenciadores alinhados ao lifestyle e performance digital com CRM ativo. Cada jornada é conectada a automações que aumentam retenção, ticket e upsell de produtos.",
+    "channels": [
+      {
+        "title": "Storytelling & social orgânico",
+        "description": "Conteúdo diário no Instagram, bastidores da casa e educação sobre autocuidado preventivo.",
+        "focus": "Reforço de marca, NPS e geração de leads inbound"
+      },
+      {
+        "title": "Parcerias e influenciadoras",
+        "description": "Medplex, médicos parceiros e creators wellness com experiências guiadas e kits exclusivos.",
+        "focus": "Autoridade clínica e tráfego qualificado B2B/B2C"
+      },
+      {
+        "title": "Performance & e-commerce",
+        "description": "Campanhas segmentadas, SEO + blog e checkout Tray integrado ao WhatsApp concierge.",
+        "focus": "Conversão recorrente e escala controlada do CAC"
+      }
+    ],
+    "automations": [
+      {
+        "title": "CRM segmentado",
+        "description": "Fluxos por jornada, abandono de carrinho, pós-experiência e reativação trimestral."
+      },
+      {
+        "title": "Loops WhatsApp + e-mail",
+        "description": "Nutrição com playlists sensoriais, insights terapêuticos e ofertas personalizadas."
+      },
+      {
+        "title": "Mensuração contínua",
+        "description": "Dashboards no AmigoTech + Tray acompanhando CAC, LTV, taxa de recompra e ocupação."
+      }
+    ],
+    "kpis": [
+      {
+        "label": "CAC meta",
+        "value": "≤ R$ 500",
+        "detail": "Campanhas ajustadas semanalmente com base em ROI."
+      },
+      {
+        "label": "Recorrência",
+        "value": "78%",
+        "detail": "Programas de 3-5 sessões e membership corporativo."
+      },
+      {
+        "label": "Conversão e-commerce",
+        "value": "3,8%",
+        "detail": "Checkout otimizado, gatilhos de escassez e kits presente."
+      }
+    ]
+  },
   "governance": {
     "team": [
       {
-        "name": "Alexandre Freire",
-        "role": "CEO & Co-Founder",
-        "bio": "Especialista em gestão, transformação digital e scaling de negócios. Background em tech e empreendedorismo.",
-        "email": "alexandre@olibanovip.com.br",
-        "image": "/team/alexandre.jpg",
-        "links": [
-          {
-            "label": "Instagram",
-            "href": "https://www.instagram.com/alexandreolibano/",
-            "type": "instagram"
-          }
-        ]
-      },
-      {
         "name": "Betusa Kramer",
-        "role": "COO & Co-Founder",
-        "bio": "Médica, idealizadora do conceito OLÍBANO. Especialista em saúde integrativa, práticas complementares e bem-estar holístico.",
+        "role": "COO & Co-founder",
+        "bio": "Médica integrativa, idealizadora da jornada Olíbano e responsável pelos protocolos sensoriais, equipe clínica e relacionamento com parceiros de saúde.",
         "email": "betusa@olibanovip.com.br",
         "image": "/team/betusa.jpg",
         "links": [
@@ -207,9 +250,23 @@
         ]
       },
       {
+        "name": "Alexandre Freire",
+        "role": "CEO & Co-founder",
+        "bio": "Executivo de tecnologia com 15 anos liderando growth e transformação digital. Orquestra estratégia, finanças e expansão comercial do Olíbano.",
+        "email": "alexandre@olibanovip.com.br",
+        "image": "/team/alexandre.jpg",
+        "links": [
+          {
+            "label": "Instagram",
+            "href": "https://www.instagram.com/alexandreolibano/",
+            "type": "instagram"
+          }
+        ]
+      },
+      {
         "name": "Leonardo Menezes",
-        "role": "CPO & Co-Founder",
-        "bio": "Especialista em planejamento estratégico, gestão de produtos e inovação. Expertise em operações de saúde e tech.",
+        "role": "CPO & Co-founder",
+        "bio": "Especialista em produto e operações omnichannel. Lidera inovação, dados e integração da experiência física com o e-commerce Olíbano.",
         "email": "leonardo@olibanovip.com.br",
         "image": "/team/leonardo.jpg",
         "links": [
@@ -222,96 +279,127 @@
       }
     ]
   },
-  "esg": {
-    "title": "Compromisso com Impacto",
-    "initiatives": [
+  "investment": {
+    "headline": "Rodada seed para acelerar expansão",
+    "summary": "Buscamos parceiros estratégicos que agreguem capital inteligente, networking em wellness/healthtech e experiência em escala premium.",
+    "round": {
+      "ask": "R$ 1.000.000",
+      "equity": "25% do equity",
+      "valuation": "R$ 3.000.000 pré-money",
+      "description": "Round destinado a consolidar a operação piloto, ativar marketing de alta performance e preparar a segunda unidade Olíbano."
+    },
+    "allocation": [
       {
-        "title": "Saúde Preventiva",
-        "desc": "Promovendo bem-estar integral e prevenção de doenças crônicas"
+        "label": "Marketing & aquisição",
+        "value": "35%",
+        "detail": "Campanhas performance, conteúdo audiovisual e ativação de influenciadores."
       },
       {
-        "title": "Educação Continuada",
-        "desc": "Certificação e desenvolvimento profissional da equipe terapêutica"
+        "label": "Equipe especializada",
+        "value": "25%",
+        "detail": "Formação e retenção de terapeutas, concierge e gestão comercial."
       },
       {
-        "title": "Práticas Sustentáveis",
-        "desc": "Uso de materiais eco-friendly e redução de pegada de carbono"
+        "label": "Produtos proprietários",
+        "value": "20%",
+        "detail": "Escalar blends, difusores e kits para e-commerce e corporate."
       },
       {
-        "title": "Inclusão Social",
-        "desc": "Programas de acesso a bem-estar para comunidades"
+        "label": "Tecnologia & infraestrutura",
+        "value": "15%",
+        "detail": "Integração completa CRM + e-commerce + plataforma digital."
+      },
+      {
+        "label": "Capital de giro",
+        "value": "5%",
+        "detail": "Fluxo de caixa saudável durante expansão e ramp-up."
       }
     ],
-    "kpis": [
+    "milestones": [
       {
-        "metric": "Sessões de saúde comunitária",
-        "target": "10+ por ano"
+        "title": "Receita recorrente",
+        "description": "R$ 30 mil/mês em até 6 meses com ocupação mínima de 80%."
       },
       {
-        "metric": "Certificação profissional",
-        "target": "100% do time"
+        "title": "Linha Olíbano Home",
+        "description": "Lançar catálogo completo de produtos sensoriais e gift corporate."
       },
       {
-        "metric": "Satisfação do cliente",
-        "target": "NPS 85+"
+        "title": "Plataforma digital",
+        "description": "Experiência pós-sessão com conteúdos, comunidade e dados clínicos."
+      }
+    ],
+    "exits": [
+      {
+        "title": "Grupos estratégicos",
+        "description": "Redes de estética, wellness clubs e empresas de cosméticos premium em expansão por M&A."
+      },
+      {
+        "title": "Healthtechs & marketplaces",
+        "description": "Plataformas digitais que buscam integrar jornadas físicas premium ao ecossistema."
+      },
+      {
+        "title": "Fundos especializados",
+        "description": "Veículos focados em bem-estar e luxo que consolidam operações regionais para escala nacional."
       }
     ]
   },
-  "press": [
-    {
-      "title": "OLÍBANO: Centro Premium de Bem-Estar Integra Tecnologia e Terapias Holísticas",
-      "date": "2025-01-15",
-      "source": "Revista Bem-Estar RS"
-    },
-    {
-      "title": "Startups de Saúde Integral em Expansão em Porto Alegre",
-      "date": "2024-11-20",
-      "source": "Jornal do Empreendedor"
-    },
-    {
-      "title": "Medplex Santana: Novo Hub de Saúde Premium",
-      "date": "2024-09-10",
-      "source": "Mídia Local"
-    }
-  ],
+  "impact": {
+    "headline": "ESG & impacto regenerativo",
+    "pillars": [
+      {
+        "title": "Ambiental",
+        "description": "Arquitetura biofílica, reúso de água das cápsulas, fornecedores locais e insumos naturais certificados."
+      },
+      {
+        "title": "Social",
+        "description": "Programa Olíbano Cuida oferta jornadas subsidiadas para profissionais de saúde e cuidadores."
+      },
+      {
+        "title": "Governança",
+        "description": "Indicadores mensais (CAC, margem, NPS) com reporting para investidores e conselho consultivo."
+      }
+    ],
+    "certifications": [
+      "Adesão ao Pacto Global ONU em andamento.",
+      "Parcerias com terapeutas credenciados em práticas integrativas.",
+      "Jornadas acessíveis para comunidades afetadas por eventos climáticos no RS."
+    ]
+  },
   "faq": [
     {
-      "q": "Qual é a proposta de captação e valuation?",
-      "a": "Estamos buscando R$ 1.000.000 por 25% do equity (Valuation pre-money: R$ 3.000.000). Os recursos serão alocados em: Marketing 35%, Equipe 25%, Produtos 20%, Tecnologia 15%, Capital de Giro 5%."
+      "question": "Como projetam a expansão após a unidade piloto?",
+      "answer": "Validamos o MVP em Porto Alegre e estruturamos o playbook para segunda operação em 2026, priorizando cidades com clusters médicos premium. Avaliamos franquia licenciada ou company-owned conforme performance da rodada seed."
     },
     {
-      "q": "Como foi validado o mercado?",
-      "a": "Através do MVP realizado em Q1 2025, alcançamos 24 clientes pagos, receita de R$18.9k em 3 meses, NPS de 92 e taxa de retenção de 78%. A demanda por bem-estar premium em Porto Alegre foi confirmada."
+      "question": "Quais métricas acompanharão o investidor?",
+      "answer": "Dashboard com CAC, LTV, taxa de recompra, ocupação, margem operacional e NPS. Relatórios trimestrais incluem evolução do e-commerce, corporate e pipeline para nova unidade."
     },
     {
-      "q": "Qual é o diferencial competitivo?",
-      "a": "Somos pioneiros na América Latina em oferecer experiência sensorial imersiva com protocolos personalizados. Nossa localização estratégica, equipe multidisciplinar e modelo escalável nos destacam."
+      "question": "Como funciona o time operacional?",
+      "answer": "Fundadores atuam full-time. Betusa lidera protocolos e qualidade clínica, Alexandre cuida de estratégia, growth e finanças e Leonardo integra produto, tecnologia e operações. Contamos com terapeutas treinados e especialistas parceiros on-demand."
     },
     {
-      "q": "Quais são as metas pós-investimento?",
-      "a": "Atingir R$30k/mês de receita recorrente em 6 meses, 80% de ocupação, lançar plataforma digital, estruturar linha de produtos e validar modelo de franquia para expansão."
-    },
-    {
-      "q": "Como é a estrutura societária atual?",
-      "a": "OLÍBANO é constituída como empresa privada com 3 co-founders (Alexandre, Betusa e Leonardo) detendo 100% do capital social atual. Estrutura societária será ajustada conforme acordo de investimento."
-    },
-    {
-      "q": "Qual é o plano de saída para investidores?",
-      "a": "Buscamos crescimento acelerado com potencial IPO, fusão com grupo de saúde maior ou venda estratégica para fundo de private equity em 5-7 anos."
-    },
-    {
-      "q": "Como será alocado o capital de investimento?",
-      "a": "35% em marketing/aquisição de clientes, 25% em equipe especializada, 20% em tecnologia (plataforma digital), 15% em desenvolvimento de produtos e 5% em capital de giro operacional."
-    },
-    {
-      "q": "Quais são os riscos principais?",
-      "a": "Riscos incluem: sensibilidade econômica de público premium, concorrência crescente, capacidade operacional limitada e dependência de localização. Mitigamos com modelo diversificado e planejamento estratégico."
+      "question": "Há planos de franquia ou licenciamento?",
+      "answer": "Sim. O blueprint arquitetônico e sensorial foi desenhado para replicação. Após consolidar duas unidades próprias, avaliamos franquias premium com curadoria rígida e supply centralizado."
     }
   ],
   "contact": {
-    "email": "ri@olibanovip.com.br",
-    "phone": "+55 (51) 99362-2621",
-    "address": "Rua Gomes Jardim, 201 - Medplex Santana, Torre Norte, Sala 1015, Porto Alegre-RS",
-    "cta": "Agendar Reunião com RI"
+    "headline": "Vamos cocriar o futuro do wellness premium?",
+    "description": "Converse com Relações com Investidores ou agende uma imersão privada na casa Olíbano.",
+    "channels": [
+      {
+        "label": "E-mail RI",
+        "value": "ri@olibanovip.com.br"
+      },
+      {
+        "label": "WhatsApp Concierge",
+        "value": "+55 51 99362-2621"
+      },
+      {
+        "label": "Instagram",
+        "value": "@olibanovip"
+      }
+    ]
   }
 }

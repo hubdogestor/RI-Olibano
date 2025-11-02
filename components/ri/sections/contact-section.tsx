@@ -1,90 +1,66 @@
 "use client"
 
+import type { ReactNode } from "react"
 import { motion } from "framer-motion"
-import { Mail, Phone, MapPin, Calendar } from "lucide-react"
+import { ArrowUpRight, Mail, Phone, Smartphone } from "lucide-react"
 
 interface ContactSectionProps {
   contact: {
-    email: string
-    phone: string
-    address: string
-    cta: string
+    headline: string
+    description: string
+    channels: Array<{
+      label: string
+      value: string
+    }>
   }
+}
+
+const iconMap: Record<string, ReactNode> = {
+  "E-mail RI": <Mail className="h-5 w-5" />,
+  "WhatsApp Concierge": <Smartphone className="h-5 w-5" />,
+  Instagram: <Phone className="h-5 w-5" />,
 }
 
 export default function ContactSection({ contact }: ContactSectionProps) {
   return (
-    <div className="h-full overflow-y-auto flex flex-col justify-center p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#C88715]/5">
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="max-w-3xl mx-auto w-full"
-      >
-        <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-12">
-          <h2 className="text-5xl font-serif font-bold mb-3 bg-gradient-to-r from-[#354037] to-[#C88715] bg-clip-text text-transparent">
-            Vamos Conversar
-          </h2>
-          <p className="text-[#354037]/70 mt-2 max-w-2xl mx-auto">
-            Entendo seu interesse em OLÍBANO. Estamos abertos para uma conversa estratégica sobre como juntos podemos
-            revolucionar o mercado de bem-estar premium.
-          </p>
-          <div className="h-1 w-16 bg-gradient-to-r from-[#354037] to-[#C88715] rounded-full mt-4 mx-auto" />
-        </motion.div>
+    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-[#f5f3f0] via-white to-[#c88715]/10 p-12">
+      <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-4xl space-y-10">
+        <div className="space-y-4 text-center">
+          <h2 className="text-4xl font-serif font-bold text-[#354037]">{contact.headline}</h2>
+          <p className="mx-auto max-w-2xl text-lg text-[#4a463f]">{contact.description}</p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          {[
-            { icon: Mail, label: "Email", value: contact.email, href: `mailto:${contact.email}` },
-            { icon: Phone, label: "Telefone", value: contact.phone, href: `tel:${contact.phone}` },
-            { icon: MapPin, label: "Endereço", value: contact.address, href: "#" },
-          ].map((detail, i) => (
-            <motion.a
-              key={i}
-              href={detail.href}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 * i }}
-              whileHover={{ translateY: -4 }}
-              className="group"
+        <div className="grid gap-6 md:grid-cols-3">
+          {contact.channels.map((channel) => (
+            <div
+              key={channel.label}
+              className="flex h-full flex-col items-center gap-3 rounded-3xl border border-[#d9cbbb]/60 bg-white/85 p-6 text-center shadow-lg shadow-[#ac4e15]/10"
             >
-              <div className="bg-white border border-[#C88715]/20 rounded-2xl p-6 hover:border-[#C88715]/50 hover:shadow-lg hover:shadow-[#C88715]/10 transition-all duration-300 h-full">
-                <div className="flex flex-col items-center text-center">
-                  <div className="p-3 rounded-lg bg-gradient-to-br from-[#C88715]/20 to-[#AC4E15]/10 mb-3 group-hover:scale-110 transition-transform">
-                    <detail.icon className="w-6 h-6 text-[#C88715]" />
-                  </div>
-                  <p className="text-xs text-[#354037]/60 font-medium">{detail.label}</p>
-                  <p className="text-sm font-serif font-bold text-[#354037] mt-2 group-hover:text-[#C88715] transition-colors break-words">
-                    {detail.value}
-                  </p>
-                </div>
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#ac4e15]/12 text-[#ac4e15]">
+                {iconMap[channel.label] ?? <ArrowUpRight className="h-5 w-5" />}
               </div>
-            </motion.a>
+              <span className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">{channel.label}</span>
+              <p className="break-words text-sm font-semibold text-[#354037]">{channel.value}</p>
+            </div>
           ))}
         </div>
 
-        {/* CTA Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="flex flex-col gap-3"
-        >
+        <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center">
           <a
-            href="https://calendly.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full py-4 px-6 bg-gradient-to-r from-[#C88715] to-[#AC4E15] text-white font-serif font-bold rounded-2xl hover:shadow-lg hover:shadow-[#C88715]/40 transition-all duration-300 flex items-center justify-center gap-2 group"
+            href="mailto:ri@olibanovip.com.br"
+            className="inline-flex items-center gap-2 rounded-full border border-[#ac4e15]/30 bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/10"
           >
-            <Calendar className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-            {contact.cta}
+            <Mail className="h-4 w-4" />
+            Falar com RI
           </a>
           <a
-            href={`mailto:${contact.email}`}
-            className="w-full py-4 px-6 bg-white border-2 border-[#C88715] text-[#C88715] font-serif font-bold rounded-2xl hover:bg-[#C88715]/5 transition-all duration-300 flex items-center justify-center gap-2"
+            href="https://wa.me/5551993622621"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] to-[#d59d40] px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-white shadow-lg shadow-[#ac4e15]/30 transition-transform hover:scale-[1.02]"
           >
-            <Mail className="w-5 h-5" />
-            Enviar Email
+            <ArrowUpRight className="h-4 w-4" />
+            Agendar imersão
           </a>
-        </motion.div>
+        </div>
       </motion.div>
     </div>
   )

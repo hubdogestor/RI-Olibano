@@ -8,34 +8,36 @@ import riData from "@/data/ri.json"
 import { cn } from "@/lib/utils"
 import {
   Target,
-  Star,
+  Sparkles,
   TrendingUp,
   Briefcase,
   Rocket,
   Map,
+  Megaphone,
   Users,
+  PiggyBank,
   Leaf,
-  Newspaper,
   HelpCircle,
   MessageSquare,
 } from "lucide-react"
 
 const sections = [
   { id: "hero", title: "O Olíbano", icon: Target },
-  { id: "highlights", title: "Destaques", icon: Star },
-  { id: "market", title: "Mercado", icon: TrendingUp },
+  { id: "highlights", title: "Experiência Assinada", icon: Sparkles },
+  { id: "market", title: "Mercado & Clientes", icon: TrendingUp },
   { id: "business", title: "Modelo de Negócio", icon: Briefcase },
   { id: "traction", title: "Tração", icon: Rocket },
   { id: "roadmap", title: "Roadmap", icon: Map },
+  { id: "goToMarket", title: "Go-to-market", icon: Megaphone },
   { id: "team", title: "Time", icon: Users },
+  { id: "investment", title: "Investimento & Exit", icon: PiggyBank },
   { id: "esg", title: "ESG & Impacto", icon: Leaf },
-  { id: "press", title: "Imprensa", icon: Newspaper },
-  { id: "faq", title: "Perguntas", icon: HelpCircle },
+  { id: "faq", title: "FAQ", icon: HelpCircle },
   { id: "contact", title: "Contato", icon: MessageSquare },
-]
+] as const
 
 export default function PitchDeckPage() {
-  const [activeSection, setActiveSection] = useState("hero")
+  const [activeSection, setActiveSection] = useState<typeof sections[number]["id"]>("hero")
   const [isImmersive, setIsImmersive] = useState(false)
 
   return (
@@ -51,6 +53,7 @@ export default function PitchDeckPage() {
         onSectionChange={setActiveSection}
         isImmersive={isImmersive}
       />
+
       <div className={cn("flex-1 transition-[margin] duration-500", isImmersive ? "lg:ml-0" : "lg:ml-72")}>
         <PitchContainer
           activeSection={activeSection}
@@ -61,6 +64,7 @@ export default function PitchDeckPage() {
           onToggleImmersive={() => setIsImmersive((prev) => !prev)}
         />
       </div>
+
       <WhatsAppButton />
     </div>
   )

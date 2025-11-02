@@ -66,10 +66,10 @@ export default function MarketSection({ market }: MarketSectionProps) {
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl font-serif font-bold mb-4 text-[#354037]"
         >
-          Oportunidade de Mercado
+          Mercado & Clientes Prioritários
         </motion.h2>
         <motion.p variants={itemVariants} className="text-lg text-gray-600 mb-12">
-          Mercado de bem-estar premium em crescimento acelerado no Brasil
+          Mercado de bem-estar premium cresce em ritmo duplo no Sul e valida nossa expansão.
         </motion.p>
 
         <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">

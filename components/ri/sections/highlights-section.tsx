@@ -36,10 +36,10 @@ export default function HighlightsSection({ highlights }: HighlightsSectionProps
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl font-serif font-bold mb-4 text-[#354037]"
         >
-          Por que OLÍBANO?
+          Experiência Assinada Olíbano
         </motion.h2>
         <motion.p variants={itemVariants} className="text-lg text-gray-600 mb-12">
-          Seis diferenciais que posicionam OLÍBANO como líder em bem-estar premium
+          Protocolos proprietários que combinam ciência integrativa, luxo sensorial e métricas claras de resultado.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
