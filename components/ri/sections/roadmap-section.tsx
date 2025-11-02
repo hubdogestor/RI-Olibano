@@ -1,36 +1,69 @@
-"use client"
-
-import { motion } from "framer-motion"
-import { CheckCircle2 } from "lucide-react"
-
-interface RoadmapSectionProps {
-  roadmap: Array<{
-    quarter: string
-    items: string[]
-  }>
-}
-
-export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
-  return (
-    <div className="h-full overflow-y-auto flex flex-col justify-center p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#C88715]/5">
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl">
-        <div className="mb-4">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-5xl font-serif font-bold mb-2 bg-gradient-to-r from-[#354037] to-[#C88715] bg-clip-text text-transparent"
-          >
-            Roadmap
-          </motion.h2>
-          <div className="h-1 w-16 bg-gradient-to-r from-[#C88715] to-[#AC4E15] rounded-full" />
-        </div>
-
-        <div className="relative mt-12">
-          <div className="absolute left-0 right-0 top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] via-[#AC4E15] to-transparent lg:block" />
-
-          <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#d59d40]/40">
+"use client"
+
+
+
+import { motion } from "framer-motion"
+
+import { CalendarClock, CheckCircle2 } from "lucide-react"
+
+
+
+interface RoadmapSectionProps {
+
+  roadmap: Array<{
+
+    quarter: string
+
+    items: string[]
+
+  }>
+
+}
+
+
+
+export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
+
+  return (
+
+    <div className="h-full overflow-y-auto flex flex-col justify-center p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#C88715]/5">
+
+      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl">
+
+        <div className="mb-4">
+
+          <motion.h2
+
+            initial={{ opacity: 0, y: -20 }}
+
+            animate={{ opacity: 1, y: 0 }}
+
+            className="text-5xl font-serif font-bold mb-2 bg-gradient-to-r from-[#354037] to-[#C88715] bg-clip-text text-transparent"
+
+          >
+
+            Roadmap
+
+          </motion.h2>
+
+          <div className="h-1 w-16 bg-gradient-to-r from-[#C88715] to-[#AC4E15] rounded-full" />
+
+        </div>
+
+
+
+        <div className="relative mt-12">
+
+          <div className="absolute left-0 right-0 top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] via-[#AC4E15] to-transparent lg:block" />
+
+
+
+          <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#d59d40]/40">
+
             {roadmap.map((phase, i) => {
               const [year, quarter] = phase.quarter.split(" ")
+              const isFuture = phase.quarter.includes("2026")
+              const ProgressIcon = isFuture ? CalendarClock : CheckCircle2
               return (
                 <motion.div
                   key={phase.quarter}
@@ -60,7 +93,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
                         transition={{ duration: 0.3, delay: j * 0.08 }}
                         className="flex gap-3 text-sm text-[#354037]"
                       >
-                        <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#ac4e15]" />
+                        <ProgressIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#ac4e15]" />
                         <span>{item}</span>
                       </motion.li>
                     ))}
@@ -68,9 +101,15 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
                 </motion.div>
               )
             })}
-          </div>
-        </div>
-      </motion.div>
-    </div>
-  )
-}
+          </div>
+
+        </div>
+
+      </motion.div>
+
+    </div>
+
+  )
+
+}
+

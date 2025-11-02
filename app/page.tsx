@@ -325,7 +325,7 @@ export default function HomePage() {
             variants={fadeIn}
             className="flex-1 space-y-6"
           >
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Protocolos assinatura</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Protocolos</p>
             <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">
               Jornadas desenhadas a partir de dados e sensorialidade.
             </h2>
@@ -350,30 +350,58 @@ export default function HomePage() {
           </motion.div>
 
           <div className="flex-1 space-y-6">
-            {signatureJourneys.map((journey, index) => (
-              <motion.div
-                key={journey.title}
-                initial={{ opacity: 0, x: 24 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="group relative overflow-hidden rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
-              >
-                <div className="absolute -left-24 -top-24 h-40 w-40 rounded-full bg-gradient-to-br from-[#ac4e15]/12 to-transparent blur-3xl transition-opacity group-hover:opacity-80" />
-                <div className="relative space-y-4">
-                  <div className="flex items-center justify-between text-xs uppercase tracking-[0.28em] text-[#ac4e15]/80">
-                    <span>{journey.duration}</span>
-                    <span>{journey.price}</span>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {signatureJourneys.slice(0, 3).map((journey, index) => (
+                <motion.div
+                  key={journey.title}
+                  initial={{ opacity: 0, x: 24 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.4, delay: index * 0.08 }}
+                  className="group relative overflow-hidden rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
+                >
+                  <div className="absolute -left-24 -top-24 h-40 w-40 rounded-full bg-gradient-to-br from-[#ac4e15]/12 to-transparent blur-3xl transition-opacity group-hover:opacity-80" />
+                  <div className="relative space-y-4">
+                    <div className="flex items-center justify-between text-xs uppercase tracking-[0.28em] text-[#ac4e15]/80">
+                      <span>{journey.duration}</span>
+                      <span>{journey.price}</span>
+                    </div>
+                    <h3 className="text-xl font-semibold text-[#354037]">{journey.title}</h3>
+                    <p className="text-sm text-[#4a463f]">{journey.description}</p>
+                    <div className="flex items-center gap-2 rounded-full bg-[#ac4e15]/10 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.26em] text-[#ac4e15]">
+                      <Clock className="h-4 w-4" />
+                      {journey.promise}
+                    </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-[#354037]">{journey.title}</h3>
-                  <p className="text-sm text-[#4a463f]">{journey.description}</p>
-                  <div className="flex items-center gap-2 rounded-full bg-[#ac4e15]/10 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.26em] text-[#ac4e15]">
-                    <Clock className="h-4 w-4" />
-                    {journey.promise}
+                </motion.div>
+              ))}
+            </div>
+            <div className="grid gap-6 md:grid-cols-2">
+              {signatureJourneys.slice(3).map((journey, index) => (
+                <motion.div
+                  key={journey.title}
+                  initial={{ opacity: 0, x: 24 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.4, delay: index * 0.08 }}
+                  className="group relative overflow-hidden rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
+                >
+                  <div className="absolute -left-24 -top-24 h-40 w-40 rounded-full bg-gradient-to-br from-[#ac4e15]/12 to-transparent blur-3xl transition-opacity group-hover:opacity-80" />
+                  <div className="relative space-y-4">
+                    <div className="flex items-center justify-between text-xs uppercase tracking-[0.28em] text-[#ac4e15]/80">
+                      <span>{journey.duration}</span>
+                      <span>{journey.price}</span>
+                    </div>
+                    <h3 className="text-xl font-semibold text-[#354037]">{journey.title}</h3>
+                    <p className="text-sm text-[#4a463f]">{journey.description}</p>
+                    <div className="flex items-center gap-2 rounded-full bg-[#ac4e15]/10 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.26em] text-[#ac4e15]">
+                      <Clock className="h-4 w-4" />
+                      {journey.promise}
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
