@@ -10,7 +10,8 @@
       "Bash(git config:*)",
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nfeat: atualizar dependências e melhorar SEO, acessibilidade e performance\n\n- Atualizar React 18.2.0 → 19.2.0 e React-DOM\n- Atualizar todos os pacotes @radix-ui para versões mais recentes\n- Atualizar dependências críticas: zod 4.1.12, @hookform/resolvers 5.2.2, lucide-react 0.552.0\n- Atualizar Next.js 16.0.0 → 16.0.1\n- Habilitar otimização de imagens (AVIF/WebP, device sizes, cache TTL)\n- Adicionar aria-label e focus ring no WhatsApp button\n- Adicionar skip navigation link para acessibilidade\n- Implementar SEO completo: Open Graph, Twitter Cards, metadata expandido\n- Criar sitemap.xml dinâmico\n- Criar robots.txt\n- Adicionar Web App Manifest (PWA)\n\nZero vulnerabilidades, build com sucesso em 1.8s\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfix: adicionar meta charset UTF-8 para corrigir encoding de caracteres\n\nCorrige problema de exibição de caracteres especiais (ã, é, í, etc)\nque estavam aparecendo incorretamente no site\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
