@@ -31,6 +31,7 @@ interface PitchContainerProps {
 
 export default function PitchContainer({ activeSection, data, sections }: PitchContainerProps) {
   const currentSectionData = sections.find((s) => s.id === activeSection)
+  const currentIndex = sections.findIndex((s) => s.id === activeSection)
 
   const renderSection = () => {
     switch (activeSection) {
@@ -62,24 +63,25 @@ export default function PitchContainer({ activeSection, data, sections }: PitchC
   }
 
   return (
-    <main className="flex-1 flex flex-col overflow-hidden ml-72">
-      {/* Header */}
-      <div className="h-20 border-b border-gray-200 bg-white px-12 flex items-center justify-between">
+    <main className="flex-1 flex flex-col lg:h-screen lg:overflow-hidden">
+      {/* Cabeçalho fixo */}
+      <div className="sticky top-16 lg:top-0 z-30 h-16 sm:h-20 border-b border-gray-200 bg-white/90 backdrop-blur flex items-center px-4 sm:px-8 lg:px-12">
         <motion.div
           key={activeSection}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <h2 className="text-2xl font-serif font-bold text-[#354037] mb-1">{currentSectionData?.title}</h2>
-          <p className="text-xs text-gray-400">
-            {sections.findIndex((s) => s.id === activeSection) + 1} de {sections.length} seções
+          <p className="text-xs text-gray-400 uppercase tracking-[0.2em]">Seção</p>
+          <h2 className="text-2xl font-serif font-bold text-[#354037] leading-tight">{currentSectionData?.title}</h2>
+          <p className="text-xs text-gray-500">
+            {currentIndex + 1} de {sections.length} seções
           </p>
         </motion.div>
       </div>
 
-      {/* Content Area */}
-      <div className="flex-1 overflow-y-auto bg-gradient-to-br from-white via-gray-50 to-[#C88715]/2">
+      {/* Conteúdo */}
+      <div className="flex-1 bg-gradient-to-br from-white via-gray-50 to-[#C88715]/5 lg:overflow-y-auto">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeSection}
@@ -87,7 +89,7 @@ export default function PitchContainer({ activeSection, data, sections }: PitchC
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -60 }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="h-full"
+            className="min-h-full"
           >
             {renderSection()}
           </motion.div>

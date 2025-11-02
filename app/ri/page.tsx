@@ -37,9 +37,9 @@ export default function PitchDeckPage() {
   const [activeSection, setActiveSection] = useState("hero")
 
   return (
-    <div className="flex h-screen bg-white overflow-hidden relative">
+    <div className="flex min-h-screen lg:h-screen bg-white overflow-hidden relative">
       <Sidebar sections={sections} activeSection={activeSection} onSectionChange={setActiveSection} />
-      <div className="flex-1 lg:ml-0 pt-16 lg:pt-0">
+      <div className="flex-1 w-full pt-16 lg:pt-0 lg:pl-72">
         <PitchContainer activeSection={activeSection} data={riData} sections={sections} />
       </div>
       <WhatsAppButton />
