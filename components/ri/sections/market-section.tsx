@@ -5,13 +5,11 @@ import { TrendingUp, Users, Target } from "lucide-react"
 
 interface MarketSectionProps {
   market: {
+    title: string
     tam: string
-    tamDescription: string
     sam: string
-    samDescription: string
     som: string
-    somDescription: string
-    methodology: string
+    insights: string[]
   }
 }
 
@@ -20,21 +18,21 @@ export default function MarketSection({ market }: MarketSectionProps) {
     {
       label: "TAM",
       value: market.tam,
-      desc: market.tamDescription,
+      desc: market.insights[0] || "",
       icon: TrendingUp,
       color: "from-[#C88715] to-[#AC4E15]",
     },
     {
       label: "SAM",
       value: market.sam,
-      desc: market.samDescription,
+      desc: market.insights[1] || "",
       icon: Users,
       color: "from-[#69683B] to-[#354037]",
     },
     {
       label: "SOM",
       value: market.som,
-      desc: market.somDescription,
+      desc: market.insights[2] || "",
       icon: Target,
       color: "from-[#AC4E15] to-[#C88715]",
     },
@@ -104,15 +102,15 @@ export default function MarketSection({ market }: MarketSectionProps) {
           })}
         </motion.div>
 
-        {/* Methodology */}
+        {/* Title Section */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="bg-gradient-to-r from-[#354037] to-[#69683B] border border-[#C88715]/20 rounded-2xl p-8 text-white"
+          className="rounded-2xl border border-[#ac4e15]/20 bg-white/80 p-6 shadow-sm shadow-[#ac4e15]/10"
         >
-          <p className="text-sm leading-relaxed">
-            <span className="font-bold text-[#C88715]">Metodologia:</span> {market.methodology}
+          <p className="text-sm text-[#4a463f]/85 italic">
+            <strong className="font-semibold text-[#354037]">Oportunidade validada:</strong> Mercado de bem-estar premium no Brasil apresenta crescimento consistente e demanda reprimida, com foco especial na região Sul onde o Olíbano está estrategicamente posicionado.
           </p>
         </motion.div>
       </motion.div>

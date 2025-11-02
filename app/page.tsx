@@ -12,6 +12,7 @@ import {
   FlaskConical,
   Gem,
   Heart,
+  MapPin,
   ShieldCheck,
   Sparkles,
   TrendingUp,
@@ -23,135 +24,112 @@ const impactMetrics = [
   { label: "NPS", value: "92" },
   { label: "Retenção", value: "78%" },
   { label: "Ticket médio", value: "R$ 799" },
-  { label: "Receita MVP (3 meses)", value: "R$ 18,9 mil" },
 ]
 
 const stressSignals: Array<{ title: string; description: string; icon: LucideIcon }> = [
   {
     title: "Pressão urbana crônica",
     description:
-      "Executivos, founders e líderes da zona sul vivem jornadas de alta exigência, com quadros de burnout e exaustão mental recorrentes.",
+      "Executivos e líderes vivem jornadas de alta exigência com sinais claros de burnout, fadiga decisória e queda de produtividade.",
     icon: BriefcaseBusiness,
   },
   {
     title: "Sono e ansiedade desregulados",
     description:
-      "Eventos climáticos extremos e a rotina conectada 24/7 ampliaram queixas de insônia, ansiedade e desequilíbrio hormonal.",
+      "Rotina conectada 24/7 e eventos climáticos recentes ampliaram distúrbios de sono, ansiedade e desequilíbrios hormonais.",
     icon: Brain,
   },
   {
     title: "Falta de espaços confiáveis",
     description:
-      "Famílias exigentes buscam ambientes premium com protocolos seguros, acolhimento genuíno e estética impecável para cuidar do corpo e da mente.",
+      "Mercado premium carece de ambientes com protocolos seguros, estética impecável e acompanhamento humano de ponta a ponta.",
     icon: ShieldCheck,
   },
 ]
 
-const experienceLayers: Array<{ title: string; description: string; icon: LucideIcon }> = [
+const solutionHighlight = {
+  title: "Nossa resposta: experiência multissensorial validada",
+  description:
+    "Ritual proprietário de 2 horas que combina flutuação, cromoterapia, aromaterapia autoral e protocolos integrativos desenvolvidos por médicos. O visitante entra em modo alfa nos primeiros 7 minutos.",
+}
+
+const differentiators: Array<{ title: string; description: string; icon: LucideIcon }> = [
   {
     title: "Ritual Sensorial Assinado",
     description:
-      "Flutuação, cromoterapia, som imersivo e aromaterapia autoral em camadas que resetam o sistema nervoso em minutos.",
+      "Camadas de flutuação, cromoterapia, som imersivo e blends autorais que ressincronizam o sistema nervoso.",
     icon: Sparkles,
   },
   {
     title: "Ciência Integrativa",
     description:
-      "Protocolos desenvolvidos por médicos e terapeutas especialistas, combinando dados biométricos com práticas ancestrais.",
+      "Protocolos desenhados por médicos e terapeutas certificados, unindo biomarcadores a práticas ancestrais.",
     icon: FlaskConical,
   },
   {
     title: "Hospitalidade Boutique",
     description:
-      "Arquitetura biofílica, agenda exclusiva e anfitriões que acompanham cada detalhe de ponta a ponta.",
+      "Arquitetura biofílica, agenda controlada e concierge dedicado que garante presença genuína da equipe.",
     icon: Heart,
   },
-]
-
-const signatureJourneys = [
   {
-    title: "Jornada Completa · Sessão Individual",
+    title: "Localização Estratégica",
     description:
-      "Imersão com flutuação em sal Epsom, cromoterapia, aterramento com cristais e shiatsu em gravidade zero guiado por psicoaromaterapia.",
-    price: "R$ 799",
-    duration: "90 minutos",
-    promise: "Reset imediato para quem precisa performar com clareza e foco.",
-  },
-  {
-    title: "Jornada Contínua · Pacote 3 Sessões",
-    description:
-      "Ritual progressivo que potencializa os efeitos sensoriais e terapêuticos a cada encontro, consolidando novos hábitos.",
-    price: "R$ 2.157",
-    duration: "Plano de 3 visitas",
-    promise: "Consistência para líderes que desejam manter corpo e mente em alta frequência.",
-  },
-  {
-    title: "Jornada Transformadora · Pacote 5 Sessões",
-    description:
-      "Programa completo de reprogramação com quinta sessão oferecida pela casa para aprofundar resultados físicos e emocionais.",
-    price: "R$ 3.196",
-    duration: "Ciclo de 5 encontros",
-    promise: "Reconstrução da energia vital e bem-estar prolongado para dividir com quem você ama.",
-  },
-  {
-    title: "Jornada Pocket · Flutuação + Cromoterapia",
-    description:
-      "Versão concentrada da nossa terapia premium: cápsula de flutuação em sal Epsom combinada com cromoterapia bioenergética.",
-    price: "R$ 469",
-    duration: "Sessão de 60 minutos",
-    promise: "Pausa inteligente para desacelerar a mente e reorganizar as energias do corpo.",
-  },
-  {
-    title: "Jornada Pocket · Cadeira + Insights",
-    description:
-      "Relaxamento profundo na cadeira de gravidade zero com curadoria de aromas e insights terapêuticos personalizados.",
-    price: "R$ 349",
-    duration: "Sessão de 45 minutos",
-    promise: "Clareza mental e alívio físico em um encontro único e sofisticado.",
+      "Hub no Medplex Santana, maior ecossistema de saúde premium do Sul, com fluxo qualificado diário.",
+    icon: MapPin,
   },
 ]
 
-const resultHighlights: Array<{ title: string; description: string; icon: LucideIcon }> = [
+const tractionHighlights: Array<{ title: string; description: string; icon: LucideIcon }> = [
   {
     title: "Blueprint escalável",
-    description:
-      "Playbook arquitetônico, sensorial e operacional pronto para replicação em outras capitais premium.",
+    description: "Playbook arquitetônico e sensorial pronto para replicação em capitais premium.",
     icon: TrendingUp,
   },
   {
     title: "Clientes fundadores",
-    description:
-      "24 membros no MVP com retenção mensal de 78% e agenda crescente mesmo com capacidade restrita.",
+    description: "24 membros pagantes no MVP com retenção mensal de 78% e capacidade ainda reduzida.",
     icon: Users,
   },
   {
-    title: "Ritmo de expansão",
-    description:
-      "Roadmap aprovado: Go-live comercial total em 2025 e segunda unidade prevista para 2026.",
+    title: "Receita validada",
+    description: "R$ 18,9 mil nos primeiros 90 dias, ticket médio de R$ 799 e upsell recorrente.",
     icon: CalendarRange,
   },
 ]
 
-const brandValues: Array<{ title: string; description: string; icon: LucideIcon }> = [
+const tractionTimeline = [
+  { period: "Q1 2023", label: "Modelagem do negócio" },
+  { period: "Q4 2023", label: "Arquitetura assinada" },
+  { period: "Q1 2024", label: "Pausa e resiliência (enchentes RS)" },
+  { period: "Q1 2025", label: "MVP lançado com 24 clientes" },
+]
+
+const marketSnapshot = [
+  { label: "TAM Brasil", value: "R$ 2 bi", detail: "Mercado nacional de wellness premium crescendo 8,5% ao ano." },
+  { label: "SAM Porto Alegre", value: "500 mil", detail: "Adultos A/B com alto poder aquisitivo na região metropolitana." },
+  { label: "SOM 3 anos", value: "6 mil", detail: "Clientes qualificados para duas unidades Olíbano até 2026." },
+]
+
+const teamMembers = [
   {
-    title: "Estética viva",
-    description:
-      "Monograma, paleta e fragrâncias proprietárias, construídas para traduzir luxo sensorial e brasilidade sofisticada.",
-    icon: Gem,
+    name: "Betusa Kramer",
+    role: "COO & Co-founder",
+    bio: "Médica integrativa, idealizadora da jornada Olíbano e responsável pelos protocolos terapêuticos e curadoria clínica.",
   },
   {
-    title: "Ciência com afeto",
-    description:
-      "Cada protocolo nasce de evidências clínicas, mas é entregue com escuta ativa e cuidado humano em cada gesto.",
-    icon: Heart,
+    name: "Alexandre Freire",
+    role: "CEO & Co-founder",
+    bio: "Executivo de tecnologia e growth há 15 anos, lidera estratégia, finanças e expansão comercial do Olíbano.",
   },
   {
-    title: "Impacto regenerativo",
-    description:
-      "Parceiros locais, consumo consciente de recursos e integração com a comunidade de saúde do Medplex Santana.",
-    icon: Sparkles,
+    name: "Leonardo Menezes",
+    role: "CPO & Co-founder",
+    bio: "Especialista em produto e operações omnichannel. Integra experiência física, digital e dados do negócio.",
   },
 ]
+
+
 
 const fadeIn = {
   hidden: { opacity: 0, y: 24 },
@@ -261,11 +239,11 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <div className="grid gap-8 lg:grid-cols-3">
-            {stressSignals.map((signal, index) => (
-              <motion.div
-                key={signal.title}
-                initial={{ opacity: 0, y: 12 }}
+        <div className="grid gap-8 lg:grid-cols-3">
+          {stressSignals.map((signal, index) => (
+            <motion.div
+              key={signal.title}
+              initial={{ opacity: 0, y: 12 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.4, delay: index * 0.07 }}
@@ -279,6 +257,17 @@ export default function HomePage() {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.5 }}
+            className="rounded-3xl border border-[#d9cbbb]/60 bg-gradient-to-r from-[#f8f2e6] via-white to-[#f4ead8] p-8 shadow-inner shadow-[#ac4e15]/10"
+          >
+            <p className="text-xs uppercase tracking-[0.36em] text-[#ac4e15]">{solutionHighlight.title}</p>
+            <p className="mt-3 max-w-3xl text-base text-[#4a463f]">{solutionHighlight.description}</p>
+          </motion.div>
         </div>
       </section>
 
@@ -295,8 +284,8 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <div className="grid gap-8 lg:grid-cols-3">
-            {experienceLayers.map((pillar, index) => (
+          <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+            {differentiators.map((pillar, index) => (
               <motion.article
                 key={pillar.title}
                 initial={{ opacity: 0, y: 16 }}
@@ -316,96 +305,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="journeys" className="px-6 sm:px-8 lg:px-12">
-        <div className="mx-auto flex max-w-6xl flex-col gap-12 lg:flex-row">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.4 }}
-            variants={fadeIn}
-            className="flex-1 space-y-6"
-          >
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Protocolos</p>
-            <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">
-              Jornadas desenhadas a partir de dados e sensorialidade.
-            </h2>
-            <p className="text-lg text-[#4a463f]">
-              Conheça os rituais disponíveis para visitas individuais ou recorrentes. Valores alinhados ao posicionamento
-              premium da marca e ao benchmark de spas internacionais.
-            </p>
-            <ul className="space-y-3 text-sm text-[#4a463f]/80">
-              <li className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-[#ac4e15]" />
-                Protocolos atualizados continuamente com base em métricas de satisfação e retorno clínico.
-              </li>
-              <li className="flex items-center gap-2">
-                <Heart className="h-4 w-4 text-[#d59d40]" />
-                Agendamento digital integrado ao WhatsApp e plantão concierge para membros recorrentes.
-              </li>
-              <li className="flex items-center gap-2">
-                <Gem className="h-4 w-4 text-[#ac4e15]" />
-                Possibilidade de gift experience e corporate wellness com curadoria personalizada.
-              </li>
-            </ul>
-          </motion.div>
-
-          <div className="flex-1 space-y-6">
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              {signatureJourneys.slice(0, 3).map((journey, index) => (
-                <motion.div
-                  key={journey.title}
-                  initial={{ opacity: 0, x: 24 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.4, delay: index * 0.08 }}
-                  className="group relative overflow-hidden rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
-                >
-                  <div className="absolute -left-24 -top-24 h-40 w-40 rounded-full bg-gradient-to-br from-[#ac4e15]/12 to-transparent blur-3xl transition-opacity group-hover:opacity-80" />
-                  <div className="relative space-y-4">
-                    <div className="flex items-center justify-between text-xs uppercase tracking-[0.28em] text-[#ac4e15]/80">
-                      <span>{journey.duration}</span>
-                      <span>{journey.price}</span>
-                    </div>
-                    <h3 className="text-xl font-semibold text-[#354037]">{journey.title}</h3>
-                    <p className="text-sm text-[#4a463f]">{journey.description}</p>
-                    <div className="flex items-center gap-2 rounded-full bg-[#ac4e15]/10 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.26em] text-[#ac4e15]">
-                      <Clock className="h-4 w-4" />
-                      {journey.promise}
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-            <div className="grid gap-6 md:grid-cols-2">
-              {signatureJourneys.slice(3).map((journey, index) => (
-                <motion.div
-                  key={journey.title}
-                  initial={{ opacity: 0, x: 24 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.4, delay: index * 0.08 }}
-                  className="group relative overflow-hidden rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
-                >
-                  <div className="absolute -left-24 -top-24 h-40 w-40 rounded-full bg-gradient-to-br from-[#ac4e15]/12 to-transparent blur-3xl transition-opacity group-hover:opacity-80" />
-                  <div className="relative space-y-4">
-                    <div className="flex items-center justify-between text-xs uppercase tracking-[0.28em] text-[#ac4e15]/80">
-                      <span>{journey.duration}</span>
-                      <span>{journey.price}</span>
-                    </div>
-                    <h3 className="text-xl font-semibold text-[#354037]">{journey.title}</h3>
-                    <p className="text-sm text-[#4a463f]">{journey.description}</p>
-                    <div className="flex items-center gap-2 rounded-full bg-[#ac4e15]/10 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.26em] text-[#ac4e15]">
-                      <Clock className="h-4 w-4" />
-                      {journey.promise}
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="resultados" className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl space-y-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
@@ -420,7 +319,7 @@ export default function HomePage() {
           </motion.div>
 
           <div className="grid gap-8 lg:grid-cols-3">
-            {resultHighlights.map((item, index) => (
+            {tractionHighlights.map((item, index) => (
               <motion.div
                 key={item.title}
                 initial={{ opacity: 0, y: 16 }}
@@ -437,50 +336,81 @@ export default function HomePage() {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: 0.5 }}
+            className="overflow-hidden rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-inner shadow-[#ac4e15]/10"
+          >
+            <p className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">Linha do tempo</p>
+            <div className="mt-4 grid gap-4 md:grid-cols-4">
+              {tractionTimeline.map((milestone) => (
+                <div key={milestone.period} className="rounded-2xl border border-[#d9cbbb]/60 bg-white/70 p-4">
+                  <p className="text-[0.7rem] uppercase tracking-[0.28em] text-[#ac4e15]/70">{milestone.period}</p>
+                  <p className="mt-2 text-sm font-semibold text-[#354037]">{milestone.label}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
 
-      <section id="manifesto" className="px-6 sm:px-8 lg:px-12">
-        <div className="mx-auto flex max-w-6xl flex-col gap-12 lg:flex-row">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.4 }}
-            variants={fadeIn}
-            className="flex-1 space-y-4"
-          >
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Manifesto OLÍBANO</p>
-            <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">
-              Luxo sensorial com propósito regenerativo.
-            </h2>
-            <p className="text-lg text-[#4a463f]">
-              Nossa identidade visual, fragrâncias e storytelling foram desenvolvidos para deixar memórias afetivas.
-              Tudo isso com responsabilidade socioambiental e foco em impacto positivo no ecossistema de saúde gaúcho.
-            </p>
+      <section id="mercado" className="px-6 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl space-y-12">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
+            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Oportunidade de mercado</p>
+            <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">Bem-estar premium com demanda reprimida no Sul.</h2>
+            <p className="max-w-3xl text-lg text-[#4a463f]">Mercado nacional supera R$ 2 bilhões e Porto Alegre concentra um público A/B com alto poder aquisitivo em busca de novas experiências.</p>
           </motion.div>
 
-          <div className="flex-1 space-y-6">
-            {brandValues.map((value, index) => (
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {marketSnapshot.map((item) => (
               <motion.div
-                key={value.title}
-                initial={{ opacity: 0, x: 24 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                key={item.label}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.4, delay: index * 0.08 }}
-                className="flex items-start gap-4 rounded-3xl border border-[#d9cbbb]/60 bg-white/75 p-6 shadow-lg shadow-[#ac4e15]/5 backdrop-blur"
+                transition={{ duration: 0.4 }}
+                className="rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
               >
-                <div className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/30">
-                  <value.icon className="h-5 w-5" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold text-[#354037]">{value.title}</h3>
-                  <p className="text-sm text-[#4a463f]">{value.description}</p>
-                </div>
+                <p className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">{item.label}</p>
+                <p className="mt-3 text-2xl font-serif font-semibold text-[#354037]">{item.value}</p>
+                <p className="mt-3 text-sm text-[#4a463f]">{item.detail}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
+      <section id="time" className="px-6 sm:px-8 lg:px-12">
+        <div className="mx-auto max-w-6xl space-y-12">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
+            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Equipe fundadora</p>
+            <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">Três especialistas complementares liderando a expansão.</h2>
+            <p className="max-w-3xl text-lg text-[#4a463f]">Investidores escolhem times. Reunimos visão clínica, tecnologia e operações para escalar o Olíbano com governança.</p>
+          </motion.div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {teamMembers.map((member, index) => (
+              <motion.article
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.45, delay: index * 0.08 }}
+                className="flex h-full flex-col gap-3 rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 text-[#354037] shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
+              >
+                <p className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">{member.role}</p>
+                <h3 className="text-xl font-serif font-semibold">{member.name}</h3>
+                <p className="text-sm text-[#4a463f]">{member.bio}</p>
+              </motion.article>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       <section id="contato" className="px-6 sm:px-8 lg:px-12">
         <motion.div
@@ -510,12 +440,13 @@ export default function HomePage() {
                 Falar com RI
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
-              <a
-                href="https://wa.me/5551993622621?text=Quero%20uma%20experi%C3%AAncia%20imersiva%20na%20Casa%20OL%C3%8DBANO."
+              <Link
+                href="/ri"
                 className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:bg-white/10"
               >
-                Reservar jornada
-              </a>
+                Acessar sala do investidor
+                <ArrowUpRight className="h-4 w-4" />
+              </Link>
             </div>
           </div>
         </motion.div>
