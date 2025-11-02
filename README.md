@@ -28,3 +28,51 @@ Continue building your app on:
 2. Deploy your chats from the v0 interface
 3. Changes are automatically pushed to this repository
 4. Vercel deploys the latest version from this repository
+
+## Development (npm)
+
+Se você prefere usar `npm` (em vez de `pnpm`), aqui estão os passos para rodar o projeto localmente:
+
+- Instalar dependências:
+
+```powershell
+npm install
+```
+
+- Rodar o servidor de desenvolvimento:
+
+```powershell
+npm run dev
+```
+
+- Build de produção e start local:
+
+```powershell
+npm run build
+npm run start
+```
+
+Observações e troubleshooting:
+
+- O projeto originalmente incluía um `pnpm-lock.yaml`. Se você estiver migrando para `npm`, remova esse arquivo para evitar confusões:
+
+```powershell
+Remove-Item pnpm-lock.yaml -ErrorAction SilentlyContinue
+```
+
+- Se o Next.js avisar sobre a versão do TypeScript, atualize para a versão mais recente com:
+
+```powershell
+npm install --save-dev typescript@latest @types/react@latest @types/react-dom@latest @types/node@latest
+```
+
+- No Windows PowerShell, para reinstalação limpa:
+
+```powershell
+Remove-Item -Recurse -Force node_modules
+Remove-Item pnpm-lock.yaml -ErrorAction SilentlyContinue
+npm cache clean --force
+npm install
+```
+
+Se quiser, eu posso adicionar um script `reinstall` ao `package.json` para automatizar a limpeza + instalação. Diga qual opção prefere.
