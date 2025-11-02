@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowTrendingUp, BadgeDollarSign, BriefcaseBusiness, Goal, PieChart } from "lucide-react"
+import { BadgeDollarSign, BriefcaseBusiness, Goal, PieChart, TrendingUp } from "lucide-react"
 
 interface InvestmentSectionProps {
   investment: {
@@ -114,7 +114,7 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
 
           <section className="space-y-5">
             <div className="flex items-center gap-3">
-              <ArrowTrendingUp className="h-5 w-5 text-[#ac4e15]" />
+              <TrendingUp className="h-5 w-5 text-[#ac4e15]" />
               <p className="text-sm uppercase tracking-[0.36em] text-[#ac4e15]">Metas pós-investimento</p>
             </div>
             <div className="space-y-4">

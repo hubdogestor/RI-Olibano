@@ -23,6 +23,7 @@ import {
 
 const sections = [
   { id: "hero", title: "O Olíbano", icon: Target },
+  { id: "purpose", title: "Missão & Valores", icon: Sparkles },
   { id: "highlights", title: "Experiência Assinada", icon: Sparkles },
   { id: "market", title: "Mercado & Clientes", icon: TrendingUp },
   { id: "business", title: "Modelo de Negócio", icon: Briefcase },
@@ -36,9 +37,15 @@ const sections = [
   { id: "contact", title: "Contato", icon: MessageSquare },
 ] as const
 
+type SectionId = (typeof sections)[number]["id"]
+
 export default function PitchDeckPage() {
-  const [activeSection, setActiveSection] = useState<typeof sections[number]["id"]>("hero")
+  const [activeSection, setActiveSection] = useState<SectionId>("hero")
   const [isImmersive, setIsImmersive] = useState(false)
+
+  const handleSectionChange = (sectionId: string) => {
+    setActiveSection(sectionId as SectionId)
+  }
 
   return (
     <div
@@ -50,7 +57,7 @@ export default function PitchDeckPage() {
       <Sidebar
         sections={sections}
         activeSection={activeSection}
-        onSectionChange={setActiveSection}
+        onSectionChange={handleSectionChange}
         isImmersive={isImmersive}
       />
 
@@ -59,7 +66,7 @@ export default function PitchDeckPage() {
           activeSection={activeSection}
           data={riData}
           sections={sections}
-          onSectionChange={setActiveSection}
+          onSectionChange={(id) => setActiveSection(id as SectionId)}
           isImmersive={isImmersive}
           onToggleImmersive={() => setIsImmersive((prev) => !prev)}
         />

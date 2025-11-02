@@ -5,13 +5,13 @@ import { motion, AnimatePresence } from "framer-motion"
 import { ChevronDown, HelpCircle } from "lucide-react"
 
 interface FAQSectionProps {
-  faq: Array<{
-    q: string
-    a: string
+  faqs: Array<{
+    question: string
+    answer: string
   }>
 }
 
-export default function FAQSection({ faq }: FAQSectionProps) {
+export default function FAQSection({ faqs }: FAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   return (
@@ -30,7 +30,7 @@ export default function FAQSection({ faq }: FAQSectionProps) {
         </div>
 
         <div className="space-y-3">
-          {faq.map((item, i) => (
+          {faqs.map((item, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 10 }}
@@ -45,7 +45,7 @@ export default function FAQSection({ faq }: FAQSectionProps) {
                 <div className="flex items-start gap-4 flex-1">
                   <HelpCircle className="w-5 h-5 text-[#C88715] flex-shrink-0 mt-0.5" />
                   <span className="font-serif font-bold text-[#354037] group-hover:text-[#C88715] transition-colors text-left">
-                    {item.q}
+                    {item.question}
                   </span>
                 </div>
                 <motion.div
@@ -66,7 +66,7 @@ export default function FAQSection({ faq }: FAQSectionProps) {
                     transition={{ duration: 0.3 }}
                     className="bg-gradient-to-br from-[#C88715]/5 to-transparent border border-[#C88715]/20 border-t-0 rounded-b-2xl"
                   >
-                    <p className="px-6 py-5 text-[#354037]/80 leading-relaxed text-sm ml-9">{item.a}</p>
+                    <p className="px-6 py-5 text-[#354037]/80 leading-relaxed text-sm ml-9">{item.answer}</p>
                   </motion.div>
                 )}
               </AnimatePresence>

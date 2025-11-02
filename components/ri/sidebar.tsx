@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils"
 
 interface SidebarProps {
 
-  sections: Array<{ id: string; title: string; icon: LucideIcon }>
+  sections: ReadonlyArray<{ id: string; title: string; icon: LucideIcon }>
 
   activeSection: string
 

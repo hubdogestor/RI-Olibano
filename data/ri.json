@@ -38,6 +38,32 @@
       }
     ]
   },
+  "purpose": {
+    "mission": "Promover bem-estar integral por meio de jornadas sensoriais inovadoras, conectando corpo, mente e espírito com ciência, espiritualidade e excelência para reduzir estresse, despertar autoconhecimento e cultivar saúde duradoura.",
+    "vision": "Ser reconhecida nos próximos 5 anos como a referência em experiências integrativas do hemisfério sul, escalando de forma sustentável um ecossistema de autocuidado premium com comunidades fiéis, parcerias estratégicas e impacto regenerativo.",
+    "values": [
+      {
+        "title": "Autoconhecimento",
+        "description": "Cada jornada conduz o visitante para dentro, com terapias que provocam reflexão e novas camadas de consciência."
+      },
+      {
+        "title": "Prevenção ativa",
+        "description": "Combinamos medicina integrativa e saberes ancestrais para manter corpo e mente equilibrados antes dos sintomas."
+      },
+      {
+        "title": "Excelência sensorial",
+        "description": "Arquitetura, produtos e protocolos proprietários entregam hospitalidade impecável e resultados mensuráveis."
+      },
+      {
+        "title": "Personalização",
+        "description": "Diagnósticos detalhados e concierge dedicado desenham roteiros exclusivos para cada pessoa e ocasião."
+      },
+      {
+        "title": "Inovação humana",
+        "description": "Tecnologia, dados e empatia caminham juntos para criar experiências que surpreendem sem perder afeto."
+      }
+    ]
+  },
   "highlights": [
     "Diagnóstico individual com trilha sensorial calibrada em dados biométricos e histórico emocional.",
     "Estrutura premium no Medplex Santana com cápsula de flutuação, cromoterapia e protocolo concierge.",

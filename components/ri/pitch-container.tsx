@@ -8,6 +8,7 @@ import type riJson from "@/data/ri.json"
 import { cn } from "@/lib/utils"
 import HeroSection from "./sections/hero-section"
 import HighlightsSection from "./sections/highlights-section"
+import PurposeSection from "./sections/purpose-section"
 import MarketSection from "./sections/market-section"
 import BusinessSection from "./sections/business-section"
 import TractionSection from "./sections/traction-section"
@@ -30,8 +31,8 @@ type RiData = typeof riJson
 interface PitchContainerProps {
   activeSection: string
   data: RiData
-  sections: SectionMeta[]
-  onSectionChange: (id: string) => void
+  sections: ReadonlyArray<SectionMeta>
+  onSectionChange: (id: SectionMeta["id"]) => void
   isImmersive: boolean
   onToggleImmersive: () => void
 }
@@ -55,6 +56,8 @@ export default function PitchContainer({
     switch (activeSection) {
       case "hero":
         return <HeroSection data={data.hero} />
+      case "purpose":
+        return <PurposeSection purpose={data.purpose} />
       case "highlights":
         return <HighlightsSection highlights={data.highlights} />
       case "market":
