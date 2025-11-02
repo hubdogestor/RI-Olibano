@@ -1,8 +1,8 @@
 {
   "hero": {
-    "title": "O OlÃÂ­bano",
+    "title": "O Olíbano",
     "subtitle": "Transformando o bem-estar premium em Porto Alegre",
-    "description": "Centro inovador de terapias integrativas com modelo escalÃÂ¡vel, traÃÂ§ÃÂ£o validada e margem saudÃÂ¡vel. Uma oportunidade de investimento em um mercado premium em expansÃÂ£o.",
+    "description": "Centro inovador de terapias integrativas com modelo escalável, tração validada e margem saudável. Uma oportunidade de investimento em um mercado premium em expansão.",
     "ctas": [
       {
         "label": "Falar com RI",
@@ -17,7 +17,7 @@
         "unit": ""
       },
       {
-        "label": "Taxa de RetenÃÂ§ÃÂ£o",
+        "label": "Taxa de Retenção",
         "value": "78%",
         "unit": ""
       },
@@ -27,51 +27,51 @@
         "unit": ""
       },
       {
-        "label": "Ticket MÃÂ©dio",
+        "label": "Ticket Médio",
         "value": "R$799",
         "unit": ""
       }
     ]
   },
   "highlights": [
-    "Pioneirismo na AmÃÂ©rica Latina em experiÃÂªncia sensorial imersiva",
-    "Protocolos personalizados com diagnÃÂ³stico individual detalhado",
-    "LocalizaÃÂ§ÃÂ£o estratÃÂ©gica no hub de saÃÂºde premium (Medplex Santana)",
-    "Modelo de negÃÂ³cio diversificado com mÃÂºltiplas fontes de receita",
-    "ValidaÃÂ§ÃÂ£o de mercado jÃÂ¡ realizada com MVP (Q1 2025)",
-    "Equipe fundadora com expertise complementar (CEO tech, COO mÃÂ©dica, CPO estratÃÂ©gia)"
+    "Pioneirismo na América Latina em experiência sensorial imersiva",
+    "Protocolos personalizados com diagnóstico individual detalhado",
+    "Localização estratégica no hub de saúde premium (Medplex Santana)",
+    "Modelo de negócio diversificado com múltiplas fontes de receita",
+    "Validação de mercado já realizada com MVP (Q1 2025)",
+    "Equipe fundadora com expertise complementar (CEO tech, COO médica, CPO estratégia)"
   ],
   "market": {
     "tam": "R$ 2 Bi",
     "tamDescription": "Mercado total de bem-estar premium no Brasil",
     "sam": "500k",
-    "samDescription": "PopulaÃÂ§ÃÂ£o A/B em Porto Alegre",
+    "samDescription": "População A/B em Porto Alegre",
     "som": "6k",
     "somDescription": "Meta de clientes qualificados (3 anos)",
-    "methodology": "Baseado em anÃÂ¡lise de mercado de saÃÂºde integrativa, dados de renda da regiÃÂ£o e benchmarks de centros wellness premium internacionais."
+    "methodology": "Baseado em análise de mercado de saúde integrativa, dados de renda da região e benchmarks de centros wellness premium internacionais."
   },
   "businessModel": {
-    "title": "Modelo de NegÃÂ³cio EscalÃÂ¡vel",
+    "title": "Modelo de Negócio Escalável",
     "revenueStreams": [
       {
-        "name": "SessÃÂµes Premium",
-        "description": "SessÃÂµes avulsas a partir de R$799",
+        "name": "Sessões Premium",
+        "description": "Sessões avulsas a partir de R$799",
         "margin": "Alto"
       },
       {
         "name": "Pacotes Recorrentes",
-        "description": "Protocolos 3-5 sessÃÂµes (R$2.157-R$3.196)",
+        "description": "Protocolos 3-5 sessões (R$2.157-R$3.196)",
         "margin": "Muito Alto"
       },
       {
         "name": "Parcerias B2B",
-        "description": "Bem-estar corporativo e nutriÃÂ§ÃÂ£o funcional",
+        "description": "Bem-estar corporativo e nutrição funcional",
         "margin": "Alto"
       },
       {
-        "name": "Produtos PrÃÂ³prios",
-        "description": "Linha exclusiva digital e fÃÂ­sica",
-        "margin": "MÃÂ¡ximo"
+        "name": "Produtos Próprios",
+        "description": "Linha exclusiva digital e física",
+        "margin": "Máximo"
       }
     ],
     "unitEconomics": {
@@ -81,44 +81,44 @@
     }
   },
   "traction": {
-    "title": "ValidaÃÂ§ÃÂ£o de Mercado",
+    "title": "Validação de Mercado",
     "milestones": [
       {
         "period": "2023 Q1",
-        "title": "Modelagem do NegÃÂ³cio",
-        "desc": "Conceito e validaÃÂ§ÃÂ£o inicial"
+        "title": "Modelagem do Negócio",
+        "desc": "Conceito e validação inicial"
       },
       {
         "period": "2023 Q2",
-        "title": "InÃÂ­cio da Obra",
-        "desc": "ConstruÃÂ§ÃÂ£o da infraestrutura"
+        "title": "Início da Obra",
+        "desc": "Construção da infraestrutura"
       },
       {
         "period": "2024 Q2",
         "title": "Enchentes - Pausa",
-        "desc": "Impacto nas operaÃÂ§ÃÂµes"
+        "desc": "Impacto nas operações"
       },
       {
         "period": "2024 Q4",
         "title": "Retomada",
-        "desc": "Retorno ÃÂ s atividades de construÃÂ§ÃÂ£o"
+        "desc": "Retorno às atividades de construção"
       },
       {
         "period": "2025 Q1",
-        "title": "MVP LanÃÂ§ado",
-        "desc": "TraÃÂ§ÃÂ£o inicial validada com clientes pagos"
+        "title": "MVP Lançado",
+        "desc": "Tração inicial validada com clientes pagos"
       },
       {
         "period": "2025 Q2",
-        "title": "EstruturaÃÂ§ÃÂ£o de Canais",
-        "desc": "ExpansÃÂ£o de vendas e parcerias"
+        "title": "Estruturação de Canais",
+        "desc": "Expansão de vendas e parcerias"
       }
     ],
     "metrics": [
       {
         "name": "Clientes no MVP",
         "value": "24",
-        "growth": "100%/mÃÂªs"
+        "growth": "100%/mês"
       },
       {
         "name": "Receita Mensal (Atual)",
@@ -126,7 +126,7 @@
         "growth": "+35% (trend)"
       },
       {
-        "name": "Taxa de RetenÃÂ§ÃÂ£o",
+        "name": "Taxa de Retenção",
         "value": "78%",
         "growth": "Acima da meta"
       },
@@ -141,33 +141,33 @@
     {
       "quarter": "Q3 2025",
       "items": [
-        "LanÃÂ§amento da plataforma digital de agendamento",
-        "ExpansÃÂ£o para 50+ clientes ativos",
+        "Lançamento da plataforma digital de agendamento",
+        "Expansão para 50+ clientes ativos",
         "Parcerias com 3+ empresas B2B"
       ]
     },
     {
       "quarter": "Q4 2025",
       "items": [
-        "Linha de produtos lanÃÂ§ada (40+ SKUs)",
-        "Atingir R$30k/mÃÂªs receita recorrente",
-        "AlcanÃÂ§ar 80% de ocupaÃÂ§ÃÂ£o mÃÂ©dia"
+        "Linha de produtos lançada (40+ SKUs)",
+        "Atingir R$30k/mês receita recorrente",
+        "Alcançar 80% de ocupação média"
       ]
     },
     {
       "quarter": "Q1 2026",
       "items": [
         "Estrutura de franquia validada",
-        "Primeira unidade franqueada em expansÃÂ£o",
+        "Primeira unidade franqueada em expansão",
         "Marca nacional consolidada"
       ]
     },
     {
       "quarter": "2026+",
       "items": [
-        "ExpansÃÂ£o para 3+ cidades",
-        "ReplicaÃÂ§ÃÂ£o do modelo de franquia",
-        "Potencial IPO ou exit estratÃÂ©gico"
+        "Expansão para 3+ cidades",
+        "Replicação do modelo de franquia",
+        "Potencial IPO ou exit estratégico"
       ]
     }
   ],
@@ -176,7 +176,7 @@
       {
         "name": "Alexandre Freire",
         "role": "CEO & Co-Founder",
-        "bio": "Especialista em gestÃÂ£o, transformaÃÂ§ÃÂ£o digital e scaling de negÃÂ³cios. Background em tech e empreendedorismo.",
+        "bio": "Especialista em gestão, transformação digital e scaling de negócios. Background em tech e empreendedorismo.",
         "email": "alexandre@olibanovip.com.br",
         "image": "/team/alexandre.jpg",
         "links": [
@@ -190,7 +190,7 @@
       {
         "name": "Betusa Kramer",
         "role": "COO & Co-Founder",
-        "bio": "MÃÂ©dica, idealizadora do conceito OLÃÂBANO. Especialista em saÃÂºde integrativa, prÃÂ¡ticas complementares e bem-estar holÃÂ­stico.",
+        "bio": "Médica, idealizadora do conceito OLÍBANO. Especialista em saúde integrativa, práticas complementares e bem-estar holístico.",
         "email": "betusa@olibanovip.com.br",
         "image": "/team/betusa.jpg",
         "links": [
@@ -209,7 +209,7 @@
       {
         "name": "Leonardo Menezes",
         "role": "CPO & Co-Founder",
-        "bio": "Especialista em planejamento estratÃÂ©gico, gestÃÂ£o de produtos e inovaÃÂ§ÃÂ£o. Expertise em operaÃÂ§ÃÂµes de saÃÂºde e tech.",
+        "bio": "Especialista em planejamento estratégico, gestão de produtos e inovação. Expertise em operações de saúde e tech.",
         "email": "leonardo@olibanovip.com.br",
         "image": "/team/leonardo.jpg",
         "links": [
@@ -226,92 +226,92 @@
     "title": "Compromisso com Impacto",
     "initiatives": [
       {
-        "title": "SaÃÂºde Preventiva",
-        "desc": "Promovendo bem-estar integral e prevenÃÂ§ÃÂ£o de doenÃÂ§as crÃÂ´nicas"
+        "title": "Saúde Preventiva",
+        "desc": "Promovendo bem-estar integral e prevenção de doenças crônicas"
       },
       {
-        "title": "EducaÃÂ§ÃÂ£o Continuada",
-        "desc": "CertificaÃÂ§ÃÂ£o e desenvolvimento profissional da equipe terapÃÂªutica"
+        "title": "Educação Continuada",
+        "desc": "Certificação e desenvolvimento profissional da equipe terapêutica"
       },
       {
-        "title": "PrÃÂ¡ticas SustentÃÂ¡veis",
-        "desc": "Uso de materiais eco-friendly e reduÃÂ§ÃÂ£o de pegada de carbono"
+        "title": "Práticas Sustentáveis",
+        "desc": "Uso de materiais eco-friendly e redução de pegada de carbono"
       },
       {
-        "title": "InclusÃÂ£o Social",
+        "title": "Inclusão Social",
         "desc": "Programas de acesso a bem-estar para comunidades"
       }
     ],
     "kpis": [
       {
-        "metric": "SessÃÂµes de saÃÂºde comunitÃÂ¡ria",
+        "metric": "Sessões de saúde comunitária",
         "target": "10+ por ano"
       },
       {
-        "metric": "CertificaÃÂ§ÃÂ£o profissional",
+        "metric": "Certificação profissional",
         "target": "100% do time"
       },
       {
-        "metric": "SatisfaÃÂ§ÃÂ£o do cliente",
+        "metric": "Satisfação do cliente",
         "target": "NPS 85+"
       }
     ]
   },
   "press": [
     {
-      "title": "OLÃÂBANO: Centro Premium de Bem-Estar Integra Tecnologia e Terapias HolÃÂ­sticas",
+      "title": "OLÍBANO: Centro Premium de Bem-Estar Integra Tecnologia e Terapias Holísticas",
       "date": "2025-01-15",
       "source": "Revista Bem-Estar RS"
     },
     {
-      "title": "Startups de SaÃÂºde Integral em ExpansÃÂ£o em Porto Alegre",
+      "title": "Startups de Saúde Integral em Expansão em Porto Alegre",
       "date": "2024-11-20",
       "source": "Jornal do Empreendedor"
     },
     {
-      "title": "Medplex Santana: Novo Hub de SaÃÂºde Premium",
+      "title": "Medplex Santana: Novo Hub de Saúde Premium",
       "date": "2024-09-10",
-      "source": "MÃÂ­dia Local"
+      "source": "Mídia Local"
     }
   ],
   "faq": [
     {
-      "q": "Qual ÃÂ© a proposta de captaÃÂ§ÃÂ£o e valuation?",
-      "a": "Estamos buscando R$ 1.000.000 por 25% do equity (Valuation pre-money: R$ 3.000.000). Os recursos serÃÂ£o alocados em: Marketing 35%, Equipe 25%, Produtos 20%, Tecnologia 15%, Capital de Giro 5%."
+      "q": "Qual é a proposta de captação e valuation?",
+      "a": "Estamos buscando R$ 1.000.000 por 25% do equity (Valuation pre-money: R$ 3.000.000). Os recursos serão alocados em: Marketing 35%, Equipe 25%, Produtos 20%, Tecnologia 15%, Capital de Giro 5%."
     },
     {
       "q": "Como foi validado o mercado?",
-      "a": "AtravÃÂ©s do MVP realizado em Q1 2025, alcanÃÂ§amos 24 clientes pagos, receita de R$18.9k em 3 meses, NPS de 92 e taxa de retenÃÂ§ÃÂ£o de 78%. A demanda por bem-estar premium em Porto Alegre foi confirmada."
+      "a": "Através do MVP realizado em Q1 2025, alcançamos 24 clientes pagos, receita de R$18.9k em 3 meses, NPS de 92 e taxa de retenção de 78%. A demanda por bem-estar premium em Porto Alegre foi confirmada."
     },
     {
-      "q": "Qual ÃÂ© o diferencial competitivo?",
-      "a": "Somos pioneiros na AmÃÂ©rica Latina em oferecer experiÃÂªncia sensorial imersiva com protocolos personalizados. Nossa localizaÃÂ§ÃÂ£o estratÃÂ©gica, equipe multidisciplinar e modelo escalÃÂ¡vel nos destacam."
+      "q": "Qual é o diferencial competitivo?",
+      "a": "Somos pioneiros na América Latina em oferecer experiência sensorial imersiva com protocolos personalizados. Nossa localização estratégica, equipe multidisciplinar e modelo escalável nos destacam."
     },
     {
-      "q": "Quais sÃÂ£o as metas pÃÂ³s-investimento?",
-      "a": "Atingir R$30k/mÃÂªs de receita recorrente em 6 meses, 80% de ocupaÃÂ§ÃÂ£o, lanÃÂ§ar plataforma digital, estruturar linha de produtos e validar modelo de franquia para expansÃÂ£o."
+      "q": "Quais são as metas pós-investimento?",
+      "a": "Atingir R$30k/mês de receita recorrente em 6 meses, 80% de ocupação, lançar plataforma digital, estruturar linha de produtos e validar modelo de franquia para expansão."
     },
     {
-      "q": "Como ÃÂ© a estrutura societÃÂ¡ria atual?",
-      "a": "OLÃÂBANO ÃÂ© constituÃÂ­da como empresa privada com 3 co-founders (Alexandre, Betusa e Leonardo) detendo 100% do capital social atual. Estrutura societÃÂ¡ria serÃÂ¡ ajustada conforme acordo de investimento."
+      "q": "Como é a estrutura societária atual?",
+      "a": "OLÍBANO é constituída como empresa privada com 3 co-founders (Alexandre, Betusa e Leonardo) detendo 100% do capital social atual. Estrutura societária será ajustada conforme acordo de investimento."
     },
     {
-      "q": "Qual ÃÂ© o plano de saÃÂ­da para investidores?",
-      "a": "Buscamos crescimento acelerado com potencial IPO, fusÃÂ£o com grupo de saÃÂºde maior ou venda estratÃÂ©gica para fundo de private equity em 5-7 anos."
+      "q": "Qual é o plano de saída para investidores?",
+      "a": "Buscamos crescimento acelerado com potencial IPO, fusão com grupo de saúde maior ou venda estratégica para fundo de private equity em 5-7 anos."
     },
     {
-      "q": "Como serÃÂ¡ alocado o capital de investimento?",
-      "a": "35% em marketing/aquisiÃÂ§ÃÂ£o de clientes, 25% em equipe especializada, 20% em tecnologia (plataforma digital), 15% em desenvolvimento de produtos e 5% em capital de giro operacional."
+      "q": "Como será alocado o capital de investimento?",
+      "a": "35% em marketing/aquisição de clientes, 25% em equipe especializada, 20% em tecnologia (plataforma digital), 15% em desenvolvimento de produtos e 5% em capital de giro operacional."
     },
     {
-      "q": "Quais sÃÂ£o os riscos principais?",
-      "a": "Riscos incluem: sensibilidade econÃÂ´mica de pÃÂºblico premium, concorrÃÂªncia crescente, capacidade operacional limitada e dependÃÂªncia de localizaÃÂ§ÃÂ£o. Mitigamos com modelo diversificado e planejamento estratÃÂ©gico."
+      "q": "Quais são os riscos principais?",
+      "a": "Riscos incluem: sensibilidade econômica de público premium, concorrência crescente, capacidade operacional limitada e dependência de localização. Mitigamos com modelo diversificado e planejamento estratégico."
     }
   ],
   "contact": {
     "email": "ri@olibanovip.com.br",
     "phone": "+55 (51) 99362-2621",
     "address": "Rua Gomes Jardim, 201 - Medplex Santana, Torre Norte, Sala 1015, Porto Alegre-RS",
-    "cta": "Agendar ReuniÃÂ£o com RI"
+    "cta": "Agendar Reunião com RI"
   }
 }

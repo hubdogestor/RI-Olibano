@@ -15,7 +15,7 @@ import {
 
 const heroStats = [
   { label: "NPS", value: "92" },
-  { label: "Retenã§ã£o", value: "78%" },
+  { label: "Retenção", value: "78%" },
   { label: "Ticket Médio", value: "R$ 799" },
   { label: "MVP Validado", value: "3 meses" },
 ]
@@ -24,11 +24,11 @@ const pillars = [
   {
     title: "Ritual Sensorial",
     description:
-      "Experiãªncia multissensorial que combina aromaterapia autoral, som imersivo e iluminaã§ã£o biofã­lica para despertar equilã­brio imediato.",
+      "Experiência multissensorial que combina aromaterapia autoral, som imersivo e iluminação biofílica para despertar equilíbrio imediato.",
     icon: Sparkles,
   },
   {
-    title: "Ciãªncia e Cura",
+    title: "Ciência e Cura",
     description:
       "Protocolos conduzidos por especialistas em medicina integrativa com acompanhamento personalizado e foco em resultados mensuráveis.",
     icon: Leaf,
@@ -36,30 +36,30 @@ const pillars = [
   {
     title: "Exclusividade Premium",
     description:
-      "Arquitetura acolhedora, poucas vagas por hora e hospitalidade de luxo para garantir privacidade e presenã§a genuã­na da equipe.",
+      "Arquitetura acolhedora, poucas vagas por hora e hospitalidade de luxo para garantir privacidade e presença genuína da equipe.",
     icon: Heart,
   },
 ]
 
 const signatureProtocols = [
   {
-    title: "OLãBANO Rebalance",
+    title: "OLÍBANO Rebalance",
     description:
-      "Sequãªncia de ativaã§ã£o sensorial com ã³leos nobres, som terapãªutico, reflexologia e liberaã§ã£o miofascial. Ideal para altos executivos.",
+      "Sequência de ativação sensorial com óleos nobres, som terapêutico, reflexologia e liberação miofascial. Ideal para altos executivos.",
     investment: "R$ 799",
     duration: "90 minutos",
   },
   {
     title: "Respira Bem Viver",
     description:
-      "Respiraã§ã£o consciente, crioterapia suave e harmonizaã§ã£o craniana para liberar tensãµes, ansiedade e melhorar o sono.",
+      "Respiração consciente, crioterapia suave e harmonização craniana para liberar tensões, ansiedade e melhorar o sono.",
     investment: "R$ 1.120",
-    duration: "Pacote 3 sessãµes",
+    duration: "Pacote 3 sessões",
   },
   {
     title: "Reconectar Feminino",
     description:
-      "Imersã£o holã­stica com psicoaromaterapia, terapia hormonal natural e nutriã§ã£o funcional voltada ao ciclo da mulher.",
+      "Imersão holística com psicoaromaterapia, terapia hormonal natural e nutrição funcional voltada ao ciclo da mulher.",
     investment: "R$ 2.480",
     duration: "Programa 30 dias",
   },
@@ -68,20 +68,20 @@ const signatureProtocols = [
 const advisoryHighlights = [
   {
     badge: "Mercado",
-    title: "Wellness premium em expansã£o",
-    text: "Mercado brasileiro supera R$ 2 bi com margens elevadas e baixa concorrãªncia qualificada no Sul.",
+    title: "Wellness premium em expansão",
+    text: "Mercado brasileiro supera R$ 2 bi com margens elevadas e baixa concorrência qualificada no Sul.",
     icon: TrendingUp,
   },
   {
     badge: "Smart Capital",
     title: "Modelo escalável",
-    text: "Blueprint replicável com monograma, pattern proprietário, playbook operacional e experiãªncia patenteada.",
+    text: "Blueprint replicável com monograma, pattern proprietário, playbook operacional e experiência patenteada.",
     icon: Users,
   },
   {
     badge: "Agenda",
-    title: "Visite a casa OLãBANO",
-    text: "Agende uma imersã£o guiada com a equipe fundadora e entenda o potencial de expansã£o nacional.",
+    title: "Visite a casa OLÍBANO",
+    text: "Agende uma imersão guiada com a equipe fundadora e entenda o potencial de expansão nacional.",
     icon: CalendarRange,
   },
 ]
@@ -102,7 +102,7 @@ export default function HomePage() {
         <div className="absolute inset-0 opacity-20">
           <Image
             src="/brand/pattern.png"
-            alt="Padrã£o OLãBANO"
+            alt="Padrão OLÍBANO"
             fill
             priority
             className="object-cover mix-blend-multiply"
@@ -118,7 +118,7 @@ export default function HomePage() {
           >
             <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Porto Alegre - Medplex Santana</p>
             <h1 className="text-balance text-[#354037]">
-              OLãBANO é o seu refãºgio para reequilibrar corpo, mente e espã­rito em ritmo urbano.
+              OLÍBANO é o seu refúgio para reequilibrar corpo, mente e espírito em ritmo urbano.
             </h1>
             <p className="max-w-2xl text-pretty text-lg text-[#4a463f] sm:text-xl">
               Casa boutique de terapias integrativas com design autoral, protocolos exclusivos e time médico premiado.
@@ -130,11 +130,11 @@ export default function HomePage() {
                 href="/ri"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white shadow-lg shadow-[#ac4e15]/25 transition-transform hover:scale-[1.02]"
               >
-                Investidor OLãBANO
+                Investidor OLÍBANO
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
               <a
-                href="https://wa.me/5551993622621?text=Olá!%20Quero%20agendar%20uma%20experiãªncia%20na%20Casa%20OLãBANO."
+                href="https://wa.me/5551993622621?text=Olá!%20Quero%20agendar%20uma%20experiência%20na%20Casa%20OLÍBANO."
                 className="inline-flex items-center gap-2 rounded-full border border-[#ac4e15]/30 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/10"
               >
                 Agende sua visita
@@ -152,7 +152,7 @@ export default function HomePage() {
             <div className="relative overflow-hidden rounded-[32px] border border-[#d9cbbb]/60 bg-white/40 shadow-2xl shadow-[#ac4e15]/15 backdrop-blur">
               <Image
                 src="/brand/logotipo-primary.png"
-                alt="Monograma OLãBANO"
+                alt="Monograma OLÍBANO"
                 width={640}
                 height={360}
                 className="w-full object-contain px-12 py-16 sm:px-16 sm:py-20"
@@ -182,11 +182,11 @@ export default function HomePage() {
       <section id="experiencia" className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl space-y-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Nossa essãªncia</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Nossa essência</p>
             <h2 className="text-balance text-[#354037]">Uma jornada de cura que desperta todos os sentidos</h2>
             <p className="max-w-3xl text-lg text-[#4a463f]">
-              A Casa OLãBANO foi criada para pessoas que unem performance e bem-estar. Cada visita é um ritual exclusivo
-              com assinatura autoral, pensado para resultados clã­nicos e emocionais duradouros.
+              A Casa OLÍBANO foi criada para pessoas que unem performance e bem-estar. Cada visita é um ritual exclusivo
+              com assinatura autoral, pensado para resultados clínicos e emocionais duradouros.
             </p>
           </motion.div>
 
@@ -224,8 +224,8 @@ export default function HomePage() {
             <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Protocolos autorais</p>
             <h2 className="text-balance text-[#354037]">Tratamentos desenhados por médicos integrativos</h2>
             <p className="text-lg text-[#4a463f]">
-              Nossos terapeutas guiam cada experiãªncia com metodologias proprietárias, utilizando ingredientes botã¢nicos
-              raros, tecnologia nã£o invasiva e escuta ativa. Resultados sã£o acompanhados por métricas de impacto.
+              Nossos terapeutas guiam cada experiência com metodologias proprietárias, utilizando ingredientes botânicos
+              raros, tecnologia não invasiva e escuta ativa. Resultados são acompanhados por métricas de impacto.
             </p>
           </motion.div>
 
@@ -267,11 +267,11 @@ export default function HomePage() {
       <section id="equipe" className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl space-y-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Visã£o estratégica</p>
-            <h2 className="text-balance text-[#354037]">OLãBANO é uma plataforma de bem-estar escalável</h2>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Visão estratégica</p>
+            <h2 className="text-balance text-[#354037]">OLÍBANO é uma plataforma de bem-estar escalável</h2>
             <p className="max-w-3xl text-lg text-[#4a463f]">
               A fundadora Dra. Betusa Kramer (medicina integrativa), Alexandre Freire (growth e tecnologia) e Leonardo
-              Menezes (produto e operaã§ãµes) lideram a expansã£o com governanã§a e indicadores de performance.
+              Menezes (produto e operações) lideram a expansão com governança e indicadores de performance.
             </p>
           </motion.div>
 
@@ -310,13 +310,13 @@ export default function HomePage() {
             <Image src="/brand/pattern.png" alt="Pattern" fill className="object-cover mix-blend-overlay" />
           </div>
           <div className="relative space-y-6">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#d59d40]">Conexã£o direta com a fundadora</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#d59d40]">Conexão direta com a fundadora</p>
             <h2 className="text-balance text-4xl sm:text-5xl">
-              Pronto para cocriar o futuro do wellness de alto padrã£o no Brasil?
+              Pronto para cocriar o futuro do wellness de alto padrão no Brasil?
             </h2>
             <p className="max-w-3xl text-lg text-white/80">
-              Agende uma conversa estratégica com a equipe de Relaã§ãµes com Investidores ou reserve uma imersã£o privada
-              na Casa OLãBANO. Seremos anfitriãµes para apresentar a operaã§ã£o e prã³ximos marcos.
+              Agende uma conversa estratégica com a equipe de Relações com Investidores ou reserve uma imersão privada
+              na Casa OLÍBANO. Seremos anfitriões para apresentar a operação e próximos marcos.
             </p>
 
             <div className="flex flex-wrap gap-4">
