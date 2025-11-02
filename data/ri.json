@@ -1,0 +1,185 @@
+{
+  "hero": {
+    "title": "OLÍBANO",
+    "subtitle": "Transformando o bem-estar premium em Porto Alegre",
+    "description": "Centro inovador de terapias integrativas com modelo escalável, tração validada e margem saudável. Uma oportunidade de investimento em um mercado premium em expansão.",
+    "ctas": [
+      { "label": "Baixar Pitch", "href": "/docs/pitch.pdf", "variant": "default" },
+      { "label": "Falar com RI", "href": "mailto:ri@olibanovip.com.br", "variant": "outline" }
+    ],
+    "stats": [
+      { "label": "NPS", "value": "92", "unit": "" },
+      { "label": "Taxa de Retenção", "value": "78%", "unit": "" },
+      { "label": "Receita MVP (3m)", "value": "R$18.9k", "unit": "" },
+      { "label": "Ticket Médio", "value": "R$799", "unit": "" }
+    ]
+  },
+  "highlights": [
+    "Pioneirismo na América Latina em experiência sensorial imersiva",
+    "Protocolos personalizados com diagnóstico individual detalhado",
+    "Localização estratégica no hub de saúde premium (Medplex Santana)",
+    "Modelo de negócio diversificado com múltiplas fontes de receita",
+    "Validação de mercado já realizada com MVP (Q1 2025)",
+    "Equipe fundadora com expertise complementar (CEO tech, COO médica, CPO estratégia)"
+  ],
+  "market": {
+    "tam": "R$ 2 Bi",
+    "tamDescription": "Mercado total de bem-estar premium no Brasil",
+    "sam": "500k",
+    "samDescription": "População A/B em Porto Alegre",
+    "som": "6k",
+    "somDescription": "Meta de clientes qualificados (3 anos)",
+    "methodology": "Baseado em análise de mercado de saúde integrativa, dados de renda da região e benchmarks de centros wellness premium internacionais."
+  },
+  "businessModel": {
+    "title": "Modelo de Negócio Escalável",
+    "revenueStreams": [
+      { "name": "Sessões Premium", "description": "Sessões avulsas a partir de R$799", "margin": "Alto" },
+      {
+        "name": "Pacotes Recorrentes",
+        "description": "Protocolos 3-5 sessões (R$2.157-R$3.196)",
+        "margin": "Muito Alto"
+      },
+      { "name": "Parcerias B2B", "description": "Bem-estar corporativo e nutrição funcional", "margin": "Alto" },
+      { "name": "Produtos Próprios", "description": "Linha exclusiva digital e física", "margin": "Máximo" }
+    ],
+    "unitEconomics": {
+      "LTV": "R$ 3.2k",
+      "CAC": "R$ 450",
+      "ratio": "7:1"
+    }
+  },
+  "traction": {
+    "title": "Validação de Mercado",
+    "milestones": [
+      { "period": "2023 Q1", "title": "Modelagem do Negócio", "desc": "Conceito e validação inicial" },
+      { "period": "2023 Q2", "title": "Início da Obra", "desc": "Construção da infraestrutura" },
+      { "period": "2024 Q2", "title": "Enchentes - Pausa", "desc": "Impacto nas operações" },
+      { "period": "2024 Q4", "title": "Retomada", "desc": "Retorno às atividades de construção" },
+      { "period": "2025 Q1", "title": "MVP Lançado", "desc": "Tração inicial validada com clientes pagos" },
+      { "period": "2025 Q2", "title": "Estruturação de Canais", "desc": "Expansão de vendas e parcerias" }
+    ],
+    "metrics": [
+      { "name": "Clientes no MVP", "value": "24", "growth": "100%/mês" },
+      { "name": "Receita Mensal (Atual)", "value": "R$ 6.3k", "growth": "+35% (trend)" },
+      { "name": "Taxa de Retenção", "value": "78%", "growth": "Acima da meta" },
+      { "name": "NPS", "value": "92", "growth": "Excelente" }
+    ]
+  },
+  "roadmap": [
+    {
+      "quarter": "Q3 2025",
+      "items": [
+        "Lançamento da plataforma digital de agendamento",
+        "Expansão para 50+ clientes ativos",
+        "Parcerias com 3+ empresas B2B"
+      ]
+    },
+    {
+      "quarter": "Q4 2025",
+      "items": [
+        "Linha de produtos lançada (40+ SKUs)",
+        "Atingir R$30k/mês receita recorrente",
+        "Alcançar 80% de ocupação média"
+      ]
+    },
+    {
+      "quarter": "Q1 2026",
+      "items": [
+        "Estrutura de franquia validada",
+        "Primeira unidade franqueada em expansão",
+        "Marca nacional consolidada"
+      ]
+    },
+    {
+      "quarter": "2026+",
+      "items": ["Expansão para 3+ cidades", "Replicação do modelo de franquia", "Potencial IPO ou exit estratégico"]
+    }
+  ],
+  "governance": {
+    "team": [
+      {
+        "name": "Alexandre Freire",
+        "role": "CEO & Co-Founder",
+        "bio": "Especialista em gestão, transformação digital e scaling de negócios. Background em tech e empreendedorismo."
+      },
+      {
+        "name": "Betusa Kramer",
+        "role": "COO & Co-Founder",
+        "bio": "Médica, idealizadora do conceito OLÍBANO. Especialista em saúde integrativa, práticas complementares e bem-estar holístico."
+      },
+      {
+        "name": "Leonardo Menezes",
+        "role": "CPO & Co-Founder",
+        "bio": "Especialista em planejamento estratégico, gestão de produtos e inovação. Expertise em operações de saúde e tech."
+      }
+    ]
+  },
+  "esg": {
+    "title": "Compromisso com Impacto",
+    "initiatives": [
+      { "title": "Saúde Preventiva", "desc": "Promovendo bem-estar integral e prevenção de doenças crônicas" },
+      { "title": "Educação Continuada", "desc": "Certificação e desenvolvimento profissional da equipe terapêutica" },
+      { "title": "Práticas Sustentáveis", "desc": "Uso de materiais eco-friendly e redução de pegada de carbono" },
+      { "title": "Inclusão Social", "desc": "Programas de acesso a bem-estar para comunidades" }
+    ],
+    "kpis": [
+      { "metric": "Sessões de saúde comunitária", "target": "10+ por ano" },
+      { "metric": "Certificação profissional", "target": "100% do time" },
+      { "metric": "Satisfação do cliente", "target": "NPS 85+" }
+    ]
+  },
+  "press": [
+    {
+      "title": "OLÍBANO: Centro Premium de Bem-Estar Integra Tecnologia e Terapias Holísticas",
+      "date": "2025-01-15",
+      "source": "Revista Bem-Estar RS"
+    },
+    {
+      "title": "Startups de Saúde Integral em Expansão em Porto Alegre",
+      "date": "2024-11-20",
+      "source": "Jornal do Empreendedor"
+    },
+    { "title": "Medplex Santana: Novo Hub de Saúde Premium", "date": "2024-09-10", "source": "Mídia Local" }
+  ],
+  "faq": [
+    {
+      "q": "Qual é a proposta de captação e valuation?",
+      "a": "Estamos buscando R$ 1.000.000 por 25% do equity (Valuation pre-money: R$ 3.000.000). Os recursos serão alocados em: Marketing 35%, Equipe 25%, Produtos 20%, Tecnologia 15%, Capital de Giro 5%."
+    },
+    {
+      "q": "Como foi validado o mercado?",
+      "a": "Através do MVP realizado em Q1 2025, alcançamos 24 clientes pagos, receita de R$18.9k em 3 meses, NPS de 92 e taxa de retenção de 78%. A demanda por bem-estar premium em Porto Alegre foi confirmada."
+    },
+    {
+      "q": "Qual é o diferencial competitivo?",
+      "a": "Somos pioneiros na América Latina em oferecer experiência sensorial imersiva com protocolos personalizados. Nossa localização estratégica, equipe multidisciplinar e modelo escalável nos destacam."
+    },
+    {
+      "q": "Quais são as metas pós-investimento?",
+      "a": "Atingir R$30k/mês de receita recorrente em 6 meses, 80% de ocupação, lançar plataforma digital, estruturar linha de produtos e validar modelo de franquia para expansão."
+    },
+    {
+      "q": "Como é a estrutura societária atual?",
+      "a": "OLÍBANO é constituída como empresa privada com 3 co-founders (Alexandre, Betusa e Leonardo) detendo 100% do capital social atual. Estrutura societária será ajustada conforme acordo de investimento."
+    },
+    {
+      "q": "Qual é o plano de saída para investidores?",
+      "a": "Buscamos crescimento acelerado com potencial IPO, fusão com grupo de saúde maior ou venda estratégica para fundo de private equity em 5-7 anos."
+    },
+    {
+      "q": "Como será alocado o capital de investimento?",
+      "a": "35% em marketing/aquisição de clientes, 25% em equipe especializada, 20% em tecnologia (plataforma digital), 15% em desenvolvimento de produtos e 5% em capital de giro operacional."
+    },
+    {
+      "q": "Quais são os riscos principais?",
+      "a": "Riscos incluem: sensibilidade econômica de público premium, concorrência crescente, capacidade operacional limitada e dependência de localização. Mitigamos com modelo diversificado e planejamento estratégico."
+    }
+  ],
+  "contact": {
+    "email": "ri@olibanovip.com.br",
+    "phone": "+55 (51) 99362-2621",
+    "address": "Rua Gomes Jardim, 201 - Medplex Santana, Torre Norte, Sala 1015, Porto Alegre-RS",
+    "cta": "Agendar Reunião com RI"
+  }
+}
