@@ -58,11 +58,11 @@ export default function Sidebar({ sections, activeSection, onSectionChange, isIm
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.4 }}
         onClick={() => setIsMobileOpen(true)}
-        className={cn(
-          "lg:hidden fixed left-4 top-[calc(var(--header-height)+1rem)] z-40 inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#ac4e15]/30 bg-[#f8f1e8]/95 text-[#ac4e15] shadow-lg shadow-[#ac4e15]/20 backdrop-blur",
-          isImmersive && "opacity-90",
-        )}
-        aria-label="Abrir menu de seÃ§Ãµes"
+        className={cn(
+          "lg:hidden fixed left-4 top-[calc(var(--header-height)+1rem)] z-40 inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#ac4e15]/30 bg-[#f8f1e8]/95 text-[#ac4e15] shadow-lg shadow-[#ac4e15]/20 backdrop-blur",
+          isImmersive && "opacity-90",
+        )}
+        aria-label="Abrir menu de seções"
       >
         <Menu className="h-5 w-5" />
       </motion.button>
@@ -102,7 +102,7 @@ export default function Sidebar({ sections, activeSection, onSectionChange, isIm
             <div className="flex items-center justify-between px-5 py-4">
               <div className="flex flex-col">
                 <span className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">Sala do investidor</span>
-                <span className="text-lg font-serif font-semibold text-[#354037]">OLÃBANO</span>
+                <span className="text-lg font-serif font-semibold text-[#354037]">OLÍBANO</span>
               </div>
               <button
                 type="button"
@@ -140,7 +140,7 @@ export default function Sidebar({ sections, activeSection, onSectionChange, isIm
         <div className="flex items-center justify-between px-6 py-5">
           <div>
             <p className="text-xs uppercase tracking-[0.36em] text-[#ac4e15]/80">Sala do investidor</p>
-            <p className="text-xl font-serif font-semibold text-[#354037]">OLÃBANO</p>
+            <p className="text-xl font-serif font-semibold text-[#354037]">OLÍBANO</p>
           </div>
         </div>
 
@@ -172,7 +172,7 @@ export default function Sidebar({ sections, activeSection, onSectionChange, isIm
             <ChevronRight className="h-4 w-4" />
             Voltar ao site
           </Link>
-          <p className="text-center text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]/60">Â© 2025 OLÃBANO</p>
+          <p className="text-center text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]/60">© 2025 OLÍBANO</p>
         </div>
       </aside>
     </>

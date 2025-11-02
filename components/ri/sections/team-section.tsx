@@ -43,10 +43,10 @@ export default function TeamSection({ team }: TeamSectionProps) {
           >
             Equipe Fundadora
           </motion.h2>
-          <p className="mt-3 max-w-3xl text-[#354037]/70">
-            Especialistas complementares com visÃ£o compartilhada para transformar o bem-estar premium em uma operaÃ§Ã£o
-            escalÃ¡vel, humana e desejada.
-          </p>
+          <p className="mt-3 max-w-3xl text-[#354037]/70">
+            Especialistas complementares com visão compartilhada para transformar o bem-estar premium em uma operação
+            escalável, humana e desejada.
+          </p>
           <div className="mt-4 h-1 w-16 rounded-full bg-gradient-to-r from-[#69683B] to-[#C88715]" />
         </div>
 
@@ -94,28 +94,28 @@ export default function TeamSection({ team }: TeamSectionProps) {
                   <p className="text-sm leading-relaxed text-[#4a463f]/80">{member.bio}</p>
 
                   <div className="grid gap-3 border-t border-[#d9cbbb]/60 pt-4">
-                    {member.email && (
-                      <a
-                        href={`mailto:${member.email}`}
-                        className="flex items-center justify-center gap-2 rounded-full border border-[#ac4e15]/30 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/10"
-                      >
-                        <Mail className="h-4 w-4" />
-                        <span className="truncate max-w-[10rem]">{member.email}</span>
-                      </a>
-                    )}
-                    <div className="flex flex-wrap justify-center gap-2">
-                      {socialLinks.map((link) => (
-                        <a
-                          key={link.href}
-                          href={link.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex min-w-[7.5rem] items-center justify-center gap-2 rounded-full bg-[#ac4e15]/8 px-3 py-2 text-[0.65rem] font-medium uppercase tracking-[0.26em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/15"
-                        >
-                          {iconMap[link.type]}
-                          {link.label}
-                        </a>
-                      ))}
+                    {member.email && (
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="mx-auto flex w-full max-w-[15rem] items-center justify-center gap-2 rounded-full border border-[#ac4e15]/30 px-4 py-2 text-[0.6rem] font-semibold uppercase tracking-[0.18em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/10"
+                      >
+                        <Mail className="h-4 w-4" />
+                        <span className="max-w-[9.5rem] truncate">{member.email}</span>
+                      </a>
+                    )}
+                    <div className="flex flex-wrap justify-center gap-2">
+                      {socialLinks.map((link) => (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex min-w-[6.5rem] items-center justify-center gap-2 rounded-full bg-[#ac4e15]/8 px-3 py-2 text-[0.58rem] font-medium uppercase tracking-[0.18em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/15"
+                        >
+                          {iconMap[link.type]}
+                          {link.label}
+                        </a>
+                      ))}
                     </div>
                   </div>
                 </div>

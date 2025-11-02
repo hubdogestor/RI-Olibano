@@ -46,7 +46,7 @@ export default function TractionSection({ traction }: TractionSectionProps) {
           transition={{ delay: 0.1 }}
           className="text-lg text-gray-600 mb-12"
         >
-          ValidaÃ§Ã£o de mercado com MVP e traÃ§Ã£o real de clientes
+          Validação de mercado com MVP e tração real de clientes
         </motion.p>
 
         {/* Timeline */}
@@ -67,11 +67,11 @@ export default function TractionSection({ traction }: TractionSectionProps) {
                     className="group relative flex w-72 min-w-[18rem] snap-center flex-col rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
                   >
                     <div className="mb-4 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]">
-                      <span className="inline-flex h-12 w-12 flex-col items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/40">
-                        <span className="text-[0.65rem] font-semibold leading-none">{quarter || year}</span>
-                        <span className="text-[0.58rem] leading-none tracking-[0.3em]">{quarter ? year : ""}</span>
+                      <span className="inline-flex h-14 w-14 flex-col items-center justify-center gap-0.5 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/40">
+                        <span className="text-xs font-semibold leading-tight tracking-[0.12em]">{quarter || year}</span>
+                        <span className="text-[0.55rem] leading-tight tracking-[0.2em]">{quarter ? year : ""}</span>
                       </span>
-                      TrajetÃ³ria
+                      Trajetória
                     </div>
                     <h4 className="text-lg font-semibold text-[#354037]">{milestone.title}</h4>
                     <p className="mt-3 text-sm text-[#4a463f]/75">{milestone.desc}</p>
@@ -83,7 +83,7 @@ export default function TractionSection({ traction }: TractionSectionProps) {
         </div>
 
         {/* Metrics */}
-        <h3 className="text-xl font-semibold mb-8 text-[#354037]">MÃ©tricas Atuais</h3>
+        <h3 className="text-xl font-semibold mb-8 text-[#354037]">Métricas Atuais</h3>
         <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {traction.metrics.map((metric, i) => {
             const Icon = metricIcons[i % metricIcons.length]

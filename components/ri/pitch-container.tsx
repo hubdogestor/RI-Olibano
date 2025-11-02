@@ -101,7 +101,7 @@ export default function PitchContainer({
               transition={{ duration: 0.3 }}
               className="text-lg font-serif font-semibold text-[#354037]"
             >
-              OLÃBANO
+              OLÍBANO
             </motion.p>
           </div>
 
@@ -113,7 +113,7 @@ export default function PitchContainer({
               transition={{ duration: 0.25 }}
               className="text-[0.62rem] uppercase tracking-[0.32em] text-[#ac4e15]/80"
             >
-              SeÃ§Ã£o
+              Seção
             </motion.p>
             <motion.h2
               key={`${activeSection}-title`}
@@ -131,7 +131,7 @@ export default function PitchContainer({
               transition={{ duration: 0.35 }}
               className="text-[0.7rem] uppercase tracking-[0.28em] text-[#4a463f]/70"
             >
-              {currentIndex + 1} de {sections.length} seÃ§Ãµes
+              {currentIndex + 1} de {sections.length} seções
             </motion.p>
           </div>
         </div>
@@ -156,9 +156,9 @@ export default function PitchContainer({
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3 }}
               onClick={() => onSectionChange(nextSection.id)}
-              className="inline-flex items-center gap-2 rounded-full border border-[#ac4e15]/30 bg-white/80 px-5 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-[#ac4e15] shadow-sm shadow-[#ac4e15]/20 transition-all hover:translate-x-0.5 hover:bg-[#ac4e15]/15"
-            >
-              PrÃ³xima seÃ§Ã£o
+              className="inline-flex items-center gap-2 rounded-full border border-[#ac4e15]/30 bg-white/80 px-5 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-[#ac4e15] shadow-sm shadow-[#ac4e15]/20 transition-all hover:translate-x-0.5 hover:bg-[#ac4e15]/15"
+            >
+              Próxima seção
               <ChevronRight className="h-4 w-4" />
             </motion.button>
           ) : null}
