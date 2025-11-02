@@ -55,25 +55,29 @@ export default function TractionSection({ traction }: TractionSectionProps) {
           <div className="relative">
             <div className="absolute left-10 right-10 top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] via-[#D59D40] to-transparent lg:block" />
             <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-6 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#d59d40]/40">
-              {traction.milestones.map((milestone, i) => (
-                <motion.div
-                  key={milestone.period}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.35 }}
-                  transition={{ duration: 0.4, delay: i * 0.08 }}
-                  className="group relative flex w-72 min-w-[18rem] snap-center flex-col rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
-                >
-                  <div className="mb-4 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]">
-                    <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/40">
-                      {milestone.period}
-                    </span>
-                    Trajetória
-                  </div>
-                  <h4 className="text-lg font-semibold text-[#354037]">{milestone.title}</h4>
-                  <p className="mt-3 text-sm text-[#4a463f]/75">{milestone.desc}</p>
-                </motion.div>
-              ))}
+              {traction.milestones.map((milestone, i) => {
+                const [year = "", quarter = ""] = milestone.period.split(" ")
+                return (
+                  <motion.div
+                    key={milestone.period}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.35 }}
+                    transition={{ duration: 0.4, delay: i * 0.08 }}
+                    className="group relative flex w-72 min-w-[18rem] snap-center flex-col rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
+                  >
+                    <div className="mb-4 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]">
+                      <span className="inline-flex h-12 w-12 flex-col items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/40">
+                        <span className="text-[0.65rem] font-semibold leading-none">{quarter || year}</span>
+                        <span className="text-[0.58rem] leading-none tracking-[0.3em]">{quarter ? year : ""}</span>
+                      </span>
+                      Trajetória
+                    </div>
+                    <h4 className="text-lg font-semibold text-[#354037]">{milestone.title}</h4>
+                    <p className="mt-3 text-sm text-[#4a463f]/75">{milestone.desc}</p>
+                  </motion.div>
+                )
+              })}
             </div>
           </div>
         </div>

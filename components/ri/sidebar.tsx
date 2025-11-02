@@ -11,9 +11,10 @@ interface SidebarProps {
   sections: Array<{ id: string; title: string; icon: LucideIcon }>
   activeSection: string
   onSectionChange: (sectionId: string) => void
+  isImmersive?: boolean
 }
 
-export default function Sidebar({ sections, activeSection, onSectionChange }: SidebarProps) {
+export default function Sidebar({ sections, activeSection, onSectionChange, isImmersive = false }: SidebarProps) {
   const [isMobileOpen, setIsMobileOpen] = useState(false)
   const activeIndex = sections.findIndex((section) => section.id === activeSection)
 
@@ -57,11 +58,19 @@ export default function Sidebar({ sections, activeSection, onSectionChange }: Si
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.4 }}
         onClick={() => setIsMobileOpen(true)}
-        className="lg:hidden fixed left-4 top-[calc(var(--header-height)+1rem)] z-40 inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#ac4e15]/30 bg-[#f8f1e8]/95 text-[#ac4e15] shadow-lg shadow-[#ac4e15]/20 backdrop-blur"
+        className={cn(
+          "lg:hidden fixed left-4 top-[calc(var(--header-height)+1rem)] z-40 inline-flex h-12 w-12 items-center justify-center rounded-full border border-[#ac4e15]/30 bg-[#f8f1e8]/95 text-[#ac4e15] shadow-lg shadow-[#ac4e15]/20 backdrop-blur",
+          isImmersive && "opacity-90",
+        )}
         aria-label="Abrir menu de seções"
       >
         <Menu className="h-5 w-5" />
       </motion.button>
+
+
+      {isImmersive && (
+        <div className="pointer-events-none fixed left-0 top-[var(--header-height)] hidden h-[calc(100vh-var(--header-height))] w-4 bg-gradient-to-r from-[#ac4e15]/20 via-[#ac4e15]/10 to-transparent opacity-0 transition-opacity duration-500 lg:block group-hover/immersive:opacity-70" />
+      )}
 
       <AnimatePresence>
         {isMobileOpen && (
@@ -75,6 +84,11 @@ export default function Sidebar({ sections, activeSection, onSectionChange }: Si
           />
         )}
       </AnimatePresence>
+
+
+      {isImmersive && (
+        <div className="pointer-events-none fixed left-0 top-[var(--header-height)] hidden h-[calc(100vh-var(--header-height))] w-4 bg-gradient-to-r from-[#ac4e15]/20 via-[#ac4e15]/10 to-transparent opacity-0 transition-opacity duration-500 lg:block group-hover/immersive:opacity-70" />
+      )}
 
       <AnimatePresence>
         {isMobileOpen && (
@@ -115,7 +129,14 @@ export default function Sidebar({ sections, activeSection, onSectionChange }: Si
         )}
       </AnimatePresence>
 
-      <aside className="hidden lg:flex fixed left-0 top-[var(--header-height)] z-40 h-[calc(100vh-var(--header-height))] w-72 flex-col border-r border-[var(--sidebar-border)] bg-[var(--sidebar-surface)] backdrop-blur-xl">
+      <aside
+        className={cn(
+          "hidden lg:flex fixed left-0 top-[var(--header-height)] z-40 h-[calc(100vh-var(--header-height))] w-72 flex-col border-r border-[var(--sidebar-border)] bg-[var(--sidebar-surface)] backdrop-blur-xl transition-all duration-500",
+          isImmersive
+            ? "lg:-translate-x-16 lg:opacity-0 lg:pointer-events-none group-hover/immersive:translate-x-0 group-hover/immersive:opacity-100 group-hover/immersive:pointer-events-auto"
+            : "",
+        )}
+      >
         <div className="flex items-center justify-between px-6 py-5">
           <div>
             <p className="text-xs uppercase tracking-[0.36em] text-[#ac4e15]/80">Sala do investidor</p>

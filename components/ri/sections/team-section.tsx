@@ -64,60 +64,60 @@ export default function TeamSection({ team }: TeamSectionProps) {
                 initial={{ opacity: 0, y: 32 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.12 * index }}
-                className="group relative overflow-hidden rounded-3xl border border-[#d9cbbb]/60 bg-white/85 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
+                className="group relative overflow-hidden rounded-3xl border border-[#d9cbbb]/60 bg-white/85 text-center shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
               >
                 <div className="absolute -left-24 -top-24 h-40 w-40 rounded-full bg-gradient-to-br from-[#ac4e15]/12 to-transparent blur-3xl" />
-                <div className="relative flex flex-col gap-6 p-8">
-                  <div className="relative h-28 w-28 self-start overflow-hidden rounded-3xl border border-white/50 shadow-lg shadow-[#ac4e15]/30">
-                  {member.image ? (
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover"
-                      sizes="112px"
-                    />
-                  ) : (
-                    <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-3xl font-serif text-white">
-                      {member.name.charAt(0)}
-                    </div>
-                  )}
-                </div>
-
-                <div>
-                  <h3 className="text-xl font-serif font-semibold text-[#354037]">{member.name}</h3>
-                  <p className="mt-1 inline-flex rounded-full bg-[#ac4e15]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.26em] text-[#ac4e15]">
-                    {member.role}
-                  </p>
-                </div>
-
-                <p className="text-sm leading-relaxed text-[#4a463f]/80">{member.bio}</p>
-
-                <div className="grid gap-3 border-t border-[#d9cbbb]/60 pt-4">
-                  {member.email && (
-                    <a
-                      href={`mailto:${member.email}`}
-                      className="inline-flex items-center gap-2 rounded-full border border-[#ac4e15]/30 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/10"
-                    >
-                      <Mail className="h-4 w-4" />
-                      {member.email}
-                    </a>
-                  )}
-                  <div className="flex flex-wrap gap-2">
-                    {socialLinks.map((link) => (
-                      <a
-                        key={link.href}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex flex-1 min-w-[8rem] items-center justify-center gap-2 rounded-full bg-[#ac4e15]/8 px-3 py-2 text-xs font-medium uppercase tracking-[0.2em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/15"
-                      >
-                        {iconMap[link.type]}
-                        {link.label}
-                      </a>
-                    ))}
+                <div className="relative flex flex-col items-center gap-6 p-8">
+                  <div className="relative h-28 w-28 overflow-hidden rounded-3xl border border-white/50 shadow-lg shadow-[#ac4e15]/30">
+                    {member.image ? (
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="object-cover"
+                        sizes="112px"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-3xl font-serif text-white">
+                        {member.name.charAt(0)}
+                      </div>
+                    )}
                   </div>
-                </div>
+
+                  <div className="flex flex-col items-center gap-2">
+                    <h3 className="text-xl font-serif font-semibold text-[#354037]">{member.name}</h3>
+                    <p className="inline-flex rounded-full bg-[#ac4e15]/10 px-4 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-[#ac4e15]">
+                      {member.role}
+                    </p>
+                  </div>
+
+                  <p className="text-sm leading-relaxed text-[#4a463f]/80">{member.bio}</p>
+
+                  <div className="grid gap-3 border-t border-[#d9cbbb]/60 pt-4">
+                    {member.email && (
+                      <a
+                        href={`mailto:${member.email}`}
+                        className="flex items-center justify-center gap-2 rounded-full border border-[#ac4e15]/30 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/10"
+                      >
+                        <Mail className="h-4 w-4" />
+                        <span className="truncate max-w-[10rem]">{member.email}</span>
+                      </a>
+                    )}
+                    <div className="flex flex-wrap justify-center gap-2">
+                      {socialLinks.map((link) => (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex min-w-[7.5rem] items-center justify-center gap-2 rounded-full bg-[#ac4e15]/8 px-3 py-2 text-[0.65rem] font-medium uppercase tracking-[0.26em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/15"
+                        >
+                          {iconMap[link.type]}
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </motion.article>
             )

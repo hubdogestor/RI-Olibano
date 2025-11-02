@@ -5,6 +5,7 @@ import Sidebar from "@/components/ri/sidebar"
 import PitchContainer from "@/components/ri/pitch-container"
 import WhatsAppButton from "@/components/whatsapp-button"
 import riData from "@/data/ri.json"
+import { cn } from "@/lib/utils"
 import {
   Target,
   Star,
@@ -35,16 +36,29 @@ const sections = [
 
 export default function PitchDeckPage() {
   const [activeSection, setActiveSection] = useState("hero")
+  const [isImmersive, setIsImmersive] = useState(false)
 
   return (
-    <div className="relative flex min-h-[calc(100vh-var(--header-height))] flex-col bg-transparent lg:flex-row">
-      <Sidebar sections={sections} activeSection={activeSection} onSectionChange={setActiveSection} />
-      <div className="flex-1 lg:ml-72">
+    <div
+      className={cn(
+        "relative flex min-h-[calc(100vh-var(--header-height))] flex-col bg-transparent transition-colors lg:flex-row",
+        isImmersive && "group/immersive",
+      )}
+    >
+      <Sidebar
+        sections={sections}
+        activeSection={activeSection}
+        onSectionChange={setActiveSection}
+        isImmersive={isImmersive}
+      />
+      <div className={cn("flex-1 transition-[margin] duration-500", isImmersive ? "lg:ml-0" : "lg:ml-72")}>
         <PitchContainer
           activeSection={activeSection}
           data={riData}
           sections={sections}
           onSectionChange={setActiveSection}
+          isImmersive={isImmersive}
+          onToggleImmersive={() => setIsImmersive((prev) => !prev)}
         />
       </div>
       <WhatsAppButton />

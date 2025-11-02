@@ -24,6 +24,7 @@ const headerVariants = {
 export default function SiteHeader() {
   const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const isPitchPage = pathname?.startsWith("/ri")
 
   const isActiveLink = (href: string) => {
     if (href === "/ri") {
@@ -41,7 +42,7 @@ export default function SiteHeader() {
       animate="visible"
       variants={headerVariants}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="fixed inset-x-0 top-0 z-50 border-b border-[#d9cbbb]/60 bg-[#faf7f1]/80 backdrop-blur-lg"
+      className={cn("fixed inset-x-0 top-0 z-50 border-b border-[#d9cbbb]/60 bg-[#faf7f1]/80 backdrop-blur-lg transition-all duration-500", isPitchPage ? "lg:-translate-y-[60%] lg:opacity-35 lg:hover:translate-y-0 lg:hover:opacity-100" : "")}
     >
       <div className="mx-auto flex h-[var(--header-height)] w-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-3">
