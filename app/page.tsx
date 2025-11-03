@@ -8,9 +8,7 @@ import {
   Brain,
   BriefcaseBusiness,
   CalendarRange,
-  Clock,
   FlaskConical,
-  Gem,
   Heart,
   MapPin,
   ShieldCheck,
@@ -109,24 +107,6 @@ const marketSnapshot = [
   { label: "TAM Brasil", value: "R$ 2 bi", detail: "Mercado nacional de wellness premium crescendo 8,5% ao ano." },
   { label: "SAM Porto Alegre", value: "500 mil", detail: "Adultos A/B com alto poder aquisitivo na região metropolitana." },
   { label: "SOM 3 anos", value: "6 mil", detail: "Clientes qualificados para duas unidades Olíbano até 2026." },
-]
-
-const teamMembers = [
-  {
-    name: "Betusa Kramer",
-    role: "COO & Co-founder",
-    bio: "Médica integrativa, idealizadora da jornada Olíbano e responsável pelos protocolos terapêuticos e curadoria clínica.",
-  },
-  {
-    name: "Alexandre Freire",
-    role: "CEO & Co-founder",
-    bio: "Executivo de tecnologia e growth há 15 anos, lidera estratégia, finanças e expansão comercial do Olíbano.",
-  },
-  {
-    name: "Leonardo Menezes",
-    role: "CPO & Co-founder",
-    bio: "Especialista em produto e operações omnichannel. Integra experiência física, digital e dados do negócio.",
-  },
 ]
 
 

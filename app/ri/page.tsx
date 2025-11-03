@@ -11,7 +11,6 @@ import {
   AlertCircle,
   Lightbulb,
   Target,
-  Sparkles,
   Users,
   TrendingUp,
   Briefcase,

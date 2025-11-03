@@ -4,7 +4,7 @@
 
 import { motion } from "framer-motion"
 
-import { CalendarClock, CheckCircle2, Clock } from "lucide-react"
+import { CheckCircle2, Clock } from "lucide-react"
 
 
 
@@ -67,8 +67,6 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
 
             {roadmap.map((phase, i) => {
               const [year, quarter] = phase.quarter.split(" ")
-              const isFuture = phase.quarter.includes("2026")
-              const ProgressIcon = isFuture ? CalendarClock : CheckCircle2
               return (
                 <motion.div
                   key={phase.quarter}

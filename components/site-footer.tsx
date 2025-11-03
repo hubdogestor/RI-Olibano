@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation"
 import Link from "next/link"
-import { Instagram, Facebook, Linkedin, Music, Phone, Globe, MessageCircle, Music2, Shell } from "lucide-react"
+import { Instagram, Facebook, Linkedin, MessageCircle, Music2, Shell } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const socialLinks = [
