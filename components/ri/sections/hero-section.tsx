@@ -39,25 +39,25 @@ export default function HeroSection({ data }: HeroSectionProps) {
   }
 
   return (
-    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#c88715]/10 p-12">
-      <motion.div variants={containerVariants} initial="hidden" animate="visible" className="mx-auto max-w-5xl space-y-12">
-        <motion.div variants={itemVariants} className="space-y-6">
+    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#c88715]/10 p-6 sm:p-8 md:p-12">
+      <motion.div variants={containerVariants} initial="hidden" animate="visible" className="mx-auto max-w-5xl space-y-8 sm:space-y-12">
+        <motion.div variants={itemVariants} className="space-y-4 sm:space-y-6">
           <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">{data.title}</p>
           <motion.h1
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="text-5xl font-serif font-bold text-[#354037] leading-tight"
+            className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#354037] leading-tight"
           >
             {data.headline}
           </motion.h1>
 
-          <motion.p variants={itemVariants} className="max-w-3xl text-lg text-[#4a463f] leading-relaxed">
+          <motion.p variants={itemVariants} className="max-w-3xl text-base sm:text-lg text-[#4a463f] leading-relaxed">
             {data.description}
           </motion.p>
         </motion.div>
 
-        <motion.div variants={itemVariants} className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           {data.stats.map((stat, i) => {
             const Icon = iconMap[i] || Award
             return (
@@ -67,13 +67,13 @@ export default function HeroSection({ data }: HeroSectionProps) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 + i * 0.1, duration: 0.5 }}
                 whileHover={{ y: -4 }}
-                className="rounded-2xl border border-[#d9cbbb]/60 bg-white/85 p-5 shadow-lg shadow-[#ac4e15]/10 backdrop-blur transition-all duration-300 hover:border-[#ac4e15]/30"
+                className="rounded-2xl border border-[#d9cbbb]/60 bg-white/85 p-4 sm:p-5 shadow-lg shadow-[#ac4e15]/10 backdrop-blur transition-all duration-300 hover:border-[#ac4e15]/30"
               >
                 <div className="mb-3 flex items-start justify-between">
                   <p className="text-xs uppercase tracking-[0.28em] text-[#ac4e15]/70">{stat.label}</p>
                   <Icon className="h-4 w-4 text-[#ac4e15]" />
                 </div>
-                <span className="text-3xl font-bold text-[#354037]">{stat.value}</span>
+                <span className="text-2xl sm:text-3xl font-bold text-[#354037]">{stat.value}</span>
               </motion.div>
             )
           })}
@@ -81,15 +81,15 @@ export default function HeroSection({ data }: HeroSectionProps) {
 
         <motion.section
           variants={itemVariants}
-          className="rounded-3xl border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15]/5 to-[#C88715]/10 p-8 shadow-inner shadow-[#ac4e15]/15"
+          className="rounded-3xl border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15]/5 to-[#C88715]/10 p-6 sm:p-8 shadow-inner shadow-[#ac4e15]/15"
         >
-          <div className="flex items-start gap-4">
+          <div className="flex flex-col sm:flex-row items-start gap-4">
             <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] p-3">
               <DollarSign className="h-6 w-6 text-white" />
             </div>
             <div className="space-y-2">
               <p className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]">Proposta de investimento</p>
-              <p className="text-lg font-medium text-[#354037]">{data.investment.highlight}</p>
+              <p className="text-base sm:text-lg font-medium text-[#354037]">{data.investment.highlight}</p>
             </div>
           </div>
         </motion.section>
