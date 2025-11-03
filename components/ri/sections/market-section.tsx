@@ -7,8 +7,11 @@ interface MarketSectionProps {
   market: {
     title: string
     tam: string
+    tamRevenue: string
     sam: string
+    samRevenue: string
     som: string
+    somRevenue: string
     insights: string[]
   }
 }
@@ -18,6 +21,7 @@ export default function MarketSection({ market }: MarketSectionProps) {
     {
       label: "TAM",
       value: market.tam,
+      revenue: market.tamRevenue,
       desc: market.insights[0] || "",
       icon: TrendingUp,
       color: "from-[#C88715] to-[#AC4E15]",
@@ -25,6 +29,7 @@ export default function MarketSection({ market }: MarketSectionProps) {
     {
       label: "SAM",
       value: market.sam,
+      revenue: market.samRevenue,
       desc: market.insights[1] || "",
       icon: Users,
       color: "from-[#69683B] to-[#354037]",
@@ -32,6 +37,7 @@ export default function MarketSection({ market }: MarketSectionProps) {
     {
       label: "SOM",
       value: market.som,
+      revenue: market.somRevenue,
       desc: market.insights[2] || "",
       icon: Target,
       color: "from-[#AC4E15] to-[#C88715]",
@@ -87,14 +93,15 @@ export default function MarketSection({ market }: MarketSectionProps) {
                     <Icon className="w-7 h-7" />
                   </motion.div>
                   <p className="text-sm font-semibold opacity-90 mb-2 uppercase tracking-wider">{metric.label}</p>
-                  <motion.p
+                  <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4 + i * 0.1, duration: 0.5 }}
-                    className="text-5xl font-bold mb-3"
+                    className="mb-3"
                   >
-                    {metric.value}
-                  </motion.p>
+                    <p className="text-5xl font-bold">{metric.value}</p>
+                    <p className="text-sm opacity-70 mt-1">{metric.revenue}</p>
+                  </motion.div>
                   <p className="text-sm leading-relaxed opacity-90">{metric.desc}</p>
                 </div>
               </motion.div>

@@ -218,11 +218,14 @@
   },
   "market": {
     "title": "TAM / SAM / SOM",
-    "tam": "R$ 2 bilhões",
-    "sam": "500 mil pessoas",
+    "tam": "625 mil clientes",
+    "tamRevenue": "≈ R$ 2 bilhões",
+    "sam": "500 mil clientes",
+    "samRevenue": "≈ R$ 1,6 bilhão",
     "som": "6 mil clientes",
+    "somRevenue": "≈ R$ 19,2 milhões",
     "insights": [
-      "TAM: Mercado brasileiro de wellness premium segundo Global Wellness Institute.",
+      "TAM: Mercado brasileiro de wellness premium (LTV médio R$ 3,2 mil).",
       "SAM: Adultos A/B em Porto Alegre com gasto recorrente em autocuidado.",
       "SOM: Meta de 6 mil clientes qualificados em duas unidades até 2026."
     ]
