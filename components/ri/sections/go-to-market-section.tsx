@@ -89,7 +89,7 @@ export default function GoToMarketSection({ goToMarket }: GoToMarketSectionProps
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true, amount: 0.4 }}
                       transition={{ duration: 0.4, delay: index * 0.08 }}
-                      className="flex items-start gap-4 rounded-2xl border border-[#d9cbbb]/60 bg-white/80 p-5 shadow-sm shadow-[#ac4e15]/10"
+                      className="flex items-start gap-4 rounded-2xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-sm shadow-[#ac4e15]/10 min-h-[120px]"
                     >
                       <div className="mt-1 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#ac4e15]/12 text-[#ac4e15]">
                         <Icon className="h-5 w-5" />

@@ -4,13 +4,15 @@
 
 import { motion } from "framer-motion"
 
-import { CheckCircle2, Clock } from "lucide-react"
+import { CheckCircle2, Clock, Calendar } from "lucide-react"
 
 
 
 interface RoadmapItem {
   text: string
-  status: string
+  status?: string
+  bold?: boolean
+  icon?: string
 }
 
 interface RoadmapSectionProps {
@@ -95,7 +97,15 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
                       const isObject = typeof item === "object" && item !== null && "text" in item
                       const text = isObject ? (item as RoadmapItem).text : (item as string)
                       const status = isObject ? (item as RoadmapItem).status : undefined
-                      const ItemIcon = status === "planned" ? Clock : CheckCircle2
+                      const isBold = isObject ? (item as RoadmapItem).bold : false
+                      const iconType = isObject ? (item as RoadmapItem).icon : undefined
+
+                      let ItemIcon: any = CheckCircle2
+                      if (status === "planned") {
+                        ItemIcon = Clock
+                      } else if (iconType === "calendar") {
+                        ItemIcon = Calendar
+                      }
 
                       return (
                         <motion.li
@@ -104,7 +114,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
                           whileInView={{ opacity: 1, x: 0 }}
                           viewport={{ once: true, amount: 0.6 }}
                           transition={{ duration: 0.3, delay: j * 0.08 }}
-                          className="flex gap-2 sm:gap-3 text-xs sm:text-sm text-[#354037]"
+                          className={`flex gap-2 sm:gap-3 text-xs sm:text-sm ${isBold ? "font-bold text-[#354037]" : "text-[#354037]"}`}
                         >
                           <ItemIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#ac4e15]" aria-hidden="true" />
                           <span>{text}</span>

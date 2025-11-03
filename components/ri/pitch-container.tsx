@@ -250,7 +250,7 @@ export default function PitchContainer({
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="min-h-full flex flex-col"
             >
-              <div className="flex-1 overflow-y-auto px-8 py-6">
+              <div className="flex-1 overflow-y-auto px-8 py-6 pb-20">
                 <Breadcrumb items={currentSectionData ? [currentSectionData.title] : []} />
                 <Suspense fallback={<SectionFallback />}>
                   {renderSection()}

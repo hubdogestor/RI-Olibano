@@ -331,7 +331,7 @@
       "Jornada do cliente e funil de vendas com mapeamento incipiente",
       "Falta de automação de marketing e nutrição de leads",
       "SEO não otimizado e ausência de análise de palavras-chave",
-      "Recursos limitados: orçamento restrito e equipe reduzida"
+      { "text": "Recursos limitados: orçamento restrito e equipe reduzida", "bold": true }
     ],
     "opportunities": [
       "Estruturação de eixo educacional para gerar leads qualificados",
@@ -432,7 +432,7 @@
       "quarter": "2025 Q3",
       "items": [
         "Lançamento do e-commerce integrado e conteúdo audiovisual premium;",
-        "Programa de Alavancagem Empresarial IBC;",
+        { "text": "Programa de Alavancagem Empresarial IBC;", "bold": true },
         "Content hub com depoimentos e vídeos imersivos;",
         "Campanha Despertar Olíbano - MedPlex."
       ]
@@ -450,28 +450,30 @@
         },
         {
           "text": "Membership + Gift experience;",
-          "status": "planned"
+          "status": "planned",
+          "icon": "calendar"
         },
         {
           "text": "Dashboard financeiro em tempo real (CAC, LTV, margem).",
-          "status": "planned"
+          "status": "planned",
+          "icon": "calendar"
         }
       ]
     },
     {
       "quarter": "2026 Q1",
       "items": [
-        "Roadshow para segunda unidade (Porto Alegre ou Florianópolis);",
-        "Lançamento da linha Olíbano Home e aromaterapia licenciada;",
-        "Parcerias com healthtechs e marketplaces premium."
+        { "text": "Roadshow para segunda unidade (Porto Alegre ou Florianópolis);", "icon": "calendar" },
+        { "text": "Lançamento da linha Olíbano Home e aromaterapia licenciada;", "icon": "calendar" },
+        { "text": "Parcerias com healthtechs e marketplaces premium.", "icon": "calendar" }
       ]
     },
     {
       "quarter": "2026 Q2",
       "items": [
-        "Estruturação de franquia/licenciamento com playbook completo;",
-        "Plataforma digital pós-sessão com comunidade e conteúdos guiados;",
-        "Preparação para captação Série A e expansão multiunidade."
+        { "text": "Estruturação de franquia/licenciamento com playbook completo;", "icon": "calendar" },
+        { "text": "Plataforma digital pós-sessão com comunidade e conteúdos guiados;", "icon": "calendar" },
+        { "text": "Preparação para captação Série A e expansão multiunidade.", "icon": "calendar" }
       ]
     }
   ],

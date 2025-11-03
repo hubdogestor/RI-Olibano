@@ -3,12 +3,14 @@
 import { motion } from "framer-motion"
 import { TrendingUp, AlertTriangle, Target, Shield } from "lucide-react"
 
+type SwotItem = string | { text: string; bold?: boolean }
+
 interface SwotSectionProps {
   swot: {
-    strengths: string[]
-    weaknesses: string[]
-    opportunities: string[]
-    threats: string[]
+    strengths: SwotItem[]
+    weaknesses: SwotItem[]
+    opportunities: SwotItem[]
+    threats: SwotItem[]
   }
 }
 
@@ -89,19 +91,23 @@ export default function SwotSection({ swot }: SwotSectionProps) {
                   <h3 className="text-xl font-serif font-semibold text-[#354037]">{quadrant.title}</h3>
                 </div>
                 <ul className="space-y-2.5">
-                  {items.map((item, idx) => (
-                    <motion.li
-                      key={idx}
-                      initial={{ opacity: 0, x: -12 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.3, delay: idx * 0.05 }}
-                      className="flex items-start gap-2.5 text-sm text-[#4a463f]/90"
-                    >
-                      <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#354037]/60" />
-                      <span>{item}</span>
-                    </motion.li>
-                  ))}
+                  {items.map((item, idx) => {
+                    const text = typeof item === "string" ? item : item.text
+                    const isBold = typeof item === "object" && item.bold
+                    return (
+                      <motion.li
+                        key={idx}
+                        initial={{ opacity: 0, x: -12 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.3, delay: idx * 0.05 }}
+                        className={`flex items-start gap-2.5 text-sm ${isBold ? "font-bold text-[#354037]" : "text-[#4a463f]/90"}`}
+                      >
+                        <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#354037]/60" />
+                        <span>{text}</span>
+                      </motion.li>
+                    )
+                  })}
                 </ul>
               </motion.article>
             )
