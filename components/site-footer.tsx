@@ -2,16 +2,16 @@
 
 import { usePathname } from "next/navigation"
 import Link from "next/link"
-import { Instagram, Facebook, Linkedin, Music, Phone, Globe } from "lucide-react"
+import { Instagram, Facebook, Linkedin, Music, Phone, Globe, MessageCircle, Music2, Shell } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const socialLinks = [
   { icon: Instagram, href: "https://www.instagram.com/olibanovip", label: "Instagram" },
   { icon: Facebook, href: "https://www.facebook.com/olibano.vip/", label: "Facebook" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/olibanovip/", label: "LinkedIn" },
-  { icon: Music, href: "https://www.tiktok.com/@olibanovip", label: "TikTok" },
-  { icon: Message-circle, href: "http://wa.me/5551993622621", label: "WhatsApp" },
-  { icon: Globe, href: "https://olibanovip.com.br/", label: "Site Institucional" },
+  { icon: Music2, href: "https://www.tiktok.com/@olibanovip", label: "TikTok" },
+  { icon: MessageCircle, href: "http://wa.me/5551993622621", label: "WhatsApp" },
+  { icon: Shell, href: "https://olibanovip.com.br/", label: "Site Institucional" },
 ]
 
 export default function SiteFooter() {
