@@ -1,7 +1,8 @@
 "use client"
 
-import { motion } from "framer-motion"
-import { BadgeDollarSign, BriefcaseBusiness, Goal, PieChart, TrendingUp } from "lucide-react"
+import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import { BadgeDollarSign, BriefcaseBusiness, Goal, PieChart, TrendingUp, Eye, EyeOff } from "lucide-react"
 
 interface InvestmentSectionProps {
   investment: {
@@ -32,6 +33,8 @@ interface InvestmentSectionProps {
 const metricIcons = [BadgeDollarSign, PieChart, BriefcaseBusiness]
 
 export default function InvestmentSection({ investment }: InvestmentSectionProps) {
+  const [isVisible, setIsVisible] = useState(true)
+
   const metrics = [
     { label: "Aporte buscado", value: investment.round.ask, icon: metricIcons[0] },
     { label: "Participação ofertada", value: investment.round.equity, icon: metricIcons[1] },
@@ -42,17 +45,45 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
     <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#ac4e15]/10 p-12">
       <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-6xl space-y-12">
         <div className="space-y-4">
-          <motion.h2
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl font-serif font-bold text-[#354037]"
-          >
-            {investment.headline}
-          </motion.h2>
+          <div className="flex items-center justify-between gap-4">
+            <motion.h2
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-4xl font-serif font-bold text-[#354037]"
+            >
+              {investment.headline}
+            </motion.h2>
+            <button
+              onClick={() => setIsVisible(!isVisible)}
+              className="group flex items-center gap-2 rounded-full border border-[#ac4e15]/30 bg-white/80 px-4 py-2 text-sm font-medium text-[#ac4e15] shadow-sm transition-all hover:border-[#ac4e15]/50 hover:bg-[#ac4e15]/5 hover:shadow-md"
+              aria-label={isVisible ? "Ocultar conteúdo" : "Exibir conteúdo"}
+            >
+              {isVisible ? (
+                <>
+                  <EyeOff className="h-4 w-4" />
+                  <span>Ocultar</span>
+                </>
+              ) : (
+                <>
+                  <Eye className="h-4 w-4" />
+                  <span>Exibir</span>
+                </>
+              )}
+            </button>
+          </div>
           <p className="max-w-3xl text-lg text-[#4a463f]">{investment.summary}</p>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-4">
+        <AnimatePresence>
+          {isVisible && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className="space-y-12 overflow-hidden"
+            >
+              <div className="grid gap-6 lg:grid-cols-4">
           {metrics.map((metric) => {
             const Icon = metric.icon
             return (
@@ -156,6 +187,9 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
             ))}
           </div>
         </section>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </motion.div>
     </div>
   )
