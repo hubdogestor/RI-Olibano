@@ -1,31 +1,43 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { lazy, Suspense, useEffect, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
 import { ChevronLeft, ChevronRight, Maximize2, Menu, Minimize2, X } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 import type riJson from "@/data/ri.json"
 import { cn } from "@/lib/utils"
-import HeroSection from "./sections/hero-section"
-import ProblemSection from "./sections/problem-section"
-import SolutionSection from "./sections/solution-section"
-import PurposeSection from "./sections/purpose-section"
-import CustomerSection from "./sections/customer-section"
-import MarketSection from "./sections/market-section"
-import BusinessSection from "./sections/business-section"
-import TractionSection from "./sections/traction-section"
-import SwotSection from "./sections/swot-section"
-import CompetitionSection from "./sections/competition-section"
-import GoToMarketSection from "./sections/go-to-market-section"
-import RoadmapSection from "./sections/roadmap-section"
-import TeamSection from "./sections/team-section"
-import InvestmentSection from "./sections/investment-section"
-import ESGSection from "./sections/esg-section"
-import FAQSection from "./sections/faq-section"
-import ContactSection from "./sections/contact-section"
 import ProgressBar from "./progress-bar"
 import ProgressIndicator from "./progress-indicator"
 import Breadcrumb from "./breadcrumb"
+
+// Dynamic imports com fallback loading
+const HeroSection = lazy(() => import("./sections/hero-section"))
+const ProblemSection = lazy(() => import("./sections/problem-section"))
+const SolutionSection = lazy(() => import("./sections/solution-section"))
+const PurposeSection = lazy(() => import("./sections/purpose-section"))
+const CustomerSection = lazy(() => import("./sections/customer-section"))
+const MarketSection = lazy(() => import("./sections/market-section"))
+const BusinessSection = lazy(() => import("./sections/business-section"))
+const TractionSection = lazy(() => import("./sections/traction-section"))
+const SwotSection = lazy(() => import("./sections/swot-section"))
+const CompetitionSection = lazy(() => import("./sections/competition-section"))
+const GoToMarketSection = lazy(() => import("./sections/go-to-market-section"))
+const RoadmapSection = lazy(() => import("./sections/roadmap-section"))
+const TeamSection = lazy(() => import("./sections/team-section"))
+const InvestmentSection = lazy(() => import("./sections/investment-section"))
+const ESGSection = lazy(() => import("./sections/esg-section"))
+const FAQSection = lazy(() => import("./sections/faq-section"))
+const ContactSection = lazy(() => import("./sections/contact-section"))
+
+// Loading fallback component
+const SectionFallback = () => (
+  <div className="h-full flex items-center justify-center bg-gradient-to-br from-white to-gray-50">
+    <div className="text-center">
+      <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#ac4e15]" />
+      <p className="mt-4 text-gray-600">Carregando seção...</p>
+    </div>
+  </div>
+)
 
 type SectionMeta = {
   id: string
@@ -240,7 +252,9 @@ export default function PitchContainer({
             >
               <div className="flex-1 overflow-y-auto px-8 py-6">
                 <Breadcrumb items={currentSectionData ? [currentSectionData.title] : []} />
-                {renderSection()}
+                <Suspense fallback={<SectionFallback />}>
+                  {renderSection()}
+                </Suspense>
               </div>
             </motion.div>
           </AnimatePresence>
@@ -361,7 +375,9 @@ export default function PitchContainer({
                     transition={{ duration: 0.35 }}
                     className="mx-auto max-w-[1200px]"
                   >
-                    {renderSection()}
+                    <Suspense fallback={<SectionFallback />}>
+                      {renderSection()}
+                    </Suspense>
                   </motion.div>
                 </AnimatePresence>
               </div>
