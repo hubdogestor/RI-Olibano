@@ -158,7 +158,7 @@ export default function HomePage() {
 
         <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-16 lg:flex-row lg:items-center">
           <motion.div initial="hidden" animate="visible" variants={fadeIn} className="flex-1 space-y-8">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Casa Olíbano · Medplex Santana</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">OLÍBANO</p>
             <h1 className="text-balance text-4xl font-serif text-[#354037] sm:text-5xl">
               Bem-estar integrativo de alto padrão com protocolos proprietários e métricas comprovadas.
             </h1>
