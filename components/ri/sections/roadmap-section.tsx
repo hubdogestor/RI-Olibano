@@ -4,9 +4,14 @@
 
 import { motion } from "framer-motion"
 
-import { CalendarClock, CheckCircle2 } from "lucide-react"
+import { CalendarClock, CheckCircle2, Clock } from "lucide-react"
 
 
+
+interface RoadmapItem {
+  text: string
+  status: string
+}
 
 interface RoadmapSectionProps {
 
@@ -14,7 +19,7 @@ interface RoadmapSectionProps {
 
     quarter: string
 
-    items: string[]
+    items: (string | RoadmapItem)[]
 
   }>
 
@@ -84,19 +89,26 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
                   </div>
 
                   <ul className="space-y-3">
-                    {phase.items.map((item, j) => (
-                      <motion.li
-                        key={item}
-                        initial={{ opacity: 0, x: -12 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, amount: 0.6 }}
-                        transition={{ duration: 0.3, delay: j * 0.08 }}
-                        className="flex gap-3 text-sm text-[#354037]"
-                      >
-                        <ProgressIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#ac4e15]" />
-                        <span>{item}</span>
-                      </motion.li>
-                    ))}
+                    {phase.items.map((item, j) => {
+                      const isObject = typeof item === "object" && item !== null && "text" in item
+                      const text = isObject ? (item as RoadmapItem).text : (item as string)
+                      const status = isObject ? (item as RoadmapItem).status : undefined
+                      const ItemIcon = status === "planned" ? Clock : CheckCircle2
+
+                      return (
+                        <motion.li
+                          key={text}
+                          initial={{ opacity: 0, x: -12 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true, amount: 0.6 }}
+                          transition={{ duration: 0.3, delay: j * 0.08 }}
+                          className="flex gap-3 text-sm text-[#354037]"
+                        >
+                          <ItemIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#ac4e15]" />
+                          <span>{text}</span>
+                        </motion.li>
+                      )
+                    })}
                   </ul>
                 </motion.div>
               )

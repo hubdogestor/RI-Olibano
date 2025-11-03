@@ -320,7 +320,7 @@
       "Jornada do cliente e funil de vendas com mapeamento incipiente",
       "Falta de automação de marketing e nutrição de leads",
       "SEO não otimizado e ausência de análise de palavras-chave",
-      "**Recursos limitados: orçamento restrito e equipe reduzida**"
+      "Recursos limitados: orçamento restrito e equipe reduzida"
     ],
     "opportunities": [
       "Estruturação de eixo educacional para gerar leads qualificados",
@@ -334,7 +334,6 @@
     "threats": [
       "Limitação de capital para abertura de mercado e anúncios pagos",
       "Setor de saúde e bem-estar em Porto Alegre competitivo e saturado",
-      "Pressão digital: falta de SEO compromete visibilidade",
       "Risco de estagnação na transição amador-profissional",
       "Definição incorreta de preço pode comprometer conversão",
       "Resistência cultural de parte do público à medicina integrativa"
@@ -422,7 +421,7 @@
       "quarter": "2025 Q3",
       "items": [
         "Lançamento do e-commerce integrado e conteúdo audiovisual premium;",
-        "**Programa de Alavancagem Empresarial IBC;**",
+        "Programa de Alavancagem Empresarial IBC;",
         "Content hub com depoimentos e vídeos imersivos;",
         "Campanha Despertar Olíbano - MedPlex."
       ]
@@ -430,10 +429,22 @@
     {
       "quarter": "2025 Q4",
       "items": [
-        "Contratação Concierge dedicado;",
-        "Expo Smart Fashion - Lounge Olíbano;",
-        "Membership + Gift experience;",
-        "Dashboard financeiro em tempo real (CAC, LTV, margem)."
+        {
+          "text": "Contratação Concierge dedicado;",
+          "status": "completed"
+        },
+        {
+          "text": "Expo Smart Fashion - Lounge Olíbano;",
+          "status": "completed"
+        },
+        {
+          "text": "Membership + Gift experience;",
+          "status": "planned"
+        },
+        {
+          "text": "Dashboard financeiro em tempo real (CAC, LTV, margem).",
+          "status": "planned"
+        }
       ]
     },
     {
