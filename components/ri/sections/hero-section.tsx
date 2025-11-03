@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { TrendingUp, Users, Award, ArrowUpRight } from "lucide-react"
 import Link from "next/link"
+import { containerVariants, fadeInY, hoverLiftSmall } from "@/lib/animations/variants"
 
 interface HeroSectionProps {
   data: {
@@ -18,18 +19,6 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({ data }: HeroSectionProps) {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1, delayChildren: 0.2 },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-  }
 
   const iconMap: Record<number, typeof Award> = {
     0: Award,
@@ -41,7 +30,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
   return (
     <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#c88715]/10 p-6 sm:p-8 md:p-12">
       <motion.div variants={containerVariants} initial="hidden" animate="visible" className="mx-auto max-w-5xl space-y-8 sm:space-y-12">
-        <motion.div variants={itemVariants} className="space-y-4 sm:space-y-6">
+        <motion.div variants={fadeInY} className="space-y-4 sm:space-y-6">
           <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">{data.title}</p>
           <motion.h1
             initial={{ opacity: 0, scale: 0.95 }}
@@ -52,12 +41,12 @@ export default function HeroSection({ data }: HeroSectionProps) {
             {data.headline}
           </motion.h1>
 
-          <motion.p variants={itemVariants} className="max-w-3xl text-base sm:text-lg text-[#4a463f] leading-relaxed">
+          <motion.p variants={fadeInY} className="max-w-3xl text-base sm:text-lg text-[#4a463f] leading-relaxed">
             {data.description}
           </motion.p>
         </motion.div>
 
-        <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+        <motion.div variants={fadeInY} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           {data.stats.map((stat, i) => {
             const Icon = iconMap[i] || Award
             return (
@@ -66,7 +55,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 + i * 0.1, duration: 0.5 }}
-                whileHover={{ y: -4 }}
+                {...hoverLiftSmall}
                 className="rounded-2xl border border-[#d9cbbb]/60 bg-white/85 p-4 sm:p-5 shadow-lg shadow-[#ac4e15]/10 backdrop-blur transition-all duration-300 hover:border-[#ac4e15]/30"
               >
                 <div className="mb-3 flex items-start justify-between">
@@ -79,7 +68,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
           })}
         </motion.div>
 
-        <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
+        <motion.div variants={fadeInY} className="flex flex-wrap gap-4">
           {data.ctas.map((cta) => (
             <Link
               key={cta.label}

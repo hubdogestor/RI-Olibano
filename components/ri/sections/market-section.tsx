@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { TrendingUp, Users, Target } from "lucide-react"
+import { containerVariantsStagger, scaleAndFadeIn } from "@/lib/animations/variants"
 
 interface MarketSectionProps {
   market: {
@@ -47,27 +48,9 @@ export default function MarketSection({ market }: MarketSectionProps) {
     },
   ]
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.15, delayChildren: 0.2 },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, scale: 0.9, y: 20 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      transition: { duration: 0.6 },
-    },
-  }
-
   return (
     <div className="h-full flex flex-col justify-center p-12 bg-gradient-to-br from-white via-gray-50 to-[#69683B]/3">
-      <motion.div variants={containerVariants} initial="hidden" animate="visible" className="max-w-5xl">
+      <motion.div variants={containerVariantsStagger.stagger_0_15} initial="hidden" animate="visible" className="max-w-5xl">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -75,15 +58,15 @@ export default function MarketSection({ market }: MarketSectionProps) {
         >
           Mercado & Clientes Prioritários
         </motion.h2>
-        <motion.p variants={itemVariants} className="text-lg text-gray-600 mb-12">
+        <motion.p variants={scaleAndFadeIn} className="text-lg text-gray-600 mb-12">
           Mercado de bem-estar premium cresce em ritmo duplo no Sul e valida nossa expansão.
         </motion.p>
 
-        <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <motion.div variants={containerVariantsStagger.stagger_0_15} className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {metrics.map((metric, i) => {
             const Icon = metric.icon
             return (
-              <motion.div key={i} variants={itemVariants} whileHover={{ y: -8 }} className="h-full">
+              <motion.div key={i} variants={scaleAndFadeIn} whileHover={{ y: -8 }} className="h-full">
                 <div
                   className={`bg-gradient-to-br ${metric.color} rounded-3xl p-8 text-white shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-default h-full flex flex-col`}
                 >

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { CheckCircle2, TrendingUp, Users, Award } from "lucide-react"
+import { containerVariants } from "@/lib/animations/variants"
 
 interface TractionSectionProps {
   traction: {
@@ -22,13 +23,6 @@ interface TractionSectionProps {
 const metricIcons = [Users, TrendingUp, Award, CheckCircle2]
 
 export default function TractionSection({ traction }: TractionSectionProps) {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1, delayChildren: 0.2 },
-    },
-  }
 
   return (
     <section aria-label="Tração e validação de mercado" className="h-full flex flex-col justify-center p-4 sm:p-6 md:p-8 lg:p-12 bg-gradient-to-br from-white via-gray-50 to-[#69683B]/3">

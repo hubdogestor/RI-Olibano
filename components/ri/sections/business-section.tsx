@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { DollarSign, TrendingUp, Zap } from "lucide-react"
+import { containerVariants, slideInFromLeft } from "@/lib/animations/variants"
 
 interface BusinessSectionProps {
   businessModel: {
@@ -19,18 +20,6 @@ interface BusinessSectionProps {
 }
 
 export default function BusinessSection({ businessModel }: BusinessSectionProps) {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1, delayChildren: 0.2 },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
-  }
 
   return (
     <div className="h-full flex flex-col justify-center p-12 bg-gradient-to-br from-white via-gray-50 to-[#AC4E15]/3">
@@ -49,7 +38,7 @@ export default function BusinessSection({ businessModel }: BusinessSectionProps)
             return (
               <motion.div
                 key={i}
-                variants={itemVariants}
+                variants={slideInFromLeft}
                 whileHover={{ x: 8 }}
                 className="group bg-gradient-to-r from-[#AC4E15]/10 to-[#C88715]/5 border-[#AC4E15]/30 border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 cursor-default"
               >
