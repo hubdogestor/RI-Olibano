@@ -85,28 +85,28 @@
     ]
   },
   "purpose": {
-    "mission": "Promover bem-estar integral por meio de jornadas sensoriais inovadoras, conectando corpo, mente e espírito com ciência, espiritualidade e excelência.",
-    "vision": "Ser referência em experiências integrativas do hemisfério sul nos próximos 5 anos, escalando de forma sustentável um ecossistema de autocuidado premium.",
+    "mission": "Criar jornadas sensoriais proprietárias que validem bem-estar através de dados (NPS, retenção, fisiologia), conectando inovação, ciência clínica e excelência operacional.",
+    "vision": "Operação modelo de bem-estar premium replicável que expande de Porto Alegre (2025) → clusters Brasil (2027) → potencial M&A em 2028-2030, mantendo padrão quality-first.",
     "values": [
       {
-        "title": "Autoconhecimento",
-        "description": "Cada jornada conduz o visitante para dentro, com terapias que despertam novas camadas de consciência."
+        "title": "Validação por dados",
+        "description": "Cada protocolo é mensurado (EEG, HRV, NPS). Retenção 78% + NPS 92 não são coincidência: são resultados comprovados de design científico."
       },
       {
-        "title": "Prevenção ativa",
-        "description": "Combinamos medicina integrativa e saberes ancestrais para manter corpo e mente equilibrados antes dos sintomas."
+        "title": "Qualidade operacional",
+        "description": "Atendimento <6 pessoas/dia, concierge dedicado, ambiente biofílico, produtos próprios. Operação premium exige rigor, não apenas storytelling."
       },
       {
-        "title": "Excelência sensorial",
-        "description": "Arquitetura, produtos e protocolos proprietários entregam ambiente quiet luxury impecável e resultados mensuráveis."
+        "title": "Inovação proprietária",
+        "description": "6 protocolos core + 12 sub-variações + 18 itens produtos. IP defensável. Difícil de copiar. Fundação para marca premium e potencial franquia."
       },
       {
-        "title": "Personalização verdadeira",
-        "description": "Diagnósticos detalhados e concierge dedicado desenham roteiros exclusivos para cada pessoa."
+        "title": "Escalabilidade com integridade",
+        "description": "Playbook documentado permite expansão (2ª unidade 2026, 3ª 2027). Mas cada nova operação passa por auditoria clínica de Betusa. NPS <85 = revisão de protocolo."
       },
       {
-        "title": "Inovação humana",
-        "description": "Tecnologia, dados e afeto caminham juntos para criar experiências que surpreendem sem perder cuidado."
+        "title": "Transparência financeira",
+        "description": "Investidor acompanha: receita/margem/CAC/ocupação mensal via dashboard. Auditoria trimestral. Burn rate explícito. Sem black boxes."
       }
     ]
   },
@@ -384,54 +384,54 @@
   },
   "goToMarket": {
     "headline": "Go-to-market e motor de crescimento",
-    "narrative": "Combinamos presença orgânica premium, influenciadores alinhados ao lifestyle e performance digital integrada ao CRM.",
+    "narrative": "Motor de aquisição multi-canal com priorização clara: 40% organic (Instagram stories + indicação), 35% parcerias (Medplex, médicos, empresas), 25% performance (Google Ads + retargeting). Meta: CAC R$450 → R$250 em 6 meses via otimização.",
     "channels": [
       {
-        "title": "Storytelling & social orgânico",
-        "description": "Conteúdo diário no Instagram, bastidores da casa e educação sobre autocuidado preventivo.",
-        "focus": "Reforço de marca e geração de leads inbound"
+        "title": "Storytelling & social orgânico (40% da aquisição)",
+        "description": "Post diário Instagram: bastidores clínicos, educação sobre bem-estar preventivo, depoimentos antes/depois (NPS 92). SEO + blog sobre EEG, frequências 432Hz, meditação guiada. Crescimento: 5k → 25k seguidores em 12 meses (target).",
+        "focus": "Leads inbound zero CAC. Target: 2-3 leads/dia via Instagram ou contato site."
       },
       {
-        "title": "Parcerias e influenciadoras",
-        "description": "Medplex, médicos parceiros e creators wellness com experiências guiadas e kits exclusivos.",
-        "focus": "Autoridade clínica e tráfego qualificado B2B/B2C"
+        "title": "Parcerias & influenciadoras (35% da aquisição)",
+        "description": "B2B: Convênios com Medplex (1k+ profissionais), 5-8 médicos parceiros (cardiologia, reumatologia, psiquiatria). B2C: 3-5 micro-influenciadores wellness (30-50k followers) com experiência gratuita + comissão R$100/referência. Programa corporate: bulk discounts para empresas 50+ pessoas.",
+        "focus": "CAC reduzido 70% via bulk (R$135/pessoa em grupos). Autoridade clínica amplificada (validação de médicos)."
       },
       {
-        "title": "Performance & e-commerce",
-        "description": "Campanhas segmentadas, SEO + blog e checkout Tray integrado ao WhatsApp concierge.",
-        "focus": "Conversão recorrente e escala controlada do CAC"
+        "title": "Performance & e-commerce (25% da aquisição)",
+        "description": "Google Ads (search 'bem-estar premium POA' + display remarketing), Instagram Ads (lookalike Clara + Ricardo personas), retargeting website. E-commerce Tray com 18 produtos. Checkout integrado WhatsApp concierge (conversão +8%). Relatório diário: CPM, CTR, ROAS.",
+        "focus": "Escala controlada. Target ROAS >3:1. CAC performance R$1.5k (aceitável para clientes recorrentes)."
       }
     ],
     "automations": [
       {
-        "title": "CRM segmentado",
-        "description": "Fluxos por jornada, abandono de carrinho, pós-experiência e reativação trimestral."
+        "title": "CRM segmentado (Metabase + Tray)",
+        "description": "5 fluxos automáticos: (1) lead → agendamento, (2) pós-primeira-sessão (NPS + reconversão), (3) abandono recorrência, (4) reativação trimestral (90 dias sem compra), (5) cross-sell produtos."
       },
       {
-        "title": "Loops WhatsApp + email",
-        "description": "Comunicações direcionadas, insights terapêuticos e ofertas personalizadas."
+        "title": "WhatsApp loops (Twilio + Tray)",
+        "description": "Dia 1 pós-sessão: video resumo protocolo + insights pessoais. Dia 7: recomendação de próxima sessão + desconto plano. Dia 30: feedback clínico + oferta produto complementar. Mensal: newsletter com dicas + evento exclusivo."
       },
       {
-        "title": "Mensuração contínua",
-        "description": "Dashboards AmigoTech + Tray acompanhando CAC, LTV e ocupação."
+        "title": "Analytics em tempo real (Metabase)",
+        "description": "Dashboard atualizado diariamente: receita acumulado, CAC por canal, ocupação, retenção 30/60/90 dias, NPS, ticket médio. Relatório semanal para founders. Trimestral com investidor + contador externo."
       }
     ],
     "kpis": [
       {
         "category": "Aquisição",
-        "metrics": ["CAC", "Conversão (leads/ecommerce)", "ROI"]
+        "metrics": ["CAC (total e por canal)", "CAC payback (months)", "Conversão (%) lead→agendamento", "Conversão (%) agendado→primeira sessão", "Cost per visit Instagram", "ROAS Google Ads"]
       },
       {
         "category": "Fidelização",
-        "metrics": ["LTV", "Recorrência", "NPS", "Retenção"]
+        "metrics": ["LTV (lifetime value R$3.2k)", "Retenção 30/60/90 dias", "Recorrência (% de clientes com 2+ sessões)", "NPS (target 85+)", "Churn mensal", "Viral coefficient (referências/cliente)"]
       },
       {
         "category": "Financeiro",
-        "metrics": ["Receita", "Ticket Médio", "Margem", "Break-even"]
+        "metrics": ["Receita total/mês", "Receita jornadas (40%)", "Receita recorrente (50%)", "Receita corporate (7%)", "Receita produtos (3%)", "Ticket médio (target R$799→R$950)", "Margem bruta (%)", "CAC:LTV ratio (target 7:1)"]
       },
       {
         "category": "Operacional",
-        "metrics": ["Ocupação", "Jornada", "Feedbacks"]
+        "metrics": ["Ocupação (%)", "Sessões/mês", "Jornada (minutos de agendamento a sessão)", "Satisfação pós-sessão", "Tempo de resposta WhatsApp"]
       }
     ]
   },
