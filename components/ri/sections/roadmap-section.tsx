@@ -31,7 +31,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
 
   return (
 
-    <div className="h-full overflow-y-auto flex flex-col justify-center p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#C88715]/5">
+    <section aria-label="Roadmap de desenvolvimento do Olíbano" className="h-full overflow-y-auto flex flex-col justify-center p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#C88715]/5">
 
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl">
 
@@ -51,7 +51,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
 
           </motion.h2>
 
-          <div className="h-1 w-16 bg-gradient-to-r from-[#C88715] to-[#AC4E15] rounded-full" />
+          <div className="h-1 w-16 bg-gradient-to-r from-[#C88715] to-[#AC4E15] rounded-full" aria-hidden="true" />
 
         </div>
 
@@ -59,11 +59,15 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
 
         <div className="relative mt-12">
 
-          <div className="absolute left-0 right-0 top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] via-[#AC4E15] to-transparent lg:block" />
+          <div className="absolute left-0 right-0 top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] via-[#AC4E15] to-transparent lg:block" aria-hidden="true" />
 
 
 
-          <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#C88715]/40">
+          <div
+            role="region"
+            aria-label="Timeline scrollável de marcos estratégicos (use as setas do teclado para navegar)"
+            className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#C88715]/40"
+          >
 
             {roadmap.map((phase, i) => {
               const [year, quarter] = phase.quarter.split(" ")
@@ -102,7 +106,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
                           transition={{ duration: 0.3, delay: j * 0.08 }}
                           className="flex gap-3 text-sm text-[#354037]"
                         >
-                          <ItemIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#ac4e15]" />
+                          <ItemIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#ac4e15]" aria-hidden="true" />
                           <span>{text}</span>
                         </motion.li>
                       )
@@ -117,7 +121,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
 
       </motion.div>
 
-    </div>
+    </section>
 
   )
 
