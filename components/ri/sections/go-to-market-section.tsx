@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { BarChart3, Megaphone, MessageSquare, Repeat2, ShoppingBag, Users } from "lucide-react"
+import { BarChart3, Megaphone, MessageSquare, Repeat2, ShoppingBag, Users, TrendingUp, Heart, DollarSign, Target } from "lucide-react"
 
 interface GoToMarketSectionProps {
   goToMarket: {
@@ -17,15 +17,20 @@ interface GoToMarketSectionProps {
       description: string
     }>
     kpis: Array<{
-      label: string
-      value: string
-      detail: string
+      category: string
+      metrics: string[]
     }>
   }
 }
 
 const channelIcons = [Megaphone, ShoppingBag, Users]
 const automationIcons = [Repeat2, MessageSquare, BarChart3]
+const kpiCategoryIcons: Record<string, typeof TrendingUp> = {
+  "Aquisição": TrendingUp,
+  "Fidelização": Heart,
+  "Financeiro": DollarSign,
+  "Operacional": Target,
+}
 
 export default function GoToMarketSection({ goToMarket }: GoToMarketSectionProps) {
   return (
@@ -102,20 +107,36 @@ export default function GoToMarketSection({ goToMarket }: GoToMarketSectionProps
             <section className="space-y-4">
               <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">KPIs monitorados</p>
               <div className="grid gap-4">
-                {goToMarket.kpis.map((kpi) => (
-                  <motion.div
-                    key={kpi.label}
-                    initial={{ opacity: 0, y: 16 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.4 }}
-                    transition={{ duration: 0.4 }}
-                    className="rounded-2xl border border-[#ac4e15]/25 bg-gradient-to-br from-[#ac4e15]/10 to-[#C88715]/5 p-6 text-[#354037] shadow-sm shadow-[#ac4e15]/10"
-                  >
-                    <p className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">{kpi.label}</p>
-                    <p className="text-3xl font-serif font-semibold text-[#354037]">{kpi.value}</p>
-                    <p className="mt-2 text-sm text-[#4a463f]/75">{kpi.detail}</p>
-                  </motion.div>
-                ))}
+                {goToMarket.kpis.map((kpi, index) => {
+                  const Icon = kpiCategoryIcons[kpi.category] || Target
+                  return (
+                    <motion.div
+                      key={kpi.category}
+                      initial={{ opacity: 0, y: 16 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, amount: 0.4 }}
+                      transition={{ duration: 0.4, delay: index * 0.08 }}
+                      className="rounded-2xl border border-[#ac4e15]/25 bg-gradient-to-br from-[#ac4e15]/10 to-[#C88715]/5 p-5 text-[#354037] shadow-sm shadow-[#ac4e15]/10"
+                    >
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white">
+                          <Icon className="h-4 w-4" />
+                        </div>
+                        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#ac4e15]">{kpi.category}</p>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {kpi.metrics.map((metric) => (
+                          <span
+                            key={metric}
+                            className="rounded-full bg-white/60 px-3 py-1 text-xs text-[#4a463f]"
+                          >
+                            {metric}
+                          </span>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )
+                })}
               </div>
             </section>
           </div>

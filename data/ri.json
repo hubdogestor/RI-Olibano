@@ -102,30 +102,113 @@
     ]
   },
   "customer": {
-    "title": "Quem serve o Olíbano",
+    "title": "Para quem serve o Olíbano",
     "segments": [
       {
-        "name": "Executivos e empreendedores (30-50 anos)",
-        "focus": "Buscam produtividade, resiliência e alívio do estresse acumulado."
+        "name": "Clara",
+        "profile": "34 anos, Gerente de Projetos, Tech | Porto Alegre",
+        "context": "Trabalho high-pressure, jornadas de 10-12h, ansiedade crônica, busca resultados mensuráveis.",
+        "pains": [
+          "Insônia recorrente e queda de performance cognitiva",
+          "Ansiedade não controlada por terapia tradicional",
+          "Frustração com soluções genéricas (apps de meditação, spas superficiais)"
+        ],
+        "desires": [
+          "Resultado tangível em poucas sessões",
+          "Ambiente privado e discreto",
+          "Protocolos baseados em ciência, não 'misticismo'",
+          "Flexibilidade de agendamento"
+        ],
+        "channels": ["Instagram de wellness premium", "LinkedIn de inovação em saúde", "Indicação de colegas executivos"]
       },
       {
-        "name": "Público fitness e saúde preventiva (20-40 anos)",
-        "focus": "Valorizam autocuidado profundo e tendências de bem-estar mensuráveis."
+        "name": "Ricardo",
+        "profile": "45 anos, CEO, Indústria | Caxias do Sul",
+        "context": "Executivo sênior, faturamento R$ 80M/ano, busca longevidade e performance sustentável.",
+        "pains": [
+          "Burnout latente, dificuldade de desacelerar",
+          "Dores crônicas (coluna, tensão muscular)",
+          "Resistência inicial a abordagens 'alternativas'"
+        ],
+        "desires": [
+          "Experiência premium alinhada ao status",
+          "Protocolo personalizado (não 'pacote padrão')",
+          "Privacidade absoluta",
+          "ROI claro: energia, foco, longevidade"
+        ],
+        "channels": ["Networking executivo (Lide, Endeavor)", "Indicação de médicos de confiança", "Eventos corporativos de alto nível"]
       },
       {
-        "name": "Adultos equilibrando família e carreira",
-        "focus": "Querem cuidar de si para sustentar jornadas familiares e profissionais."
+        "name": "Helena",
+        "profile": "38 anos, Enfermeira, Saúde | Porto Alegre",
+        "context": "Profissional de saúde em turnos exaustivos, conhece medicina tradicional mas busca integração.",
+        "pains": [
+          "Sobrecarga emocional (cuidar de outros, negligenciar a si)",
+          "Ceticismo: 'já tentei tudo, nada funciona'",
+          "Orçamento limitado vs. desejo de qualidade"
+        ],
+        "desires": [
+          "Validação científica das terapias oferecidas",
+          "Custo-benefício transparente",
+          "Ambiente acolhedor, não pretensioso",
+          "Profissionais que entendam suas dores específicas"
+        ],
+        "channels": ["WhatsApp de grupos de saúde", "Instagram de bem-estar baseado em evidências", "Boca a boca entre colegas de profissão"]
       },
       {
-        "name": "Pacientes em transição medicamentosa",
-        "focus": "Buscam suporte integrativo para reduzir ansiedade, insônia e efeitos colaterais."
+        "name": "Paulo",
+        "profile": "27 anos, Analista Financeiro, Mercado Financeiro | Porto Alegre",
+        "context": "Jovem profissional, cultura fitness consolidada, busca autocuidado além da academia.",
+        "pains": [
+          "Ansiedade pré-competição ou reuniões importantes",
+          "Recuperação pós-treino inadequada",
+          "Falta de diferencial em rotinas de wellness já saturadas (criolipólise, massagens comuns)"
+        ],
+        "desires": [
+          "Experiência instagramável (mas com resultado real)",
+          "Tecnologia de ponta (gadgets, biohacking)",
+          "Combinação de estética + performance",
+          "Protocolo de recuperação acelerada"
+        ],
+        "channels": ["Instagram fitness/biohacking", "YouTube de longevidade e performance", "Indicação de personal trainers"]
       },
       {
-        "name": "Perfis introspectivos (quietos)",
-        "focus": "Preferem experiências de silêncio, contemplação e aprofundamento emocional."
+        "name": "Marina",
+        "profile": "41 anos, Nutricionista, Clínica própria | Porto Alegre",
+        "context": "Profissional liberal, renda variável, valoriza autoconhecimento e crescimento pessoal.",
+        "pains": [
+          "Renda instável gera ansiedade financeira",
+          "Solidão empreendedora",
+          "Necessidade de renovar conhecimento constantemente"
+        ],
+        "desires": [
+          "Networking com profissionais alinhados",
+          "Experiência que possa recomendar aos pacientes",
+          "Autocuidado que reflita seus próprios valores profissionais",
+          "Potencial parceria comercial (indicação cruzada)"
+        ],
+        "channels": ["Eventos de nutrição integrativa", "Instagram de saúde holística", "Grupos de WhatsApp profissionais"]
+      },
+      {
+        "name": "João",
+        "profile": "62 anos, Aposentado, Ex-executivo | Porto Alegre",
+        "context": "Transição pós-carreira, busca propósito e qualidade de vida na terceira idade.",
+        "pains": [
+          "Sensação de inutilidade pós-aposentadoria",
+          "Dores crônicas (artrose, tensão)",
+          "Medo de declínio cognitivo",
+          "Resistência a tecnologia complexa"
+        ],
+        "desires": [
+          "Dignidade e respeito no atendimento",
+          "Protocolos simples, sem jargões",
+          "Longevidade com qualidade",
+          "Ambiente tranquilo, sem pressa"
+        ],
+        "channels": ["Indicação médica", "Grupos de convivência", "Família (filhos marcam a primeira sessão)"]
       }
     ],
-    "pains": [
+    "painsSummary": [
       "Insônia, queda de foco e desempenho",
       "Cansaço físico, dores musculares e falta de criatividade",
       "Ansiedade, traumas emocionais e crenças limitantes",
@@ -306,19 +389,20 @@
     ],
     "kpis": [
       {
-        "label": "CAC meta",
-        "value": "≤ R$ 500",
-        "detail": "Campanhas ajustadas semanalmente com base em ROI."
+        "category": "Aquisição",
+        "metrics": ["CAC", "Conversão (leads/ecommerce)", "ROI"]
       },
       {
-        "label": "Recorrência",
-        "value": "78%",
-        "detail": "Programas de 3-5 sessões e membership corporate."
+        "category": "Fidelização",
+        "metrics": ["LTV", "Recorrência", "NPS", "Retenção"]
       },
       {
-        "label": "Conversão e-commerce",
-        "value": "3,8%",
-        "detail": "Checkout otimizado, gatilhos de oferta e kits presente."
+        "category": "Financeiro",
+        "metrics": ["Receita", "Ticket Médio", "Margem", "Break-even"]
+      },
+      {
+        "category": "Operacional",
+        "metrics": ["Ocupação", "Jornada", "Feedbacks"]
       }
     ]
   },
