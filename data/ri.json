@@ -2,7 +2,7 @@
   "executiveSummary": {
     "title": "Executive Summary",
     "headline": "Bem-estar integrativo de alto padrão com protocolos proprietários e métricas comprovadas",
-    "description": "Centro premium que combina medicina integrativa, tecnologia sensorial e hospitalidade boutique em jornadas de 2 horas. Modelo replicável validado em 90 dias com NPS 92, retenção de 78% e ticket médio de R$799. Posicionamento único no mercado premium do Sul do Brasil.",
+    "description": "Centro premium que combina medicina integrativa, tecnologia sensorial e ambiente quiet luxury em jornadas de 2 horas. Modelo replicável validado em 90 dias com NPS 92, retenção de 78% e ticket médio de R$799. Posicionamento único no mercado premium do Sul do Brasil.",
     "stats": [
       {
         "label": "NPS",
@@ -89,7 +89,7 @@
       },
       {
         "title": "Excelência sensorial",
-        "description": "Arquitetura, produtos e protocolos proprietários entregam hospitalidade impecável e resultados mensuráveis."
+        "description": "Arquitetura, produtos e protocolos proprietários entregam ambiente quiet luxury impecável e resultados mensuráveis."
       },
       {
         "title": "Personalização verdadeira",
@@ -149,23 +149,19 @@
     "revenueStreams": [
       {
         "name": "Jornadas assinatura",
-        "description": "Sessões individuais a partir de R$ 799 com overdelivery sensorial.",
-        "margin": "Alto"
+        "description": "Sessões individuais a partir de R$ 799 com overdelivery sensorial."
       },
       {
         "name": "Protocolos recorrentes",
-        "description": "Planos de 3 a 5 sessões (R$ 2.157 a R$ 3.196) elevando LTV e ocupação.",
-        "margin": "Muito Alto"
+        "description": "Planos de 3 a 5 sessões (R$ 2.157 a R$ 3.196) elevando LTV e ocupação."
       },
       {
         "name": "Corporate & parcerias",
-        "description": "Programas para executivos, hubs médicos e empresas com kits exclusivos.",
-        "margin": "Alto"
+        "description": "Programas para executivos, hubs médicos e empresas com kits exclusivos."
       },
       {
         "name": "Produtos proprietários",
-        "description": "Blends, difusores e conteúdos digitais que estendem o ritual para casa.",
-        "margin": "Máximo"
+        "description": "Blends, difusores e conteúdos digitais que estendem o ritual para casa."
       }
     ],
     "unitEconomics": {
@@ -215,19 +211,9 @@
         "growth": "+100% ao mês no ciclo MVP"
       },
       {
-        "name": "Receita atual",
-        "value": "R$ 6,3 mil/mês",
-        "growth": "+35% com capacidade reduzida"
-      },
-      {
-        "name": "Ocupação concierge",
-        "value": "72%",
-        "growth": "Meta de 80% até agosto/25"
-      },
-      {
         "name": "Mix de produtos",
         "value": "18 itens",
-        "growth": "Blends e presentes corporativos em rollout"
+        "growth": "Blends e presentes corporativos em rollout. Selo de confiança: produção em laboratório com controle farmacêutico e registro nos órgãos competentes."
       }
     ]
   },
@@ -278,11 +264,11 @@
       {
         "name": "Olíbano",
         "focus": "Bem-estar holístico (físico + emocional + energético)",
-        "gap": "Preenche lacuna com protocolos proprietários e hospitalidade boutique",
+        "gap": "Preenche lacuna com protocolos proprietários e ambiente quiet luxury",
         "experience": "Imersão sensorial de alto padrão com concierge dedicado"
       }
     ],
-    "conclusion": "Criamos uma nova categoria no mercado premium, combinando ciência, tecnologia e hospitalidade boutique."
+    "conclusion": "Criamos uma nova categoria no mercado premium, combinando ciência, tecnologia e ambiente quiet luxury."
   },
   "goToMarket": {
     "headline": "Go-to-market e motor de crescimento",
@@ -311,7 +297,7 @@
       },
       {
         "title": "Loops WhatsApp + email",
-        "description": "Nutrição com playlists, insights terapêuticos e ofertas personalizadas."
+        "description": "Comunicações direcionadas, insights terapêuticos e ofertas personalizadas."
       },
       {
         "title": "Mensuração contínua",
@@ -341,16 +327,18 @@
       "quarter": "2025 Q3",
       "items": [
         "Lançar e-commerce integrado e conteúdo audiovisual premium.",
-        "Programa corporate piloto com empresas do Medplex.",
+        "**Programa de Alavancagem Empresarial IBC** (destaque estratégico)",
+        "Campanha Despertar Olíbano - MedPlex",
         "Content hub com depoimentos e vídeos imersivos."
       ]
     },
     {
       "quarter": "2025 Q4",
       "items": [
-        "Segunda sala sensorial ativa ampliando capacidade em 40%.",
-        "Gift experience e membership digital com recorrência trimestral.",
-        "Dashboard financeiro em tempo real (CAC, LTV, margem)."
+        "Contratação Concierge dedicado",
+        "Expo Smart Fashion - Lounge Olíbano",
+        "Gift experience (planejado)",
+        "Dashboard financeiro em tempo real - planejado (CAC, LTV, margem)"
       ]
     },
     {
@@ -374,7 +362,7 @@
     {
       "name": "Betusa Kramer",
       "role": "COO & Co-founder",
-      "bio": "Médica integrativa, cria os protocolos sensoriais, lidera equipe clínica e relacionamentos estratégicos de saúde.",
+      "bio": "Médica integrativa, lidera equipe clínica, relacionamentos estratégicos de saúde e gestão financeira.",
       "image": "/team/betusa.jpg",
       "email": "betusa@olibanovip.com.br",
       "links": [
@@ -393,7 +381,7 @@
     {
       "name": "Alexandre Freire",
       "role": "CEO & Co-founder",
-      "bio": "Executivo de tecnologia e growth, conduz estratégia, finanças, parcerias e expansão comercial do Olíbano.",
+      "bio": "Executivo de tecnologia e growth, cria protocolos sensoriais proprietários, conduz parcerias e expansão comercial do Olíbano.",
       "image": "/team/alexandre.jpg",
       "email": "alexandre@olibanovip.com.br",
       "links": [
@@ -407,7 +395,7 @@
     {
       "name": "Leonardo Menezes",
       "role": "CPO & Co-founder",
-      "bio": "Especialista em produto e operações omnichannel, integra experiência física, digital e dados do negócio.",
+      "bio": "Especialista em produto e operações omnichannel, conduz estratégia, inovação e integração de experiência física, digital e dados do negócio.",
       "image": "/team/leonardo.jpg",
       "email": "leonardo@olibanovip.com.br",
       "links": [

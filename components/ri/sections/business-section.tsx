@@ -9,7 +9,6 @@ interface BusinessSectionProps {
     revenueStreams: Array<{
       name: string
       description: string
-      margin: string
     }>
     unitEconomics: {
       LTV: string
@@ -17,20 +16,6 @@ interface BusinessSectionProps {
       ratio: string
     }
   }
-}
-
-const marginConfig: Record<string, { bg: string; border: string; badge: string }> = {
-  Alto: { bg: "from-[#AC4E15]/10 to-[#C88715]/5", border: "border-[#AC4E15]/30", badge: "bg-[#AC4E15] text-white" },
-  "Muito Alto": {
-    bg: "from-[#C88715]/10 to-[#AC4E15]/5",
-    border: "border-[#C88715]/30",
-    badge: "bg-[#C88715] text-white",
-  },
-  Máximo: {
-    bg: "from-[#69683B]/10 to-[#354037]/5",
-    border: "border-[#69683B]/30",
-    badge: "bg-[#69683B] text-white",
-  },
 }
 
 export default function BusinessSection({ businessModel }: BusinessSectionProps) {
@@ -61,20 +46,16 @@ export default function BusinessSection({ businessModel }: BusinessSectionProps)
         {/* Revenue Streams */}
         <div className="space-y-4 mb-16">
           {businessModel.revenueStreams.map((stream, i) => {
-            const config = marginConfig[stream.margin as keyof typeof marginConfig]
             return (
               <motion.div
                 key={i}
                 variants={itemVariants}
                 whileHover={{ x: 8 }}
-                className={`group bg-gradient-to-r ${config.bg} ${config.border} border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 cursor-default`}
+                className="group bg-gradient-to-r from-[#AC4E15]/10 to-[#C88715]/5 border-[#AC4E15]/30 border rounded-2xl p-6 hover:shadow-lg transition-all duration-300 cursor-default"
               >
-                <div className="flex justify-between items-start mb-3">
-                  <h3 className="text-lg font-semibold text-[#354037] group-hover:text-[#C88715] transition-colors">
-                    {stream.name}
-                  </h3>
-                  <span className={`text-xs font-bold px-4 py-2 rounded-lg ${config.badge}`}>{stream.margin}</span>
-                </div>
+                <h3 className="text-lg font-semibold text-[#354037] group-hover:text-[#C88715] transition-colors mb-3">
+                  {stream.name}
+                </h3>
                 <p className="text-gray-700 group-hover:text-gray-900 transition-colors">{stream.description}</p>
               </motion.div>
             )
