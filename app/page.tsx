@@ -219,7 +219,7 @@ export default function HomePage() {
         </motion.div>
       </section>
 
-      <section id="problema" className="px-6 sm:px-8 lg:px-12">
+      <section id="oportunidade" className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl space-y-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
             <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Oportunidade de mercado</p>
@@ -263,7 +263,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="experiencia" className="px-6 sm:px-8 lg:px-12">
+      <section id="diferenciais" className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl space-y-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
             <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Diferenciais competitivos</p>
@@ -296,7 +296,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="resultados" className="px-6 sm:px-8 lg:px-12">
+      <section id="tracao" className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl space-y-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
             <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Tração e validação</p>
@@ -373,34 +373,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <section id="time" className="px-6 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl space-y-12">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Time fundador</p>
-            <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">Expertise complementar em medicina, tecnologia e operações.</h2>
-            <p className="max-w-3xl text-lg text-[#4a463f]">Investidores apostam em times. Reunimos competências clínicas, estratégia de crescimento e execução omnichannel para construir operação escalável com governança desde o dia zero.</p>
-          </motion.div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {teamMembers.map((member, index) => (
-              <motion.article
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.45, delay: index * 0.08 }}
-                className="flex h-full flex-col gap-3 rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 text-[#354037] shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
-              >
-                <p className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">{member.role}</p>
-                <h3 className="text-xl font-serif font-semibold">{member.name}</h3>
-                <p className="text-sm text-[#4a463f]">{member.bio}</p>
-              </motion.article>
-            ))}
-          </div>
-        </div>
-      </section>
-
 
       <section id="contato" className="px-6 sm:px-8 lg:px-12">
         <motion.div

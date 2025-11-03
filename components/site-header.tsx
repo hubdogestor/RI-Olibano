@@ -10,8 +10,9 @@ import { cn } from "@/lib/utils"
 
 const navLinks = [
   { label: "O Olíbano", href: "/#hero" },
-  { label: "Jornada Sensorial", href: "/#experiencia" },
-  { label: "Resultados", href: "/#resultados" },
+  { label: "Oportunidade", href: "/#oportunidade" },
+  { label: "Diferenciais", href: "/#diferenciais" },
+  { label: "Tração", href: "/#tracao" },
   { label: "Contato", href: "/#contato" },
 ]
 
