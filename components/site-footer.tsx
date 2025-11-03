@@ -10,7 +10,7 @@ const socialLinks = [
   { icon: Facebook, href: "https://www.facebook.com/olibano.vip/", label: "Facebook" },
   { icon: Linkedin, href: "https://www.linkedin.com/company/olibanovip/", label: "LinkedIn" },
   { icon: Music, href: "https://www.tiktok.com/@olibanovip", label: "TikTok" },
-  { icon: Phone, href: "http://wa.me/5551993622621", label: "WhatsApp" },
+  { icon: Message-circle, href: "http://wa.me/5551993622621", label: "WhatsApp" },
   { icon: Globe, href: "https://olibanovip.com.br/", label: "Site Institucional" },
 ]
 
