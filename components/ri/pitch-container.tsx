@@ -121,23 +121,36 @@ export default function PitchContainer({
   }
 
   useEffect(() => {
-    if (!isImmersive) {
-      return
-    }
     const handleKeydown = (event: KeyboardEvent) => {
-      if (event.key === "ArrowRight" || event.key === "PageDown" || event.code === "Space") {
-        event.preventDefault()
-        if (nextSection) {
-          onSectionChange(nextSection.id)
-        }
+      const target = event.target as HTMLElement
+      const tagName = target?.tagName.toLowerCase()
+
+      // Não interceptar navegação em inputs ou textareas
+      if (tagName === "input" || tagName === "textarea" || target?.contentEditable === "true") {
+        return
       }
-      if (event.key === "ArrowLeft" || event.key === "PageUp") {
-        event.preventDefault()
-        if (previousSection) {
-          onSectionChange(previousSection.id)
+
+      // Navegação por teclado ativada em modo imersivo OU quando usando setas explicitamente
+      const isArrowKey = event.key === "ArrowRight" || event.key === "ArrowLeft"
+      const isPageKey = event.key === "PageDown" || event.key === "PageUp"
+      const isSpaceKey = event.code === "Space"
+
+      if ((isArrowKey || isPageKey || (isSpaceKey && isImmersive)) && (nextSection || previousSection)) {
+        if (event.key === "ArrowRight" || event.key === "PageDown" || event.code === "Space") {
+          event.preventDefault()
+          if (nextSection) {
+            onSectionChange(nextSection.id)
+          }
+        }
+        if (event.key === "ArrowLeft" || event.key === "PageUp") {
+          event.preventDefault()
+          if (previousSection) {
+            onSectionChange(previousSection.id)
+          }
         }
       }
     }
+
     window.addEventListener("keydown", handleKeydown)
     return () => window.removeEventListener("keydown", handleKeydown)
   }, [isImmersive, nextSection, onSectionChange, previousSection])
