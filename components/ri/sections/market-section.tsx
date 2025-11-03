@@ -20,6 +20,7 @@ export default function MarketSection({ market }: MarketSectionProps) {
   const metrics = [
     {
       label: "TAM",
+      subtitle: "Total Addressable Market / Mercado Total",
       value: market.tam,
       revenue: market.tamRevenue,
       desc: market.insights[0] || "",
@@ -28,6 +29,7 @@ export default function MarketSection({ market }: MarketSectionProps) {
     },
     {
       label: "SAM",
+      subtitle: "Mercado Endereçável",
       value: market.sam,
       revenue: market.samRevenue,
       desc: market.insights[1] || "",
@@ -36,6 +38,7 @@ export default function MarketSection({ market }: MarketSectionProps) {
     },
     {
       label: "SOM",
+      subtitle: "Mercado Atingível",
       value: market.som,
       revenue: market.somRevenue,
       desc: market.insights[2] || "",
@@ -80,9 +83,9 @@ export default function MarketSection({ market }: MarketSectionProps) {
           {metrics.map((metric, i) => {
             const Icon = metric.icon
             return (
-              <motion.div key={i} variants={itemVariants} whileHover={{ y: -8 }}>
+              <motion.div key={i} variants={itemVariants} whileHover={{ y: -8 }} className="h-full">
                 <div
-                  className={`bg-gradient-to-br ${metric.color} rounded-3xl p-8 text-white shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-default`}
+                  className={`bg-gradient-to-br ${metric.color} rounded-3xl p-8 text-white shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-default h-full flex flex-col`}
                 >
                   <div className="flex items-start gap-3 mb-6">
                     <motion.div
@@ -93,7 +96,7 @@ export default function MarketSection({ market }: MarketSectionProps) {
                     >
                       <Icon className="w-6 h-6" />
                     </motion.div>
-                    <p className="text-2xl font-bold font-serif mt-1">{metric.label}</p>
+                    <p className="text-4xl font-bold font-serif mt-1">{metric.label}</p>
                   </div>
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -101,15 +104,11 @@ export default function MarketSection({ market }: MarketSectionProps) {
                     transition={{ delay: 0.4 + i * 0.1, duration: 0.5 }}
                     className="mb-4 pl-1"
                   >
-                    <p className="text-sm opacity-75 italic mb-2">
-                      {metric.label === "TAM" && "(Total Addressable Market / Mercado Total)"}
-                      {metric.label === "SAM" && "(Serviceable Available Market)"}
-                      {metric.label === "SOM" && "(Serviceable Obtainable Market)"}
-                    </p>
+                    <p className="text-sm opacity-75 italic mb-3">({metric.subtitle})</p>
                     <p className="text-3xl font-bold mb-1">{metric.value}</p>
                     <p className="text-lg font-bold opacity-90">{metric.revenue}</p>
                   </motion.div>
-                  <p className="text-xs leading-relaxed opacity-85 pl-1">{metric.desc.replace(/^[^:]+:\s*/, "Racional: ")}</p>
+                  <p className="text-xs leading-relaxed opacity-85 pl-1 flex-grow">{metric.desc.replace(/^[^:]+:\s*/, "Racional: ")}</p>
                 </div>
               </motion.div>
             )
