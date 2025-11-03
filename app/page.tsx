@@ -160,10 +160,10 @@ export default function HomePage() {
           <motion.div initial="hidden" animate="visible" variants={fadeIn} className="flex-1 space-y-8">
             <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Casa Olíbano · Medplex Santana</p>
             <h1 className="text-balance text-4xl font-serif text-[#354037] sm:text-5xl">
-              Santuário de recalibração do sistema nervoso para quem lidera em alta intensidade.
+              Bem-estar integrativo de alto padrão com protocolos proprietários e métricas comprovadas.
             </h1>
             <p className="max-w-2xl text-pretty text-lg text-[#4a463f] sm:text-xl">
-              Protocolos multisensoriais desenvolvidos por médicos, ambiente boutique e métricas validadas. Transformamos pressão crônica em performance sustentável para executivos, líderes e empreendedores que valorizam autocuidado estratégico.
+              Jornada sensorial de 2 horas que combina medicina integrativa, tecnologia e hospitalidade boutique. Modelo replicável validado em 90 dias com NPS 92, retenção de 78% e ticket médio de R$799. Posicionamento único no mercado premium do Sul do Brasil.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
