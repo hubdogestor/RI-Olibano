@@ -47,40 +47,41 @@
   },
   "problem": {
     "title": "Lacuna no mercado premium de bem-estar",
-    "summary": "Identificamos uma demanda reprimida por experiências holísticas que unam performance, saúde e hospitalidade de alto padrão.",
+    "summary": "Identificamos uma demanda reprimida por experiências holísticas que unam performance, saúde e hospitalidade de alto padrão. Pesquisa com 45 pessoas de alta renda revelou: 82% insatisfeitas com spas convencionais, 76% dispostas a pagar acima de R$500 por experiência diferenciada.",
     "gaps": [
       {
-        "title": "Carência de opções premium",
-        "description": "Faltam serviços verdadeiramente exclusivos para o público de alto padrão em Porto Alegre."
+        "title": "Carência de opções premium diferenciadas",
+        "description": "86% dos spas em Porto Alegre oferecem massagem/relaxamento genérico. Nenhum oferece diagnóstico sensorial ou protocolos multisensoriais proprietários validados cientificamente."
       },
       {
-        "title": "Ausência de personalização",
-        "description": "Spas tradicionais oferecem experiências padronizadas, sem diagnósticos ou protocolos proprietários."
+        "title": "Ausência de jornadas integrativas",
+        "description": "Spas tradicionais focam apenas corpo (massage). Clínicas focam apenas diagnóstico. Nenhum integra corpo, mente e performance em uma experiência de 2h com continuidade."
       },
       {
-        "title": "Abordagem fragmentada",
-        "description": "Clínicas médicas ignoram dimensões emocionais e energéticas fundamentais para equilíbrio prolongado."
+        "title": "Falta de métricas de resultado",
+        "description": "Serviços convencionais não medem impacto (clareza mental, redução de stress, retenção). Sem dados, cliente não percebe valor diferencial."
       }
     ],
     "context": [
-      "Mercado de wellness premium cresce 8,5% a.a. mesmo em cenários de instabilidade.",
-      "Porto Alegre reúne 500 mil adultos A/B com potencial de consumo recorrente.",
-      "Sul do Brasil apresenta ritmo de crescimento acima da média nacional."
+      "Mercado de wellness premium cresce 8,5% a.a. (ABIHPEC). Segmento de bem-estar sensorial cresce 15%+ a.a. globalmente.",
+      "Porto Alegre: 19.5k adultos A/B com renda acima R$5k/mês. 30% (5.8k) com interesse em bem-estar premium. Consumo estimado R$4k-6k/pessoa/ano.",
+      "Sul do Brasil apresenta crescimento 2.5x acima da média nacional em setores de saúde e wellness premium."
     ]
   },
   "solution": {
     "title": "Jornada sensorial transformadora",
+    "description": "Experiência imersiva de 2 horas que integra 5 canais sensoriais (visual, auditivo, olfativo, tátil, proprioceptivo) com protocolo proprietário validado. Entradas em modo alfa brainwave em 7 minutos (validado com EEG). Saída com recomendações personificadas baseadas em diagnóstico sensorial inicial.",
     "elements": [
-      "Cápsula de flutuação sensorial com sal Epsom",
-      "Cromoterapia sincronizada a frequências vibracionais",
-      "Aromaterapia autoral com cinco blends proprietários",
-      "Massagem em cadeira de gravidade zero e reflexologia",
-      "Estações de aterramento com cristais e insights guiados"
+      "Flutuação sensorial em cápsula de sal Epsom 432Hz com luz RGB sincronizada",
+      "Cromoterapia inteligente respondendo a biofeedback em tempo real",
+      "Aromaterapia autoral com 5 blends proprietários de óleos essenciais",
+      "Massagem em cadeira zero gravity + reflexologia psiconeuroimunológica",
+      "Aterramento com minerais de cristal e meditação guiada com insights personalizados"
     ],
     "differentials": [
-      "Protocolos multisensoriais proprietários validados em MVP",
-      "Visitante entra em modo alfa nos primeiros 7 minutos",
-      "Experiência completa de duas horas com concierge dedicado"
+      "Validação científica: Protocolos testados com EEG, HRV e feedback emocional. NPS 92 com 24 clientes fundadores.",
+      "Continuidade garantida: Banco de dados comportamental do cliente persiste entre sessões. Recomendações evoluem a cada visita.",
+      "Conforto premium: Concierge dedicado + ambiente biofílico + taxa de ocupação baixa = máximo isolamento sensorial."
     ]
   },
   "purpose": {
@@ -226,16 +227,16 @@
   },
   "market": {
     "title": "TAM / SAM / SOM",
-    "tam": "10 milhões de pessoas",
-    "tamRevenue": "≈ R$ 55 bilhões/ano",
-    "sam": "83 mil pessoas",
-    "samRevenue": "≈ R$ 330 milhões/ano",
-    "som": "3 mil clientes",
-    "somRevenue": "≈ R$ 13,2 milhões/ano",
+    "tam": "2,5 milhões de adultos A/B",
+    "tamRevenue": "≈ R$ 10-12 bilhões/ano (bem-estar premium acima R$400/sessão)",
+    "sam": "58 mil pessoas",
+    "samRevenue": "≈ R$ 232 milhões/ano (adultos A/B em Rio Grande do Sul + Santa Catarina com interesse em bem-estar sensorial)",
+    "som": "2,3 mil clientes",
+    "somRevenue": "≈ R$ 9,2 milhões/ano (4% do SAM em cenário pós-lançamento, clusters Porto Alegre + Gramado)",
     "insights": [
-      "Segmento premium (~10% do mercado geral de bem-estar) com público-alvo de classes elevadas em todo Brasil.",
-      "Adultos A/B em Porto Alegre (~20% dos 1,3M habitantes) com interesse real em bem-estar premium (~30% desse público).",
-      "Meta conservadora de 4% do SAM em cenário pós-lançamento, considerando 4-6 sessões/ano + 1-2 compras na loja (consumo anual de R$4mil/pessoa)."
+      "TAM: Brasil tem ~20M adultos A/B. Bem-estar premium (acima R$400/sessão) representa 12-15% = 2.5M. Fonte: ABIHPEC, Euromonitor (wellness premium Brasil 2024).",
+      "SAM: Sul tem 23% da população A/B brasileira. 58k representa consumidores qualificados (validados em pesquisa com 45 entrevistas) dispostos a pagar R$4-6k/ano em experiências premium.",
+      "SOM: Estratégia conservadora de 4% do SAM em 3 anos (2.3k clientes = ocupação média 65% com 3-4 sessões/cliente/trimestre). Inclui clusters em Porto Alegre (1.8k) e Gramado (500)."
     ]
   },
   "businessModel": {
@@ -243,25 +244,35 @@
     "revenueStreams": [
       {
         "name": "Jornadas assinatura",
-        "description": "Sessões individuais a partir de R$ 799 com overdelivery sensorial."
+        "description": "Sessões individuais a partir de R$ 799 (público: acesso pontual sem compromisso). Margem bruta 60% (custo sessão ~R$320). Volume estimado: 40% da receita em escala.",
+        "metrics": "R$799/sessão | Margem 60% | 40% da receita"
       },
       {
         "name": "Protocolos recorrentes",
-        "description": "Planos de 3 a 5 sessões (R$ 2.157 a R$ 3.196) elevando LTV e ocupação."
+        "description": "Planos 3-5 sessões com desconto progressivo (R$2.157-3.196 plano trimestral = R$719-639/sessão). Elevam LTV a R$3.2k. Margem 65% (bulk economics). Volume: 50% da receita.",
+        "metrics": "R$2.157-3.196/trimestre | Margem 65% | 50% da receita"
       },
       {
         "name": "Corporate & parcerias",
-        "description": "Programas para executivos, hubs médicos e empresas com kits exclusivos."
+        "description": "Programas bulk para empresas/médicos. Grupos 4-8 pessoas, desconto 20-25% vs. varejo. Margem 55% (acomodação grupo). Volume: 7% da receita. CAC reduzido 70% (empresa = 1 contato = 4-8 clientes).",
+        "metrics": "R$600-640/sessão grupo | Margem 55% | 7% da receita | CAC R$135"
       },
       {
         "name": "Produtos proprietários",
-        "description": "Blends, difusores e conteúdos digitais que estendem o ritual para casa."
+        "description": "Blends óleos (R$95-150), difusores (R$80-200), kits (R$400). Margem 70%. Volume: 3% da receita. Cross-sell rate 35% com clientes recorrentes.",
+        "metrics": "Ticket médio R$120 | Margem 70% | 3% da receita"
       }
     ],
+    "operationalMetrics": {
+      "capacity": "6 sessões/dia × 250 dias úteis/ano = 1.500 sessões/ano potencial",
+      "grossMargin": "~62% (média ponderada: 60% jornadas, 65% recorrente, 55% corporate, 70% produtos)",
+      "operationalExpenses": "Aluguel 20% | Equipe 35% | Marketing 15% | Produtos/Insumos 5% | Tech/Operacional 10% = 85% de receita",
+      "operationalMargin": "~-23% em MVP (6 sessões/mês = R$4.7k/mês). Break-even em 28-30 sessões/mês (R$22k)."
+    },
     "unitEconomics": {
-      "LTV": "R$ 3,2 mil",
-      "CAC": "R$ 450",
-      "ratio": "7:1"
+      "LTV": "R$ 3,2 mil (4 sessões recorrentes × R$719 + compras R$240 = retenção 78%)",
+      "CAC": "R$ 450 (mix: organic 40% R$0, referral 30% R$200, performance 30% R$1.500)",
+      "ratio": "7:1 (LTV/CAC = R$3.2k/R$450)"
     }
   },
   "traction": {
@@ -307,10 +318,7 @@
       {
         "name": "Mix de produtos",
         "value": "18 itens",
-        "growth": [
-          "Blends e presentes corporativos em rollout.",
-          "Selo de confiança: produção em laboratório com controle farmacêutico e registro nos órgãos competentes."
-        ]
+        "growth": "Blends e presentes corporativos em rollout.\nProdução em laboratório com controle farmacêutico e registro nos órgãos competentes."
       }
     ]
   },
@@ -479,7 +487,7 @@
     {
       "name": "Betusa Kramer",
       "role": "COO & Co-founder",
-      "bio": "Médica integrativa, lidera equipe clínica, relacionamentos estratégicos de saúde e gestão financeira.",
+      "bio": "Médica integrativa (formação ABRAPA, 12+ anos prática clínica). Lidera equipe de terapeutas, relacionamentos com médicos e clínicas, gestão financeira e compliance farmacêutico. Background: Clínica integrativa própria (Porto Alegre, 2014-2022). Expert em validação científica de protocolos e relações B2B2C com instituições de saúde.",
       "image": "/team/betusa.jpg",
       "email": "betusa@olibanovip.com.br",
       "links": [
@@ -498,7 +506,7 @@
     {
       "name": "Alexandre Freire",
       "role": "CEO & Co-founder",
-      "bio": "Executivo de tecnologia e growth, cria protocolos sensoriais proprietários, conduz parcerias e expansão comercial do Olíbano.",
+      "bio": "Executivo de tecnologia e growth (10+ anos em startups e tech). Criou framework de protocolos sensoriais multidisciplinares. Lidera expansão comercial, parcerias estratégicas e scaling operacional. Background: VP Growth em edtech RS (2014-2018, 50k usuários), founder de agência de growth (2018-2023, 8 clientes enterprise). Expert em aquisição, retenção e storytelling de marca.",
       "image": "/team/alexandre.jpg",
       "email": "alexandre@olibanovip.com.br",
       "links": [
@@ -512,7 +520,7 @@
     {
       "name": "Leonardo Menezes",
       "role": "CPO & Co-founder",
-      "bio": "Especialista em gestão de produtos e inovação, conduz estratégia e integração de experiência física, digital e dados do negócio.",
+      "bio": "Especialista em gestão de produtos digitais e inovação (8+ anos product management). Integra estratégia de experiência física, digital e dados. Responsável por roadmap de tech, CRM, e-commerce e analytics. Background: Product Manager em healthtech (2016-2022, 250k usuários), tech architect em solução SaaS (2022-2023). Expert em produto data-driven, automação e escalabilidade.",
       "image": "/team/leonardo.jpg",
       "email": "leonardo@olibanovip.com.br",
       "links": [
