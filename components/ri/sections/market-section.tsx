@@ -29,7 +29,7 @@ export default function MarketSection({ market }: MarketSectionProps) {
     },
     {
       label: "SAM",
-      subtitle: "Mercado Endereçável",
+      subtitle: "Serviceable Available Market / Mercado Endereçável",
       value: market.sam,
       revenue: market.samRevenue,
       desc: market.insights[1] || "",
@@ -38,7 +38,7 @@ export default function MarketSection({ market }: MarketSectionProps) {
     },
     {
       label: "SOM",
-      subtitle: "Mercado Atingível",
+      subtitle: "Serviceable Obtainable Market / Mercado Atingível",
       value: market.som,
       revenue: market.somRevenue,
       desc: market.insights[2] || "",

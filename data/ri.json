@@ -226,7 +226,7 @@
   },
   "market": {
     "title": "TAM / SAM / SOM",
-    "tam": "10MM de pessoas",
+    "tam": "10 milhões de pessoas",
     "tamRevenue": "≈ R$ 55 bilhões/ano",
     "sam": "83 mil pessoas",
     "samRevenue": "≈ R$ 330 milhões/ano",
@@ -307,7 +307,10 @@
       {
         "name": "Mix de produtos",
         "value": "18 itens",
-        "growth": "Blends e presentes corporativos em rollout.\n*Selo de confiança: produção em laboratório com controle farmacêutico e registro nos órgãos competentes.*"
+        "growth": [
+          "Blends e presentes corporativos em rollout.",
+          "Selo de confiança: produção em laboratório com controle farmacêutico e registro nos órgãos competentes."
+        ]
       }
     ]
   },
