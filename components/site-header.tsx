@@ -75,9 +75,9 @@ export default function SiteHeader() {
           <Link
             href="/ri"
             className={cn(
-              "hidden md:inline-flex items-center gap-2 rounded-full border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b]",
+              "hidden md:inline-flex items-center gap-2 rounded-full border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b]",
               "px-5 py-2 text-sm font-semibold uppercase tracking-[0.18em] text-white shadow-lg shadow-[#ac4e15]/25 transition-transform hover:scale-[1.02]",
-              pathname === "/ri" && "ring-2 ring-offset-2 ring-[#d59d40]/40 ring-offset-[#faf7f1]",
+              pathname === "/ri" && "ring-2 ring-offset-2 ring-[#C88715]/40 ring-offset-[#faf7f1]",
             )}
           >
             Investidores
@@ -141,7 +141,7 @@ export default function SiteHeader() {
               <Link
                 href="/ri"
                 onClick={() => setIsMenuOpen(false)}
-                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-lg shadow-[#ac4e15]/25"
+                className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-lg shadow-[#ac4e15]/25"
               >
                 Área do Investidor
                 <Home className="h-4 w-4" />

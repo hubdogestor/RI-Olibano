@@ -64,7 +64,7 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
                 transition={{ duration: 0.4 }}
                 className="rounded-3xl border border-[#d9cbbb]/60 bg-white/85 p-6 text-[#354037] shadow-lg shadow-[#ac4e15]/10"
               >
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/30">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white shadow-lg shadow-[#ac4e15]/30">
                   <Icon className="h-5 w-5" />
                 </div>
                 <p className="mt-4 text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">{metric.label}</p>
@@ -77,7 +77,7 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.4 }}
             transition={{ duration: 0.4 }}
-            className="rounded-3xl border border-[#ac4e15]/20 bg-gradient-to-br from-[#ac4e15]/10 to-[#d59d40]/5 p-6 text-[#354037] shadow-lg shadow-[#ac4e15]/15"
+            className="rounded-3xl border border-[#ac4e15]/20 bg-gradient-to-br from-[#ac4e15]/10 to-[#C88715]/5 p-6 text-[#354037] shadow-lg shadow-[#ac4e15]/15"
           >
             <p className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">Tese do round</p>
             <p className="mt-2 text-sm text-[#4a463f]/80">{investment.round.description}</p>

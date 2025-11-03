@@ -159,7 +159,7 @@ export default function PitchContainer({
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.25 }}
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-sm font-bold text-white shadow-sm shadow-[#ac4e15]/30"
+              className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-sm font-bold text-white shadow-sm shadow-[#ac4e15]/30"
             >
               {formattedIndex}
             </motion.span>
@@ -209,7 +209,7 @@ export default function PitchContainer({
           </div>
         </div>
 
-        <div className="flex-1 overflow-hidden rounded-2xl bg-gradient-to-br from-white via-[#f6eee2] to-[#d59d40]/10">
+        <div className="flex-1 overflow-hidden rounded-2xl bg-gradient-to-br from-white via-[#f6eee2] to-[#C88715]/10">
           <AnimatePresence mode="wait">
             <motion.div
               key={`inline-${activeSection}`}
@@ -258,7 +258,7 @@ export default function PitchContainer({
                         className={cn(
                           "flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left text-[0.68rem] font-semibold uppercase tracking-[0.26em] transition-all",
                           isActive
-                            ? "bg-gradient-to-r from-[#ac4e15]/15 to-[#d59d40]/20 text-[#ac4e15]"
+                            ? "bg-gradient-to-r from-[#ac4e15]/15 to-[#C88715]/20 text-[#ac4e15]"
                             : "text-[#4a463f]/70 hover:bg-white/90 hover:text-[#ac4e15]",
                         )}
                       >
@@ -283,7 +283,7 @@ export default function PitchContainer({
                     {overlayMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
                   </button>
                   <div className="flex items-center gap-3">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-sm font-bold text-white shadow-sm shadow-[#ac4e15]/30">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-sm font-bold text-white shadow-sm shadow-[#ac4e15]/30">
                       {formattedIndex}
                     </span>
                     <div className="space-y-1">
@@ -320,7 +320,7 @@ export default function PitchContainer({
                 <div className="flex items-center gap-3">
                   <button
                     onClick={handleToggleImmersive}
-                    className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b] px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white shadow-lg shadow-[#ac4e15]/20 transition-transform hover:scale-[1.02]"
+                    className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b] px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-white shadow-lg shadow-[#ac4e15]/20 transition-transform hover:scale-[1.02]"
                   >
                     <Minimize2 className="h-4 w-4" />
                     Sair

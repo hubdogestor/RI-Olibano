@@ -58,7 +58,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
 
 
 
-          <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#d59d40]/40">
+          <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#C88715]/40">
 
             {roadmap.map((phase, i) => {
               const [year, quarter] = phase.quarter.split(" ")
@@ -74,7 +74,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
                   className="group relative flex w-80 min-w-[20rem] snap-center flex-col rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-7 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
                 >
                   <div className="mb-5 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]">
-                    <span className="inline-flex h-14 w-14 flex-col items-center justify-center gap-0.5 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white font-semibold shadow-lg shadow-[#ac4e15]/30">
+                    <span className="inline-flex h-14 w-14 flex-col items-center justify-center gap-0.5 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white font-semibold shadow-lg shadow-[#ac4e15]/30">
                       <span className="text-xs leading-tight tracking-[0.12em]">
                         {quarter ?? phase.quarter}
                       </span>

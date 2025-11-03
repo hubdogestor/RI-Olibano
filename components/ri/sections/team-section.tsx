@@ -78,7 +78,7 @@ export default function TeamSection({ team }: TeamSectionProps) {
                         sizes="112px"
                       />
                     ) : (
-                      <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-3xl font-serif text-white">
+                      <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-3xl font-serif text-white">
                         {member.name.charAt(0)}
                       </div>
                     )}

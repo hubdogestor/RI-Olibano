@@ -53,8 +53,8 @@ export default function TractionSection({ traction }: TractionSectionProps) {
         <div className="mb-16">
           <h3 className="text-xl font-semibold mb-8 text-[#354037]">Linha do Tempo</h3>
           <div className="relative">
-            <div className="absolute left-10 right-10 top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] via-[#D59D40] to-transparent lg:block" />
-            <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-6 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#d59d40]/40">
+            <div className="absolute left-10 right-10 top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] to-transparent lg:block" />
+            <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-6 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#C88715]/40">
               {traction.milestones.map((milestone, i) => {
                 const [year = "", quarter = ""] = milestone.period.split(" ")
                 return (
@@ -67,7 +67,7 @@ export default function TractionSection({ traction }: TractionSectionProps) {
                     className="group relative flex w-72 min-w-[18rem] snap-center flex-col rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
                   >
                     <div className="mb-4 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]">
-                      <span className="inline-flex h-14 w-14 flex-col items-center justify-center gap-0.5 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/40">
+                      <span className="inline-flex h-14 w-14 flex-col items-center justify-center gap-0.5 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white shadow-lg shadow-[#ac4e15]/40">
                         <span className="text-xs font-semibold leading-tight tracking-[0.12em]">{quarter || year}</span>
                         <span className="text-[0.55rem] leading-tight tracking-[0.2em]">{quarter ? year : ""}</span>
                       </span>

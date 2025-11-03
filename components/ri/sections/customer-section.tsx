@@ -85,10 +85,10 @@ export default function CustomerSection({ customer }: CustomerSectionProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.5 }}
-          className="rounded-3xl border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15]/5 to-[#d59d40]/10 p-8 shadow-inner shadow-[#ac4e15]/15"
+          className="rounded-3xl border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15]/5 to-[#C88715]/10 p-8 shadow-inner shadow-[#ac4e15]/15"
         >
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] p-3">
+            <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] p-3">
               <AlertTriangle className="h-6 w-6 text-white" />
             </div>
             <div className="space-y-2">

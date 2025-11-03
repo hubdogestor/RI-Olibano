@@ -42,7 +42,7 @@ export default function ProblemSection({ problem }: ProblemSectionProps) {
               transition={{ duration: 0.45, delay: index * 0.08 }}
               className="flex h-full flex-col gap-3 rounded-3xl border border-[#d9cbbb]/60 bg-white/85 p-6 shadow-lg shadow-[#ac4e15]/12 backdrop-blur"
             >
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/30">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white shadow-lg shadow-[#ac4e15]/30">
                 <AlertCircle className="h-5 w-5" />
               </div>
               <h3 className="text-xl font-semibold text-[#354037]">{gap.title}</h3>

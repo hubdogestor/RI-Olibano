@@ -45,7 +45,7 @@ export default function SolutionSection({ solution }: SolutionSectionProps) {
                 transition={{ duration: 0.35, delay: index * 0.08 }}
                 className="flex items-start gap-3 rounded-2xl border border-[#ac4e15]/20 bg-white/80 p-4 shadow-sm shadow-[#ac4e15]/10"
               >
-                <span className="mt-0.5 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40]" />
+                <span className="mt-0.5 h-2 w-2 flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715]" />
                 <p className="text-sm text-[#4a463f]/85">{element}</p>
               </motion.div>
             ))}
@@ -70,7 +70,7 @@ export default function SolutionSection({ solution }: SolutionSectionProps) {
                 className="rounded-2xl border border-[#d9cbbb]/60 bg-white/85 p-5 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] p-1.5">
+                  <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] p-1.5">
                     <CheckCircle className="h-5 w-5 text-white" />
                   </div>
                   <p className="text-base text-[#354037] font-medium">{differential}</p>

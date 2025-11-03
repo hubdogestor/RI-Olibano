@@ -169,7 +169,7 @@ export default function HomePage() {
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 href="/ri"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white shadow-lg shadow-[#ac4e15]/25 transition-transform hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white shadow-lg shadow-[#ac4e15]/25 transition-transform hover:scale-[1.02]"
               >
                 Pitch completo
                 <ArrowUpRight className="h-4 w-4" />
@@ -241,7 +241,7 @@ export default function HomePage() {
                 transition={{ duration: 0.4, delay: index * 0.07 }}
                 className="relative flex h-full flex-col gap-4 rounded-3xl border border-[#d9cbbb]/60 bg-white/75 p-8 shadow-lg shadow-[#354037]/5 backdrop-blur"
               >
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/30">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white shadow-lg shadow-[#ac4e15]/30">
                   <signal.icon className="h-5 w-5" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#354037]">{signal.title}</h3>
@@ -285,7 +285,7 @@ export default function HomePage() {
                 transition={{ duration: 0.45, delay: index * 0.08 }}
                 className="relative flex h-full flex-col gap-4 rounded-3xl border border-[#d9cbbb]/60 bg-white/75 p-8 shadow-lg shadow-[#354037]/5 backdrop-blur"
               >
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/30">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white shadow-lg shadow-[#ac4e15]/30">
                   <pillar.icon className="h-5 w-5" />
                 </div>
                 <h3 className="text-2xl text-[#354037]">{pillar.title}</h3>
@@ -318,7 +318,7 @@ export default function HomePage() {
                 transition={{ duration: 0.45, delay: index * 0.08 }}
                 className="relative flex h-full flex-col gap-4 rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-8 shadow-lg shadow-[#354037]/5 backdrop-blur"
               >
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/30">
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white shadow-lg shadow-[#ac4e15]/30">
                   <item.icon className="h-5 w-5" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#354037]">{item.title}</h3>
@@ -414,7 +414,7 @@ export default function HomePage() {
             <Image src="/brand/pattern.png" alt="Pattern Olíbano" fill className="object-cover mix-blend-overlay" />
           </div>
           <div className="relative space-y-6">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#d59d40]">Relações com investidores</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#C88715]">Relações com investidores</p>
             <h2 className="text-balance text-4xl sm:text-5xl">
               Construir a categoria de wellness integrativo premium no Brasil.
             </h2>

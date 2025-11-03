@@ -80,7 +80,7 @@ export default function Sidebar({ sections, activeSection, onSectionChange, isIm
 
             isActive
 
-              ? "bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b] text-white shadow-lg shadow-[#ac4e15]/30"
+              ? "bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b] text-white shadow-lg shadow-[#ac4e15]/30"
 
               : "text-[#4a463f] hover:bg-[#ac4e15]/10 hover:text-[#ac4e15]",
 
@@ -295,7 +295,7 @@ export default function Sidebar({ sections, activeSection, onSectionChange, isIm
 
                 transition={{ duration: 0.4, ease: "easeOut" }}
 
-                className="h-full rounded-full bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b]"
+                className="h-full rounded-full bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b]"
 
               />
 

@@ -29,7 +29,7 @@ const automationIcons = [Repeat2, MessageSquare, BarChart3]
 
 export default function GoToMarketSection({ goToMarket }: GoToMarketSectionProps) {
   return (
-    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-[#f5f3f0] via-white to-[#d59d40]/10 p-12">
+    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-[#f5f3f0] via-white to-[#C88715]/10 p-12">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-6xl space-y-12">
         <div className="space-y-4">
           <motion.h2
@@ -57,7 +57,7 @@ export default function GoToMarketSection({ goToMarket }: GoToMarketSectionProps
                     transition={{ duration: 0.45, delay: index * 0.1 }}
                     className="group flex h-full flex-col gap-4 rounded-3xl border border-[#d9cbbb]/60 bg-white/85 p-6 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
                   >
-                    <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/30">
+                    <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white shadow-lg shadow-[#ac4e15]/30">
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="text-xl font-semibold text-[#354037]">{channel.title}</h3>
@@ -109,7 +109,7 @@ export default function GoToMarketSection({ goToMarket }: GoToMarketSectionProps
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.4 }}
-                    className="rounded-2xl border border-[#ac4e15]/25 bg-gradient-to-br from-[#ac4e15]/10 to-[#d59d40]/5 p-6 text-[#354037] shadow-sm shadow-[#ac4e15]/10"
+                    className="rounded-2xl border border-[#ac4e15]/25 bg-gradient-to-br from-[#ac4e15]/10 to-[#C88715]/5 p-6 text-[#354037] shadow-sm shadow-[#ac4e15]/10"
                   >
                     <p className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">{kpi.label}</p>
                     <p className="text-3xl font-serif font-semibold text-[#354037]">{kpi.value}</p>

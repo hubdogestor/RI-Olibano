@@ -53,19 +53,19 @@ export default function CompetitionSection({ competition }: CompetitionSectionPr
                 transition={{ duration: 0.45, delay: index * 0.1 }}
                 className={`relative flex h-full flex-col gap-4 rounded-3xl border p-6 shadow-lg backdrop-blur ${
                   isOlibano
-                    ? "border-[#ac4e15]/40 bg-gradient-to-br from-[#ac4e15]/10 via-white/90 to-[#d59d40]/10 shadow-[#ac4e15]/20"
+                    ? "border-[#ac4e15]/40 bg-gradient-to-br from-[#ac4e15]/10 via-white/90 to-[#C88715]/10 shadow-[#ac4e15]/20"
                     : "border-[#d9cbbb]/60 bg-white/85 shadow-[#354037]/5"
                 }`}
               >
                 {isOlibano && (
-                  <div className="absolute -right-2 -top-2 rounded-full bg-gradient-to-r from-[#ac4e15] to-[#d59d40] px-3 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-lg">
+                  <div className="absolute -right-2 -top-2 rounded-full bg-gradient-to-r from-[#ac4e15] to-[#C88715] px-3 py-1 text-xs font-bold uppercase tracking-wider text-white shadow-lg">
                     Nossa posição
                   </div>
                 )}
                 <div
                   className={`inline-flex h-12 w-12 items-center justify-center rounded-full ${
                     isOlibano
-                      ? "bg-gradient-to-br from-[#ac4e15] to-[#d59d40] text-white shadow-lg shadow-[#ac4e15]/30"
+                      ? "bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white shadow-lg shadow-[#ac4e15]/30"
                       : "bg-[#354037]/10 text-[#354037]"
                   }`}
                 >
@@ -99,10 +99,10 @@ export default function CompetitionSection({ competition }: CompetitionSectionPr
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.5 }}
-          className="rounded-3xl border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15]/5 to-[#d59d40]/10 p-8 shadow-inner shadow-[#ac4e15]/15"
+          className="rounded-3xl border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15]/5 to-[#C88715]/10 p-8 shadow-inner shadow-[#ac4e15]/15"
         >
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] p-3">
+            <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] p-3">
               <Sparkles className="h-6 w-6 text-white" />
             </div>
             <div className="space-y-2">

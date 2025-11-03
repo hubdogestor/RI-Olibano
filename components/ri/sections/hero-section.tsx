@@ -81,10 +81,10 @@ export default function HeroSection({ data }: HeroSectionProps) {
 
         <motion.section
           variants={itemVariants}
-          className="rounded-3xl border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15]/5 to-[#d59d40]/10 p-8 shadow-inner shadow-[#ac4e15]/15"
+          className="rounded-3xl border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15]/5 to-[#C88715]/10 p-8 shadow-inner shadow-[#ac4e15]/15"
         >
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#d59d40] p-3">
+            <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] p-3">
               <DollarSign className="h-6 w-6 text-white" />
             </div>
             <div className="space-y-2">
@@ -101,7 +101,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
               href={cta.href}
               className={`inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] transition-all ${
                 cta.variant === "default"
-                  ? "bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b] text-white shadow-lg shadow-[#ac4e15]/25 hover:scale-[1.02]"
+                  ? "bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b] text-white shadow-lg shadow-[#ac4e15]/25 hover:scale-[1.02]"
                   : "border border-[#ac4e15]/30 text-[#ac4e15] hover:bg-[#ac4e15]/10"
               }`}
             >

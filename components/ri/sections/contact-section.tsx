@@ -55,7 +55,7 @@ export default function ContactSection({ contact }: ContactSectionProps) {
           </a>
           <a
             href="https://wa.me/5551993622621"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] to-[#d59d40] px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-white shadow-lg shadow-[#ac4e15]/30 transition-transform hover:scale-[1.02]"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] to-[#C88715] px-6 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-white shadow-lg shadow-[#ac4e15]/30 transition-transform hover:scale-[1.02]"
           >
             <ArrowUpRight className="h-4 w-4" />
             Agendar imersão
