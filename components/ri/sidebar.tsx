@@ -267,44 +267,38 @@ export default function Sidebar({ sections, activeSection, onSectionChange, isIm
 
 
 
-        <div className="space-y-3 border-t border-[var(--sidebar-border)] px-6 py-5">
+        <div className="border-t border-[var(--sidebar-border)] px-6 py-3">
 
-          <div>
+          <div className="flex items-center justify-between mb-2">
 
-            <div className="flex items-center justify-between">
+            <span className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">Progresso</span>
 
-              <span className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">Progresso</span>
+            <span className="text-xs font-semibold text-[#ac4e15]">
 
-              <span className="text-xs font-semibold text-[#ac4e15]">
+              {activeIndex + 1}/{sections.length}
 
-                {activeIndex + 1}/{sections.length}
-
-              </span>
-
-            </div>
-
-            <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-[#ac4e15]/10">
-
-              <motion.div
-
-                key={activeSection}
-
-                initial={{ width: 0 }}
-
-                animate={{ width: `${((activeIndex + 1) / sections.length) * 100}%` }}
-
-                transition={{ duration: 0.4, ease: "easeOut" }}
-
-                className="h-full rounded-full bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b]"
-
-              />
-
-            </div>
+            </span>
 
           </div>
 
+          <div className="h-1.5 w-full overflow-hidden rounded-full bg-[#ac4e15]/10">
 
-          <p className="text-center text-[10px] uppercase tracking-[0.32em] text-[#ac4e15]/60">© 2025 Olíbano</p>
+            <motion.div
+
+              key={activeSection}
+
+              initial={{ width: 0 }}
+
+              animate={{ width: `${((activeIndex + 1) / sections.length) * 100}%` }}
+
+              transition={{ duration: 0.4, ease: "easeOut" }}
+
+              className="h-full rounded-full bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b]"
+
+            />
+
+          </div>
+
         </div>
 
       </aside>
