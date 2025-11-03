@@ -84,25 +84,32 @@ export default function MarketSection({ market }: MarketSectionProps) {
                 <div
                   className={`bg-gradient-to-br ${metric.color} rounded-3xl p-8 text-white shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-default`}
                 >
-                  <motion.div
-                    initial={{ scale: 0, rotate: -90 }}
-                    animate={{ scale: 1, rotate: 0 }}
-                    transition={{ delay: 0.3 + i * 0.1, duration: 0.5 }}
-                    className="w-14 h-14 rounded-xl bg-white/20 backdrop-blur flex items-center justify-center mb-6 group-hover:bg-white/30 transition-all"
-                  >
-                    <Icon className="w-7 h-7" />
-                  </motion.div>
-                  <p className="text-sm font-semibold opacity-90 mb-2 uppercase tracking-wider">{metric.label}</p>
+                  <div className="flex items-start gap-3 mb-6">
+                    <motion.div
+                      initial={{ scale: 0, rotate: -90 }}
+                      animate={{ scale: 1, rotate: 0 }}
+                      transition={{ delay: 0.3 + i * 0.1, duration: 0.5 }}
+                      className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur flex items-center justify-center flex-shrink-0 group-hover:bg-white/30 transition-all"
+                    >
+                      <Icon className="w-6 h-6" />
+                    </motion.div>
+                    <p className="text-2xl font-bold font-serif mt-1">{metric.label}</p>
+                  </div>
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.4 + i * 0.1, duration: 0.5 }}
-                    className="mb-3"
+                    className="mb-4 pl-1"
                   >
-                    <p className="text-5xl font-bold">{metric.value}</p>
-                    <p className="text-sm opacity-70 mt-1">{metric.revenue}</p>
+                    <p className="text-sm opacity-75 italic mb-2">
+                      {metric.label === "TAM" && "(Total Addressable Market / Mercado Total)"}
+                      {metric.label === "SAM" && "(Serviceable Available Market)"}
+                      {metric.label === "SOM" && "(Serviceable Obtainable Market)"}
+                    </p>
+                    <p className="text-3xl font-bold mb-1">{metric.value}</p>
+                    <p className="text-lg font-bold opacity-90">{metric.revenue}</p>
                   </motion.div>
-                  <p className="text-sm leading-relaxed opacity-90">{metric.desc}</p>
+                  <p className="text-xs leading-relaxed opacity-85 pl-1">{metric.desc.replace(/^[^:]+:\s*/, "Racional: ")}</p>
                 </div>
               </motion.div>
             )
