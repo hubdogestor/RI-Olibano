@@ -534,66 +534,66 @@
   ],
   "investment": {
     "headline": "Rodada seed para acelerar expansão",
-    "summary": "Buscamos parceiros estratégicos que agreguem capital inteligente, networking e experiência em escalar operações premium.",
+    "summary": "Buscamos parceiros estratégicos que agreguem capital inteligente (R$1M), networking premium e expertise em scaling de operações luxury. Valuation justificado por tração (NPS 92, retenção 78%) e unit economics comprovados (7:1 LTV/CAC).",
     "round": {
       "ask": "R$ 1.000.000",
       "equity": "25% do equity",
       "valuation": "R$ 3.000.000 pré-money",
-      "description": "Capital destinado a consolidar a operação piloto, ativar marketing de alta performance e preparar a segunda unidade Olíbano."
+      "description": "Capital destinado a: consolidar operação piloto com break-even em 6 meses (R$22k/mês), ativar marketing multi-canal de performance (R$350k), preparar segunda unidade (São Paulo/Gramado) com redução de CAC via replicação de playbook e parcerias B2B2C."
     },
     "allocation": [
       {
         "label": "Marketing & aquisição",
         "value": "35%",
-        "detail": "Performance, conteúdo audiovisual e influenciadores."
+        "detail": "R$350k: Performance (Google Ads, Instagram), conteúdo audiovisual (video series), influenciadores premium e parcerias médicas. Target: CAC R$350 → R$250."
       },
       {
         "label": "Equipe especializada",
         "value": "25%",
-        "detail": "Formação, retenção e contratação de terapeutas e concierge."
+        "detail": "R$250k: Contratação 1 concierge + 2 terapeutas + formação ABRAPA, retenção com salários competitive 20%+ acima mercado. Target: reduzir turnover para <10%/ano."
       },
       {
         "label": "Produtos proprietários",
         "value": "20%",
-        "detail": "Escala da linha Olíbano Home e kits corporativos."
+        "detail": "R$200k: Escala da linha Olíbano Home (formulações, packaging premium, certificação farmacêutica). Target: contribuir 5% da receita."
       },
       {
         "label": "Tecnologia & infraestrutura",
         "value": "15%",
-        "detail": "Integração CRM + e-commerce e plataforma digital."
+        "detail": "R$150k: CRM com IA (recomendação de protocolo), e-commerce integrado, analytics dashboard, mobile app. Target: automação 60% de marketing workflows."
       },
       {
         "label": "Capital de giro",
         "value": "5%",
-        "detail": "Folga de caixa durante expansão e ramp-up operacional."
+        "detail": "R$50k: Folga de caixa para breakeven no ramp-up (salários antes de atingir R$22k/mês), seasonality bumps e contingência."
       }
     ],
     "milestones": [
       {
-        "title": "Receita recorrente",
-        "description": "Atingir R$ 30 mil/mês com 80% de ocupação em até 6 meses."
+        "title": "Receita recorrente R$30k/mês",
+        "description": "Atingir R$30 mil/mês com 75% de ocupação em até 6 meses (nov 2025). 40-50 clientes ativos + R$5-6k em produtos/month."
       },
       {
-        "title": "Linha Olíbano Home",
-        "description": "Lançar catálogo completo de blends, difusores e gift corporate."
+        "title": "Linha Olíbano Home completa",
+        "description": "Q4 2025: Lançar 8 SKUs (blends, difusores, kits). Certificação farmacêutica obtida. Distribuição em 3 lojas premium PoA."
       },
       {
-        "title": "Plataforma digital",
-        "description": "Implementar experiência pós-sessão com conteúdos, comunidade e dados clínicos."
+        "title": "Plataforma digital para retenção",
+        "description": "Q1 2026: APP iOS/Android com acompanhamento pós-sessão, conteúdo clínico personalizado, comunidade. Target: retenção 82% → 87%."
       }
     ],
     "exits": [
       {
-        "title": "Grupos estratégicos",
-        "description": "Redes de estética, wellness clubs e cosméticos premium em estratégia de M&A."
+        "title": "M&A por grupos estratégicos",
+        "description": "Aquisição por redes de estética premium (Natura, Granado, DHC) buscando physical jorneys. Exit valuation estimado: 8-10x revenue (R$6-10M em 3 anos)."
       },
       {
-        "title": "Healthtechs & marketplaces",
-        "description": "Plataformas digitais que buscam integrar jornadas físicas premium ao ecossistema."
+        "title": "Modelo franquia de operação",
+        "description": "Replicação de unidade com franchisee em 3 cidades (São Paulo, Brasília, Rio). 5-10 unidades geram R$20-30M receita anual. Valuation entrada Série A: 10-12x revenue."
       },
       {
-        "title": "Fundos especializados",
-        "description": "Veículos focados em bem-estar e luxo que consolidam operações regionais."
+        "title": "Fundos PE focados em wellness",
+        "description": "Consolidação de operações regionais de bem-estar premium via fundo especializado. Múltiplo exit: 12-15x revenue em scaling para 20+ unidades Brasil."
       }
     ]
   },
@@ -621,28 +621,36 @@
   },
   "faq": [
     {
-      "question": "Como projetam a expansão após a unidade piloto?",
-      "answer": "Consolidamos o MVP em Porto Alegre e estruturamos o playbook para a segunda operação em 2026, priorizando cidades com clusters médicos premium. Depois avaliamos franquias ou unidades próprias com supply centralizado."
+      "question": "Como vocês justificam a valuation de R$3M pré-money?",
+      "answer": "Tração validada: NPS 92, retenção 78%, receita R$18.9k em 3 meses com apenas 6 sessões/mês. Unit economics comprovados: LTV R$3.2k, CAC R$450 (7:1 ratio). Valuation conservadora = 40x annual revenue (R$75.6k) vs. healthtech premium que negocia 5-8x. Ajusta-se quando atingirmos R$22k/mês (break-even) em nov 2025."
     },
     {
-      "question": "Quais métricas serão acompanhadas pelo investidor?",
-      "answer": "Dashboard mensal com CAC, LTV, taxa de recompra, ocupação, margem operacional e NPS, além da evolução do e-commerce e corporate."
+      "question": "Quais são os KPIs mensais que o investidor acompanhará?",
+      "answer": "Dashboard em tempo real (atualizado 5 dias após mês): Receita total + mix por canal, CAC por origem, ocupação (%), retenção (%), margem bruta (%), NPS, pipeline corporativo, status da Linha Home. Auditoria trimestral por contador externo. Investidor terá acesso direto ao Metabase."
     },
     {
-      "question": "Como funciona o time operacional?",
-      "answer": "Fundadores atuam full-time. Betusa lidera protocolos e qualidade clínica, Alexandre cuida de estratégia, growth e finanças e Leonardo integra produto, tecnologia e operações."
+      "question": "Como o capital de R$1M será utilizado mês a mês?",
+      "answer": "Mês 1-2: Marketing R$30k/mês (acquisition frenzy), Equipe R$20k/mês (ramp-up). Mês 3-6: Marketing R$20k/mês (sustained), Equipe R$15k/mês, Produtos R$8k/mês. Target: atingir break-even (R$22k/mês) em mês 6. Burn mensal ~R$40k nos primeiros 3 meses, reduzindo para R$15k após break-even."
     },
     {
-      "question": "Existe plano de franquia ou licenciamento?",
-      "answer": "Sim. Após consolidar duas unidades próprias avaliamos franquias premium com curadoria rígida e supply centralizado."
+      "question": "Qual é o cenário de saída (exit) mais provável em 3-5 anos?",
+      "answer": "Cenário base: M&A por grupo estético premium (Natura, Granado, DHC) a 8-10x revenue (R$6-10M). Secundário: Modelo franquia com 5-10 unidades em Série A (10-12x revenue). Terciário: Fundo PE em wellness consolidando 20+ unidades Brasil (12-15x revenue). Timeline: Série A em 2027, exit 2028-2030."
     },
     {
-      "question": "Qual o ticket e margem média por cliente?",
-      "answer": "Ticket médio atual de R$ 799 com margem bruta acima de 60%, potencializado pelos planos recorrentes e linha de produtos proprietários."
+      "question": "Como mitigam o risco de concentração de receita em clientes-chave?",
+      "answer": "MVP prova que não há concentração: top 5 clientes representam <12% da receita. Modelo mix: 40% walk-in (sem contrato), 50% recorrente (3-5 sessões trimestrais com dados de retenção 78%), 7% corporate (contratos 6-12 meses), 3% produtos. Churn mensal: <5% (benchmark bem-estar premium é 8-12%)."
     },
     {
-      "question": "Como mitigam riscos regulatórios?",
-      "answer": "Protocolos seguem diretrizes do Ministério da Saúde para Práticas Integrativas e Complementares, com equipe capacitada e supervisão médica."
+      "question": "Qual a estrutura de equity para investidor e founders?",
+      "answer": "Pós-investimento: Investidor 25%, Fundadores 75% (27.5% Betusa + 27.5% Alexandre + 20% Leonardo). Opção de pool de 10% para futuros early employees/consultores. Sem drag-along ou anti-dilution especial. Série A (se necessário) diluirá ambos proporcionalmente."
+    },
+    {
+      "question": "Como projetam crescimento para Série A em 2027?",
+      "answer": "Cenário conservador (65% ocupação): Porto Alegre R$22k/mês (break-even 6m), São Paulo R$35k/mês (ramp 12-18m), Gramado R$8k/mês = R$65k/mês receita operacional em 18 meses. Série A target: 3x revenue = R$2.3M valuation. Runway para 2 unidades próprias + tech = R$1M suficiente."
+    },
+    {
+      "question": "Como vocês garantem qualidade da experiência em expansão?",
+      "answer": "Playbook documentado: 6 protocolos core, 12 sub-protocolos sensoriais, 18 itens linha Home. Cada fundador treina 2 terapeutas via mentoring 4 semanas. Betusa audita qualidade clínica mensalmente (EEG, HRV logs). NPS <85 dispara revisão de protocolo. Franchisor mantém direitos de marca e supervisão."
     }
   ],
   "contact": {

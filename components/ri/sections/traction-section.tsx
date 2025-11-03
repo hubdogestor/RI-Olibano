@@ -103,7 +103,7 @@ export default function TractionSection({ traction }: TractionSectionProps) {
                   </div>
                 </div>
                 <p className="text-4xl font-bold text-[#354037] mb-2">{metric.value}</p>
-                <p className="text-sm font-semibold text-[#C88715]">{metric.growth}</p>
+                <p className="text-sm text-[#4a463f]/75 whitespace-pre-line">{metric.growth}</p>
               </motion.div>
             )
           })}

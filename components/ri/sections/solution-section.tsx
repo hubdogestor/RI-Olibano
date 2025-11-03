@@ -6,6 +6,7 @@ import { Sparkles, CheckCircle } from "lucide-react"
 interface SolutionSectionProps {
   solution: {
     title: string
+    description?: string
     elements: string[]
     differentials: string[]
   }
@@ -24,7 +25,7 @@ export default function SolutionSection({ solution }: SolutionSectionProps) {
             {solution.title}
           </motion.h2>
           <p className="max-w-3xl text-lg text-[#4a463f]">
-            Uma experiência completa de duas horas que combina protocolos terapêuticos, tecnologia sensorial e design imersivo.
+            {solution.description || "Uma experiência completa de duas horas que combina protocolos terapêuticos, tecnologia sensorial e design imersivo."}
           </p>
         </div>
 
