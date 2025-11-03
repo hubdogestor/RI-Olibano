@@ -133,7 +133,7 @@ export default function HomePage() {
         className="relative isolate overflow-hidden bg-gradient-to-br from-white via-[#f8f2e9] to-[#f3e4d1] px-6 pb-20 pt-24 sm:px-8 lg:px-12 lg:pt-28"
       >
         <div className="absolute inset-0 opacity-20">
-          <Image src="/brand/pattern.png" alt="Padrão OLÍBANO" fill priority className="object-cover mix-blend-multiply" />
+          <Image src="/brand/pattern.png" alt="Padrão OLÍBANO" fill priority className="object-cover mix-blend-multiply" sizes="100vw" />
         </div>
 
         <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-16 lg:flex-row lg:items-center">
@@ -171,6 +171,8 @@ export default function HomePage() {
                 width={640}
                 height={360}
                 className="w-full object-contain px-12 py-16 sm:px-16 sm:py-20"
+                priority
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 rounded-[32px] border border-white/40" />
             </div>
@@ -357,7 +359,7 @@ export default function HomePage() {
           className="relative mx-auto max-w-5xl overflow-hidden rounded-[36px] border border-[#d9cbbb]/70 bg-gradient-to-r from-[#354037] via-[#3f4a41] to-[#1f251f] p-10 sm:p-14 text-white shadow-[0_20px_60px_rgba(22,25,21,0.45)]"
         >
           <div className="absolute inset-0 opacity-30">
-            <Image src="/brand/pattern.png" alt="Pattern Olíbano" fill className="object-cover mix-blend-overlay" />
+            <Image src="/brand/pattern.png" alt="Pattern Olíbano" fill className="object-cover mix-blend-overlay" sizes="100vw" />
           </div>
           <div className="relative space-y-6">
             <p className="text-sm uppercase tracking-[0.4em] text-[#C88715]">Relações com investidores</p>

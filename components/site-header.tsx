@@ -53,6 +53,7 @@ export default function SiteHeader() {
               fill
               className="object-contain"
               priority
+              sizes="(max-width: 640px) 112px, 128px"
             />
           </span>
         </Link>
@@ -114,7 +115,7 @@ export default function SiteHeader() {
             >
               <div className="mb-8 flex items-center justify-between">
                 <span className="relative block h-10 w-24">
-                  <Image src="/brand/monogram.png" alt="OLÍBANO monograma" fill className="object-contain" />
+                  <Image src="/brand/monogram.png" alt="OLÍBANO monograma" fill className="object-contain" sizes="96px" />
                 </span>
                 <button
                   type="button"
