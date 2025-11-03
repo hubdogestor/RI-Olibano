@@ -106,7 +106,7 @@ export default function GoToMarketSection({ goToMarket }: GoToMarketSectionProps
 
             <section className="space-y-4">
               <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">KPIs monitorados</p>
-              <div className="grid gap-4">
+              <div className="grid gap-3">
                 {goToMarket.kpis.map((kpi, index) => {
                   const Icon = kpiCategoryIcons[kpi.category] || Target
                   return (
@@ -116,19 +116,19 @@ export default function GoToMarketSection({ goToMarket }: GoToMarketSectionProps
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, amount: 0.4 }}
                       transition={{ duration: 0.4, delay: index * 0.08 }}
-                      className="rounded-2xl border border-[#ac4e15]/25 bg-gradient-to-br from-[#ac4e15]/10 to-[#C88715]/5 p-5 text-[#354037] shadow-sm shadow-[#ac4e15]/10"
+                      className="rounded-xl border border-[#ac4e15]/20 bg-white/80 p-3 shadow-sm shadow-[#ac4e15]/10"
                     >
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white">
-                          <Icon className="h-4 w-4" />
+                      <div className="flex items-center gap-2 mb-2">
+                        <div className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white">
+                          <Icon className="h-3 w-3" />
                         </div>
-                        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#ac4e15]">{kpi.category}</p>
+                        <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#ac4e15]">{kpi.category}</p>
                       </div>
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-1.5 pl-8">
                         {kpi.metrics.map((metric) => (
                           <span
                             key={metric}
-                            className="rounded-full bg-white/60 px-3 py-1 text-xs text-[#4a463f]"
+                            className="rounded-full bg-[#ac4e15]/5 px-2 py-0.5 text-[0.65rem] text-[#4a463f]/70"
                           >
                             {metric}
                           </span>

@@ -299,7 +299,7 @@
       {
         "name": "Mix de produtos",
         "value": "18 itens",
-        "growth": "Blends e presentes corporativos em rollout. Selo de confiança: produção em laboratório com controle farmacêutico e registro nos órgãos competentes."
+        "growth": "Blends e presentes corporativos em rollout.\n*Selo de confiança: produção em laboratório com controle farmacêutico e registro nos órgãos competentes.*"
       }
     ]
   },
@@ -315,12 +315,12 @@
     ],
     "weaknesses": [
       "Comunicação da proposta de valor ainda pouco clara",
-      "Posicionamento e reconhecimento de marca fracos",
-      "Ausência de KPIs estruturados (ROI, CAC, LTV)",
-      "Jornada do cliente e funil de vendas não mapeados",
+      "Posicionamento e reconhecimento de marca com pouca amplitude",
+      "KPIs ainda não automatizados (ROI, CAC, LTV)",
+      "Jornada do cliente e funil de vendas com mapeamento incipiente",
       "Falta de automação de marketing e nutrição de leads",
       "SEO não otimizado e ausência de análise de palavras-chave",
-      "Recursos limitados: orçamento restrito e equipe reduzida"
+      "**Recursos limitados: orçamento restrito e equipe reduzida**"
     ],
     "opportunities": [
       "Estruturação de eixo educacional para gerar leads qualificados",
@@ -421,34 +421,34 @@
     {
       "quarter": "2025 Q3",
       "items": [
-        "Lançar e-commerce integrado e conteúdo audiovisual premium.",
-        "**Programa de Alavancagem Empresarial IBC** (destaque estratégico)",
-        "Campanha Despertar Olíbano - MedPlex",
-        "Content hub com depoimentos e vídeos imersivos."
+        "Lançamento do e-commerce integrado e conteúdo audiovisual premium;",
+        "**Programa de Alavancagem Empresarial IBC;**",
+        "Content hub com depoimentos e vídeos imersivos;",
+        "Campanha Despertar Olíbano - MedPlex."
       ]
     },
     {
       "quarter": "2025 Q4",
       "items": [
-        "Contratação Concierge dedicado",
-        "Expo Smart Fashion - Lounge Olíbano",
-        "Gift experience (planejado)",
-        "Dashboard financeiro em tempo real - planejado (CAC, LTV, margem)"
+        "Contratação Concierge dedicado;",
+        "Expo Smart Fashion - Lounge Olíbano;",
+        "Membership + Gift experience;",
+        "Dashboard financeiro em tempo real (CAC, LTV, margem)."
       ]
     },
     {
       "quarter": "2026 Q1",
       "items": [
-        "Roadshow para segunda unidade (Porto Alegre ou Florianópolis).",
-        "Lançamento da linha Olíbano Home e aromaterapia licenciada.",
+        "Roadshow para segunda unidade (Porto Alegre ou Florianópolis);",
+        "Lançamento da linha Olíbano Home e aromaterapia licenciada;",
         "Parcerias com healthtechs e marketplaces premium."
       ]
     },
     {
       "quarter": "2026 Q2",
       "items": [
-        "Estruturação de franquia/licenciamento com playbook completo.",
-        "Plataforma digital pós-sessão com comunidade e conteúdos guiados.",
+        "Estruturação de franquia/licenciamento com playbook completo;",
+        "Plataforma digital pós-sessão com comunidade e conteúdos guiados;",
         "Preparação para captação Série A e expansão multiunidade."
       ]
     }
@@ -490,7 +490,7 @@
     {
       "name": "Leonardo Menezes",
       "role": "CPO & Co-founder",
-      "bio": "Especialista em produto e operações omnichannel, conduz estratégia, inovação e integração de experiência física, digital e dados do negócio.",
+      "bio": "Especialista em gestão de produtos e inovação, conduz estratégia e integração de experiência física, digital e dados do negócio.",
       "image": "/team/leonardo.jpg",
       "email": "leonardo@olibanovip.com.br",
       "links": [
