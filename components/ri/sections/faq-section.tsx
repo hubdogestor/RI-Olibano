@@ -15,7 +15,10 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   return (
-    <div className="h-full overflow-y-auto flex flex-col justify-center p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#354037]/5">
+    <section
+      aria-label="Perguntas frequentes sobre investimento"
+      className="h-full overflow-y-auto flex flex-col justify-center p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#354037]/5"
+    >
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-4xl">
         <div className="mb-8">
           <motion.h2
@@ -26,7 +29,7 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
             Perguntas Frequentes
           </motion.h2>
           <p className="text-[#354037]/70 mt-2">Dúvidas comuns de investidores sobre OLÍBANO</p>
-          <div className="h-1 w-16 bg-gradient-to-r from-[#354037] to-[#C88715] rounded-full mt-4" />
+          <div className="h-1 w-16 bg-gradient-to-r from-[#354037] to-[#C88715] rounded-full mt-4" aria-hidden="true" />
         </div>
 
         <div className="space-y-3">
@@ -40,10 +43,12 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                aria-expanded={openIndex === i}
+                aria-controls={`faq-answer-${i}`}
                 className="w-full text-left bg-white border border-[#C88715]/20 rounded-2xl px-6 py-5 flex justify-between items-center hover:border-[#C88715]/50 hover:bg-gradient-to-r hover:from-[#C88715]/5 hover:to-transparent transition-all duration-300"
               >
                 <div className="flex items-start gap-4 flex-1">
-                  <HelpCircle className="w-5 h-5 text-[#C88715] flex-shrink-0 mt-0.5" />
+                  <HelpCircle className="w-5 h-5 text-[#C88715] flex-shrink-0 mt-0.5" aria-hidden="true" />
                   <span className="font-serif font-bold text-[#354037] group-hover:text-[#C88715] transition-colors text-left">
                     {item.question}
                   </span>
@@ -52,6 +57,7 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
                   animate={{ rotate: openIndex === i ? 180 : 0 }}
                   transition={{ duration: 0.2 }}
                   className="flex-shrink-0 text-[#C88715] ml-4"
+                  aria-hidden="true"
                 >
                   <ChevronDown size={20} />
                 </motion.div>
@@ -60,6 +66,9 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
               <AnimatePresence>
                 {openIndex === i && (
                   <motion.div
+                    id={`faq-answer-${i}`}
+                    role="region"
+                    aria-label={`Resposta: ${item.question}`}
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
@@ -74,6 +83,6 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
           ))}
         </div>
       </motion.div>
-    </div>
+    </section>
   )
 }

@@ -42,7 +42,10 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
   ]
 
   return (
-    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#ac4e15]/10 p-12">
+    <section
+      aria-label="Detalhes de investimento e rodada de captação"
+      className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#ac4e15]/10 p-12"
+    >
       <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-6xl space-y-12">
         <div className="space-y-4">
           <div className="flex items-center justify-between gap-4">
@@ -55,17 +58,19 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
             </motion.h2>
             <button
               onClick={() => setIsVisible(!isVisible)}
+              aria-expanded={isVisible}
+              aria-controls="investment-details"
               className="group flex items-center gap-2 rounded-full border border-[#ac4e15]/30 bg-white/80 px-4 py-2 text-sm font-medium text-[#ac4e15] shadow-sm transition-all hover:border-[#ac4e15]/50 hover:bg-[#ac4e15]/5 hover:shadow-md"
-              aria-label={isVisible ? "Ocultar conteúdo" : "Exibir conteúdo"}
+              aria-label={isVisible ? "Ocultar detalhes de investimento, alocação de capital e milestones" : "Exibir detalhes de investimento, alocação de capital e milestones"}
             >
               {isVisible ? (
                 <>
-                  <EyeOff className="h-4 w-4" />
+                  <EyeOff className="h-4 w-4" aria-hidden="true" />
                   <span>Ocultar</span>
                 </>
               ) : (
                 <>
-                  <Eye className="h-4 w-4" />
+                  <Eye className="h-4 w-4" aria-hidden="true" />
                   <span>Exibir</span>
                 </>
               )}
@@ -77,6 +82,9 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
         <AnimatePresence>
           {isVisible && (
             <motion.div
+              id="investment-details"
+              role="region"
+              aria-label="Detalhes de investimento, alocação de capital e milestones"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
@@ -95,8 +103,8 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
                 transition={{ duration: 0.4 }}
                 className="rounded-3xl border border-[#d9cbbb]/60 bg-white/85 p-6 text-[#354037] shadow-lg shadow-[#ac4e15]/10"
               >
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white shadow-lg shadow-[#ac4e15]/30">
-                  <Icon className="h-5 w-5" />
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white shadow-lg shadow-[#ac4e15]/30" aria-hidden="true">
+                  <Icon className="h-5 w-5" aria-hidden="true" />
                 </div>
                 <p className="mt-4 text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">{metric.label}</p>
                 <p className="mt-2 text-2xl font-semibold text-[#354037]">{metric.value}</p>
@@ -118,7 +126,7 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
         <div className="grid gap-8 lg:grid-cols-2">
           <section className="space-y-5">
             <div className="flex items-center gap-3">
-              <Goal className="h-5 w-5 text-[#ac4e15]" />
+              <Goal className="h-5 w-5 text-[#ac4e15]" aria-hidden="true" />
               <p className="text-sm uppercase tracking-[0.36em] text-[#ac4e15]">Alocação do capital</p>
             </div>
             <div className="space-y-4">
@@ -145,7 +153,7 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
 
           <section className="space-y-5">
             <div className="flex items-center gap-3">
-              <TrendingUp className="h-5 w-5 text-[#ac4e15]" />
+              <TrendingUp className="h-5 w-5 text-[#ac4e15]" aria-hidden="true" />
               <p className="text-sm uppercase tracking-[0.36em] text-[#ac4e15]">Metas pós-investimento</p>
             </div>
             <div className="space-y-4">
@@ -168,7 +176,7 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
 
         <section className="space-y-4">
           <div className="flex items-center gap-3">
-            <BriefcaseBusiness className="h-5 w-5 text-[#ac4e15]" />
+            <BriefcaseBusiness className="h-5 w-5 text-[#ac4e15]" aria-hidden="true" />
             <p className="text-sm uppercase tracking-[0.36em] text-[#ac4e15]">Rotas de exit mapeadas</p>
           </div>
           <div className="grid gap-6 lg:grid-cols-3">
@@ -191,6 +199,6 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
           )}
         </AnimatePresence>
       </motion.div>
-    </div>
+    </section>
   )
 }
