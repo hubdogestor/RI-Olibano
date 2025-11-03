@@ -160,11 +160,10 @@ export default function HomePage() {
           <motion.div initial="hidden" animate="visible" variants={fadeIn} className="flex-1 space-y-8">
             <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Casa Olíbano · Medplex Santana</p>
             <h1 className="text-balance text-4xl font-serif text-[#354037] sm:text-5xl">
-              Bem-estar científico com alma brasileira para uma vida que não desacelera.
+              Santuário de recalibração do sistema nervoso para quem lidera em alta intensidade.
             </h1>
             <p className="max-w-2xl text-pretty text-lg text-[#4a463f] sm:text-xl">
-              Transformamos pressão urbana em equilíbrio tangível com protocolos multisensoriais, hospitalidade boutique
-              e indicadores de performance validados. Um refúgio premium para quem entende autocuidado como investimento.
+              Protocolos multisensoriais desenvolvidos por médicos, ambiente boutique e métricas validadas. Transformamos pressão crônica em performance sustentável para executivos, líderes e empreendedores que valorizam autocuidado estratégico.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
@@ -172,20 +171,14 @@ export default function HomePage() {
                 href="/ri"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] via-[#d59d40] to-[#69683b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white shadow-lg shadow-[#ac4e15]/25 transition-transform hover:scale-[1.02]"
               >
-                Sala do Investidor
+                Pitch completo
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
-              <a
-                href="https://wa.me/5551993622621?text=Ol%C3%A1!%20Quero%20agendar%20uma%20experi%C3%AAncia%20na%20Casa%20OL%C3%8DBANO."
+              <Link
+                href="mailto:ri@olibanovip.com.br"
                 className="inline-flex items-center gap-2 rounded-full border border-[#ac4e15]/30 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/10"
               >
-                Agende sua visita
-              </a>
-              <Link
-                href="#journeys"
-                className="inline-flex items-center gap-2 rounded-full border border-transparent px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#354037] transition-colors hover:text-[#ac4e15]"
-              >
-                Conheça as jornadas
+                Contato RI
               </Link>
             </div>
           </motion.div>
@@ -229,13 +222,12 @@ export default function HomePage() {
       <section id="problema" className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl space-y-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Por que existimos</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Oportunidade de mercado</p>
             <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">
-              A pressão da vida em alta performance exige um refúgio à altura.
+              Gap estrutural no mercado premium de saúde integrativa no Sul do Brasil.
             </h2>
             <p className="max-w-3xl text-lg text-[#4a463f]">
-              Mapeamos as principais dores da nossa comunidade no Sul do Brasil. O Olíbano nasce para responder com uma
-              experiência científica, humana e financeiramente sustentável.
+              Identificamos demanda reprimida em segmento de alto valor com disposição a pagar por experiências personalizadas, cientificamente validadas e esteticamente impecáveis.
             </p>
           </motion.div>
 
@@ -274,13 +266,12 @@ export default function HomePage() {
       <section id="experiencia" className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl space-y-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Jornada sensorial</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Diferenciais competitivos</p>
             <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">
-              Multissensorialidade guiada por ciência integrativa.
+              Protocolo proprietário que combina ciência, design e curadoria terapêutica.
             </h2>
             <p className="max-w-3xl text-lg text-[#4a463f]">
-              Cada roteiro combina protocolos terapêuticos, tecnologia e design para acelerar resultados clínicos e
-              emocionais. O visitante entra em modo alfa nos primeiros 7 minutos.
+              Criamos uma nova categoria de experiência ao integrar medicina integrativa, tecnologia sensorial e hospitalidade boutique em um modelo escalável e defensável.
             </p>
           </motion.div>
 
@@ -308,13 +299,12 @@ export default function HomePage() {
       <section id="resultados" className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl space-y-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Resultados concretos</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Tração e validação</p>
             <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">
-              Métricas e governança que sustentam a expansão.
+              MVP operacional com métricas que confirmam product-market fit.
             </h2>
             <p className="max-w-3xl text-lg text-[#4a463f]">
-              Crescemos com disciplina financeira, experiências memoráveis e time fundador dedicado a replicar o modelo
-              em novas praças estratégicas.
+              Modelo validado em 90 dias com alta retenção, ticket premium e capacidade de replicação. Blueprint arquitetônico e operacional pronto para escalar em mercados estratégicos.
             </p>
           </motion.div>
 
@@ -387,9 +377,9 @@ export default function HomePage() {
       <section id="time" className="px-6 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl space-y-12">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeIn} className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Equipe fundadora</p>
-            <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">Três especialistas complementares liderando a expansão.</h2>
-            <p className="max-w-3xl text-lg text-[#4a463f]">Investidores escolhem times. Reunimos visão clínica, tecnologia e operações para escalar o Olíbano com governança.</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#ac4e15]">Time fundador</p>
+            <h2 className="text-balance text-3xl font-serif text-[#354037] sm:text-4xl">Expertise complementar em medicina, tecnologia e operações.</h2>
+            <p className="max-w-3xl text-lg text-[#4a463f]">Investidores apostam em times. Reunimos competências clínicas, estratégia de crescimento e execução omnichannel para construir operação escalável com governança desde o dia zero.</p>
           </motion.div>
 
           <div className="grid gap-6 md:grid-cols-3">
@@ -424,27 +414,26 @@ export default function HomePage() {
             <Image src="/brand/pattern.png" alt="Pattern Olíbano" fill className="object-cover mix-blend-overlay" />
           </div>
           <div className="relative space-y-6">
-            <p className="text-sm uppercase tracking-[0.4em] text-[#d59d40]">Conexão com a equipe fundadora</p>
+            <p className="text-sm uppercase tracking-[0.4em] text-[#d59d40]">Relações com investidores</p>
             <h2 className="text-balance text-4xl sm:text-5xl">
-              Vamos cocriar o futuro do wellness premium no Brasil?
+              Construir a categoria de wellness integrativo premium no Brasil.
             </h2>
             <p className="max-w-3xl text-lg text-white/80">
-              Agende uma imersão privada ou converse diretamente com Relações com Investidores. Apresentamos a operação,
-              os aprendizados do MVP e o roadmap de expansão.
+              Buscamos parceiros estratégicos que agreguem capital inteligente, network qualificado e experiência em escalar operações de alto padrão. Converse diretamente com a equipe fundadora.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <Link
                 href="mailto:ri@olibanovip.com.br"
-                className="inline-flex items-center gap-2 rounded-full bg-white/10 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:bg-white/20"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#354037] transition-colors hover:bg-white/90"
               >
-                Falar com RI
+                Contato RI
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/ri"
                 className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white transition-colors hover:bg-white/10"
               >
-                Acessar sala do investidor
+                Ver pitch completo
                 <ArrowUpRight className="h-4 w-4" />
               </Link>
             </div>

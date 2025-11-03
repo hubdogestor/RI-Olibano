@@ -1,8 +1,8 @@
 {
   "executiveSummary": {
     "title": "Executive Summary",
-    "headline": "Bem-estar científico com alma brasileira",
-    "description": "Centro premium de terapias integrativas com modelo replicável, métricas validadas e governança preparada para expansão nacional.",
+    "headline": "Santuário de recalibração do sistema nervoso para líderes em alta intensidade",
+    "description": "Centro premium de terapias integrativas multissensoriais com protocolos proprietários desenvolvidos por médicos, modelo replicável e métricas validadas em 90 dias de MVP.",
     "stats": [
       {
         "label": "NPS",
@@ -375,6 +375,7 @@
       "name": "Betusa Kramer",
       "role": "COO & Co-founder",
       "bio": "Médica integrativa, cria os protocolos sensoriais, lidera equipe clínica e relacionamentos estratégicos de saúde.",
+      "image": "/team/betusa.jpg",
       "email": "betusa@olibanovip.com.br",
       "links": [
         {
@@ -393,6 +394,7 @@
       "name": "Alexandre Freire",
       "role": "CEO & Co-founder",
       "bio": "Executivo de tecnologia e growth, conduz estratégia, finanças, parcerias e expansão comercial do Olíbano.",
+      "image": "/team/alexandre.jpg",
       "email": "alexandre@olibanovip.com.br",
       "links": [
         {
@@ -406,6 +408,7 @@
       "name": "Leonardo Menezes",
       "role": "CPO & Co-founder",
       "bio": "Especialista em produto e operações omnichannel, integra experiência física, digital e dados do negócio.",
+      "image": "/team/leonardo.jpg",
       "email": "leonardo@olibanovip.com.br",
       "links": [
         {
