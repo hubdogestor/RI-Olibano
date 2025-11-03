@@ -168,17 +168,11 @@ export default function HomePage() {
 
             <div className="flex flex-wrap items-center gap-4">
               <Link
-                href="/ri"
+                href="mailto:ri@olibanovip.com.br"
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-white shadow-lg shadow-[#ac4e15]/25 transition-transform hover:scale-[1.02]"
               >
-                Pitch completo
-                <ArrowUpRight className="h-4 w-4" />
-              </Link>
-              <Link
-                href="mailto:ri@olibanovip.com.br"
-                className="inline-flex items-center gap-2 rounded-full border border-[#ac4e15]/30 px-6 py-3 text-sm font-semibold uppercase tracking-[0.22em] text-[#ac4e15] transition-colors hover:bg-[#ac4e15]/10"
-              >
                 Contato RI
+                <ArrowUpRight className="h-4 w-4" />
               </Link>
             </div>
           </motion.div>

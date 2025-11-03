@@ -33,7 +33,7 @@ interface InvestmentSectionProps {
 const metricIcons = [BadgeDollarSign, PieChart, BriefcaseBusiness]
 
 export default function InvestmentSection({ investment }: InvestmentSectionProps) {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(false)
 
   const metrics = [
     { label: "Aporte buscado", value: investment.round.ask, icon: metricIcons[0] },

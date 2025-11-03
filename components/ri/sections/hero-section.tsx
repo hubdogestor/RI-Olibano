@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { TrendingUp, Users, Award, DollarSign, ArrowUpRight } from "lucide-react"
+import { TrendingUp, Users, Award, ArrowUpRight } from "lucide-react"
 import Link from "next/link"
 
 interface HeroSectionProps {
@@ -34,8 +34,8 @@ export default function HeroSection({ data }: HeroSectionProps) {
   const iconMap: Record<number, typeof Award> = {
     0: Award,
     1: TrendingUp,
-    2: DollarSign,
-    3: Users,
+    2: Users,
+    3: Award,
   }
 
   return (
@@ -78,21 +78,6 @@ export default function HeroSection({ data }: HeroSectionProps) {
             )
           })}
         </motion.div>
-
-        <motion.section
-          variants={itemVariants}
-          className="rounded-3xl border border-[#ac4e15]/30 bg-gradient-to-r from-[#ac4e15]/5 to-[#C88715]/10 p-6 sm:p-8 shadow-inner shadow-[#ac4e15]/15"
-        >
-          <div className="flex flex-col sm:flex-row items-start gap-4">
-            <div className="flex-shrink-0 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] p-3">
-              <DollarSign className="h-6 w-6 text-white" />
-            </div>
-            <div className="space-y-2">
-              <p className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]">Proposta de investimento</p>
-              <p className="text-base sm:text-lg font-medium text-[#354037]">{data.investment.highlight}</p>
-            </div>
-          </div>
-        </motion.section>
 
         <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
           {data.ctas.map((cta) => (

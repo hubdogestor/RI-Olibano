@@ -28,11 +28,11 @@ import {
 } from "lucide-react"
 
 const sections = [
-  { id: "hero", title: "Executive Summary", icon: FileText },
+  { id: "hero", title: "Sumário Executivo", icon: FileText },
   { id: "problem", title: "O Problema", icon: AlertCircle },
   { id: "solution", title: "A Solução", icon: Lightbulb },
   { id: "purpose", title: "Missão & Valores", icon: Target },
-  { id: "customer", title: "Perfil do Cliente", icon: Users },
+  { id: "customer", title: "Para quem serve o Olíbano", icon: Users },
   { id: "market", title: "Tamanho de Mercado", icon: TrendingUp },
   { id: "business", title: "Modelo de Negócio", icon: Briefcase },
   { id: "traction", title: "Tração e Validação", icon: Rocket },

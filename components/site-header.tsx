@@ -81,7 +81,7 @@ export default function SiteHeader() {
               pathname === "/ri" && "ring-2 ring-offset-2 ring-[#C88715]/40 ring-offset-[#faf7f1]",
             )}
           >
-            Investidores
+            Pitch completo
             <ArrowUpRight className="h-4 w-4" />
           </Link>
 
@@ -144,7 +144,7 @@ export default function SiteHeader() {
                 onClick={() => setIsMenuOpen(false)}
                 className="mt-8 inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#ac4e15] via-[#C88715] to-[#69683b] px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white shadow-lg shadow-[#ac4e15]/25"
               >
-                Área do Investidor
+                Pitch completo
                 <Home className="h-4 w-4" />
               </Link>
             </motion.div>
