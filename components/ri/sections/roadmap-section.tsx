@@ -31,7 +31,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
 
   return (
 
-    <section aria-label="Roadmap de desenvolvimento do Olíbano" className="h-full overflow-y-auto flex flex-col justify-center p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#C88715]/5">
+    <section aria-label="Roadmap de desenvolvimento do Olíbano" className="h-full overflow-y-auto flex flex-col justify-center p-4 sm:p-6 md:p-8 lg:p-12 bg-gradient-to-br from-[#f5f3f0] via-white to-[#C88715]/5">
 
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-5xl">
 
@@ -43,7 +43,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
 
             animate={{ opacity: 1, y: 0 }}
 
-            className="text-5xl font-serif font-bold mb-2 bg-gradient-to-r from-[#354037] to-[#C88715] bg-clip-text text-transparent"
+            className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold mb-2 bg-gradient-to-r from-[#354037] to-[#C88715] bg-clip-text text-transparent"
 
           >
 
@@ -57,16 +57,16 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
 
 
 
-        <div className="relative mt-12">
+        <div className="relative mt-6 sm:mt-8 md:mt-10 lg:mt-12">
 
-          <div className="absolute left-0 right-0 top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] via-[#AC4E15] to-transparent lg:block" aria-hidden="true" />
+          <div className="absolute left-0 right-0 top-12 sm:top-14 md:top-16 hidden h-0.5 bg-gradient-to-r from-[#C88715] via-[#AC4E15] to-transparent lg:block" aria-hidden="true" />
 
 
 
           <div
             role="region"
             aria-label="Timeline scrollável de marcos estratégicos (use as setas do teclado para navegar)"
-            className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#C88715]/40"
+            className="flex snap-x snap-mandatory gap-3 sm:gap-4 md:gap-6 overflow-x-auto pb-4 sm:pb-6 md:pb-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#C88715]/40"
           >
 
             {roadmap.map((phase, i) => {
@@ -78,10 +78,10 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.4 }}
                   transition={{ duration: 0.45, delay: i * 0.1 }}
-                  className="group relative flex w-80 min-w-[20rem] snap-center flex-col rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-7 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
+                  className="group relative flex w-72 sm:w-80 min-w-[16rem] sm:min-w-[20rem] snap-center flex-col rounded-3xl border border-[#d9cbbb]/60 bg-white/80 p-5 sm:p-6 md:p-7 shadow-lg shadow-[#ac4e15]/10 backdrop-blur"
                 >
-                  <div className="mb-5 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-[#ac4e15]">
-                    <span className="inline-flex h-14 w-14 flex-col items-center justify-center gap-0.5 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white font-semibold shadow-lg shadow-[#ac4e15]/30">
+                  <div className="mb-4 sm:mb-5 inline-flex items-center gap-2 sm:gap-3 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] sm:tracking-[0.32em] text-[#ac4e15]">
+                    <span className="inline-flex h-12 w-12 sm:h-14 sm:w-14 flex-col items-center justify-center gap-0.5 rounded-full bg-gradient-to-br from-[#ac4e15] to-[#C88715] text-white font-semibold shadow-lg shadow-[#ac4e15]/30">
                       <span className="text-xs leading-tight tracking-[0.12em]">
                         {quarter ?? phase.quarter}
                       </span>
@@ -90,7 +90,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
                     Marco estratégico
                   </div>
 
-                  <ul className="space-y-3">
+                  <ul className="space-y-2 sm:space-y-3">
                     {phase.items.map((item, j) => {
                       const isObject = typeof item === "object" && item !== null && "text" in item
                       const text = isObject ? (item as RoadmapItem).text : (item as string)
@@ -104,7 +104,7 @@ export default function RoadmapSection({ roadmap }: RoadmapSectionProps) {
                           whileInView={{ opacity: 1, x: 0 }}
                           viewport={{ once: true, amount: 0.6 }}
                           transition={{ duration: 0.3, delay: j * 0.08 }}
-                          className="flex gap-3 text-sm text-[#354037]"
+                          className="flex gap-2 sm:gap-3 text-xs sm:text-sm text-[#354037]"
                         >
                           <ItemIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-[#ac4e15]" aria-hidden="true" />
                           <span>{text}</span>
