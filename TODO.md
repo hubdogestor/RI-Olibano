@@ -28,27 +28,27 @@
 **Descrição:** Criar schemas Zod para validar a estrutura de `ri.json` na inicialização da aplicação
 
 **Arquivos a criar/modificar:**
-- [ ] Criar `lib/validators/ri-data.ts` - Schemas Zod para toda estrutura de dados
-- [ ] Criar `lib/validators/index.ts` - Exports dos validators
-- [ ] Modificar `lib/index.ts` ou `app.tsx` - Adicionar função de validação na inicialização
+- [x] Criar `lib/validators/ri-data.ts` - Schemas Zod para toda estrutura de dados
+- [x] Criar `lib/validators/index.ts` - Exports dos validators
+- [x] Modificar `lib/index.ts` ou `app.tsx` - Adicionar função de validação na inicialização
 
 **Checklist de implementação:**
 ```
-- [ ] Instalar Zod: npm install zod
-- [ ] Criar schema para executiveSummary
-- [ ] Criar schema para customer (com segments, painsSummary, hiddenFear)
-- [ ] Criar schema para market (com insights)
-- [ ] Criar schema para businessModel (com revenueStreams, unitEconomics)
-- [ ] Criar schema para SWOT (strengths, weaknesses, opportunities, threats)
-- [ ] Criar schema para competition
-- [ ] Criar schema para goToMarket (channels, automations, kpis)
-- [ ] Criar schema para roadmap
-- [ ] Criar schema para team
-- [ ] Criar schema para contact
-- [ ] Criar função validateRIData() que faz parse + throw erros descritivos
-- [ ] Importar e chamar em layout.tsx ou no carregamento inicial
-- [ ] Adicionar error boundary para fallbacks graciosos
-- [ ] Testar com dados inválidos propositais
+- [x] Instalar Zod: npm install zod
+- [x] Criar schema para executiveSummary
+- [x] Criar schema para customer (com segments, painsSummary, hiddenFear)
+- [x] Criar schema para market (com insights)
+- [x] Criar schema para businessModel (com revenueStreams, unitEconomics)
+- [x] Criar schema para SWOT (strengths, weaknesses, opportunities, threats)
+- [x] Criar schema para competition
+- [x] Criar schema para goToMarket (channels, automations, kpis)
+- [x] Criar schema para roadmap
+- [x] Criar schema para team
+- [x] Criar schema para contact
+- [x] Criar função validateRIData() que faz parse + throw erros descritivos
+- [x] Importar e chamar em layout.tsx ou no carregamento inicial
+- [x] Adicionar error boundary para fallbacks graciosos
+- [x] Testar com dados inválidos propositais
 ```
 
 **Exemplo de código esperado:**
@@ -87,18 +87,18 @@ export function validateRIData(data: unknown) {
 **Descrição:** Ativar configurações mais rigorosas no `tsconfig.json`
 
 **Arquivos a modificar:**
-- [ ] `tsconfig.json`
+- [x] `tsconfig.json`
 
 **Checklist de implementação:**
 ```
-- [ ] Adicionar "strict": true
-- [ ] Adicionar "strictNullChecks": true
-- [ ] Adicionar "noImplicitAny": true
-- [ ] Adicionar "noUnusedLocals": true
-- [ ] Adicionar "noUnusedParameters": true
-- [ ] Adicionar "noImplicitReturns": true
-- [ ] Executar build e corrigir erros TypeScript que aparecerem
-- [ ] Testar que todos os components ainda compilam sem erros
+- [x] Adicionar "strict": true
+- [x] Adicionar "strictNullChecks": true
+- [x] Adicionar "noImplicitAny": true
+- [x] Adicionar "noUnusedLocals": true
+- [x] Adicionar "noUnusedParameters": true
+- [x] Adicionar "noImplicitReturns": true
+- [x] Executar build e corrigir erros TypeScript que aparecerem
+- [x] Testar que todos os components ainda compilam sem erros
 ```
 
 ---
@@ -108,21 +108,21 @@ export function validateRIData(data: unknown) {
 **Descrição:** Centralizar todas as interfaces TypeScript em arquivos de tipos
 
 **Arquivos a criar/modificar:**
-- [ ] Criar `lib/types/index.ts` - Tipos principais
-- [ ] Criar `lib/types/animations.ts` - Tipos para animações Framer Motion
-- [ ] Criar `lib/constants/index.ts` - Constantes (cores, timings)
+- [x] Criar `lib/types/index.ts` - Tipos principais
+- [x] Criar `lib/types/animations.ts` - Tipos para animações Framer Motion
+- [x] Criar `lib/constants/index.ts` - Constantes (cores, timings)
 
 **Checklist de implementação:**
 ```
-- [ ] Extrair RoadmapItem, RoadmapSectionProps, etc para types/index.ts
-- [ ] Extrair CustomerSectionProps, GoToMarketSectionProps para types/index.ts
-- [ ] Extrair MarketSectionProps, BusinessSectionProps para types/index.ts
-- [ ] Criar constantes de cores: COLOR_PRIMARY, COLOR_SECONDARY, etc
-- [ ] Criar constantes de timing de animação: ANIMATION_DURATION_SHORT, MEDIUM, LONG
-- [ ] Criar tipos AnimatedSectionProps, CardProps, etc reutilizáveis
-- [ ] Usar "as const" para literal types (quarter names, status values)
-- [ ] Importar tipos em todos os components
-- [ ] Verificar que TypeScript está satisfeito (sem any implícitos)
+- [x] Extrair RoadmapItem, RoadmapSectionProps, etc para types/index.ts
+- [x] Extrair CustomerSectionProps, GoToMarketSectionProps para types/index.ts
+- [x] Extrair MarketSectionProps, BusinessSectionProps para types/index.ts
+- [x] Criar constantes de cores: COLOR_PRIMARY, COLOR_SECONDARY, etc
+- [x] Criar constantes de timing de animação: ANIMATION_DURATION_SHORT, MEDIUM, LONG
+- [x] Criar tipos AnimatedSectionProps, CardProps, etc reutilizáveis
+- [x] Usar "as const" para literal types (quarter names, status values)
+- [x] Importar tipos em todos os components
+- [x] Verificar que TypeScript está satisfeito (sem any implícitos)
 ```
 
 ---
