@@ -16,7 +16,7 @@ interface TractionSectionProps {
     metrics: Array<{
       name: string
       value: string
-      growth: string
+      growth: string | string[]
     }>
   }
 }
@@ -102,7 +102,15 @@ function TractionSection({ traction }: TractionSectionProps) {
                   </div>
                 </div>
                 <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#354037] mb-1 sm:mb-2">{metric.value}</p>
-                <p className="text-xs sm:text-sm text-[#4a463f]/75 whitespace-pre-line">{metric.growth}</p>
+                {typeof metric.growth === "string" ? (
+                  <p className="text-xs sm:text-sm text-[#4a463f]/75 whitespace-pre-line">{metric.growth}</p>
+                ) : (
+                  <ul className="text-xs sm:text-sm text-[#4a463f]/75 space-y-1 list-disc list-inside">
+                    {metric.growth.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                )}
               </motion.div>
             )
           })}
