@@ -23,6 +23,9 @@ import InvestmentSection from "./sections/investment-section"
 import ESGSection from "./sections/esg-section"
 import FAQSection from "./sections/faq-section"
 import ContactSection from "./sections/contact-section"
+import ProgressBar from "./progress-bar"
+import ProgressIndicator from "./progress-indicator"
+import Breadcrumb from "./breadcrumb"
 
 type SectionMeta = {
   id: string
@@ -139,8 +142,11 @@ export default function PitchContainer({
     return () => window.removeEventListener("keydown", handleKeydown)
   }, [isImmersive, nextSection, onSectionChange, previousSection])
 
+  const progressPercentage = ((currentIndex + 1) / sections.length) * 100
+
   return (
     <>
+      <ProgressBar progress={progressPercentage} />
       <main className="relative flex h-full flex-col gap-4 rounded-3xl border border-[#d9cbbb]/60 bg-white/65 p-5 shadow-[0_12px_60px_rgba(36,34,30,0.08)] backdrop-blur">
         <div className="flex flex-col justify-between gap-4 rounded-2xl border border-[#ecdcca] bg-white/80 px-5 py-4 shadow-sm shadow-[#ac4e15]/10 lg:flex-row lg:items-center">
           <div className="flex flex-1 flex-wrap items-center gap-3">
@@ -209,7 +215,7 @@ export default function PitchContainer({
           </div>
         </div>
 
-        <div className="flex-1 overflow-hidden rounded-2xl bg-gradient-to-br from-white via-[#f6eee2] to-[#C88715]/10">
+        <div className="flex-1 overflow-hidden rounded-2xl bg-gradient-to-br from-white via-[#f6eee2] to-[#C88715]/10 relative">
           <AnimatePresence mode="wait">
             <motion.div
               key={`inline-${activeSection}`}
@@ -217,11 +223,15 @@ export default function PitchContainer({
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -48 }}
               transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="min-h-full"
+              className="min-h-full flex flex-col"
             >
-              {renderSection()}
+              <div className="flex-1 overflow-y-auto px-8 py-6">
+                <Breadcrumb items={currentSectionData ? [currentSectionData.title] : []} />
+                {renderSection()}
+              </div>
             </motion.div>
           </AnimatePresence>
+          <ProgressIndicator current={currentIndex + 1} total={sections.length} />
         </div>
       </main>
 
