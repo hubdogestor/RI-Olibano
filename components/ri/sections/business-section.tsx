@@ -1,5 +1,6 @@
 "use client"
 
+import { memo } from "react"
 import { motion } from "framer-motion"
 import { DollarSign, TrendingUp, Zap } from "lucide-react"
 import { containerVariants, slideInFromLeft } from "@/lib/animations/variants"
@@ -19,7 +20,7 @@ interface BusinessSectionProps {
   }
 }
 
-export default function BusinessSection({ businessModel }: BusinessSectionProps) {
+function BusinessSection({ businessModel }: BusinessSectionProps) {
 
   return (
     <div className="h-full flex flex-col justify-center p-12 bg-gradient-to-br from-white via-gray-50 to-[#AC4E15]/3">
@@ -89,4 +90,4 @@ export default function BusinessSection({ businessModel }: BusinessSectionProps)
   )
 }
 
-
+export default memo(BusinessSection)

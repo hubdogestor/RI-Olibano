@@ -1,5 +1,6 @@
 "use client"
 
+import { memo } from "react"
 import { motion } from "framer-motion"
 import { TrendingUp, Users, Target } from "lucide-react"
 import { containerVariantsStagger, scaleAndFadeIn } from "@/lib/animations/variants"
@@ -17,7 +18,7 @@ interface MarketSectionProps {
   }
 }
 
-export default function MarketSection({ market }: MarketSectionProps) {
+function MarketSection({ market }: MarketSectionProps) {
   const metrics = [
     {
       label: "TAM",
@@ -113,3 +114,5 @@ export default function MarketSection({ market }: MarketSectionProps) {
     </div>
   )
 }
+
+export default memo(MarketSection)

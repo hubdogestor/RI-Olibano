@@ -1,5 +1,6 @@
 "use client"
 
+import { memo, useMemo } from "react"
 import { motion } from "framer-motion"
 import { TrendingUp, Users, Award, ArrowUpRight } from "lucide-react"
 import Link from "next/link"
@@ -18,14 +19,12 @@ interface HeroSectionProps {
   }
 }
 
-export default function HeroSection({ data }: HeroSectionProps) {
+function HeroSection({ data }: HeroSectionProps) {
 
-  const iconMap: Record<number, typeof Award> = {
-    0: Award,
-    1: TrendingUp,
-    2: Users,
-    3: Award,
-  }
+  const iconMap = useMemo(
+    () => [Award, TrendingUp, Users, Award],
+    []
+  )
 
   return (
     <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#c88715]/10 p-6 sm:p-8 md:p-12">
@@ -48,7 +47,7 @@ export default function HeroSection({ data }: HeroSectionProps) {
 
         <motion.div variants={fadeInY} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           {data.stats.map((stat, i) => {
-            const Icon = iconMap[i] || Award
+            const Icon = iconMap[i % iconMap.length] || Award
             return (
               <motion.div
                 key={stat.label}
@@ -88,3 +87,5 @@ export default function HeroSection({ data }: HeroSectionProps) {
     </div>
   )
 }
+
+export default memo(HeroSection)

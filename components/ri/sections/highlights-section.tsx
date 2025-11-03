@@ -1,5 +1,6 @@
 "use client"
 
+import { memo } from "react"
 import { motion } from "framer-motion"
 import { Zap, Award, MapPin, Layers, TrendingUp, Users } from "lucide-react"
 import { containerVariantsStagger, fadeInYEaseOut } from "@/lib/animations/variants"
@@ -10,7 +11,7 @@ interface HighlightsSectionProps {
 
 const icons = [Zap, Award, MapPin, Layers, TrendingUp, Users]
 
-export default function HighlightsSection({ highlights }: HighlightsSectionProps) {
+function HighlightsSection({ highlights }: HighlightsSectionProps) {
 
   return (
     <section
@@ -63,3 +64,5 @@ export default function HighlightsSection({ highlights }: HighlightsSectionProps
     </section>
   )
 }
+
+export default memo(HighlightsSection)
