@@ -34,7 +34,7 @@ const kpiCategoryIcons: Record<string, typeof TrendingUp> = {
 
 export default function GoToMarketSection({ goToMarket }: GoToMarketSectionProps) {
   return (
-    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-[#f5f3f0] via-white to-[#C88715]/10 p-12">
+    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-[#f5f3f0] via-white to-[#C88715]/10 p-12 pb-20">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-6xl space-y-12">
         <div className="space-y-4">
           <motion.h2

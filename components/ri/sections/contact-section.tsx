@@ -17,8 +17,26 @@ interface ContactSectionProps {
 
 const iconMap: Record<string, ReactNode> = {
   "E-mail RI": <Mail className="h-5 w-5" />,
+  "E-mail": <Mail className="h-5 w-5" />,
   "WhatsApp Concierge": <Smartphone className="h-5 w-5" />,
+  "WhatsApp": <Smartphone className="h-5 w-5" />,
   Instagram: <Phone className="h-5 w-5" />,
+}
+
+function getChannelLink(label: string, value: string): string {
+  if (label.toLowerCase().includes("email") || label.toLowerCase().includes("e-mail")) {
+    return `mailto:${value}`
+  }
+  if (label.toLowerCase().includes("whatsapp")) {
+    // Remove formatting and create WhatsApp link
+    const cleanNumber = value.replace(/\D/g, "")
+    return `https://wa.me/${cleanNumber}`
+  }
+  if (label.toLowerCase().includes("instagram")) {
+    const username = value.replace("@", "")
+    return `https://instagram.com/${username}`
+  }
+  return "#"
 }
 
 export default function ContactSection({ contact }: ContactSectionProps) {
@@ -31,18 +49,26 @@ export default function ContactSection({ contact }: ContactSectionProps) {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {contact.channels.map((channel) => (
-            <div
-              key={channel.label}
-              className="flex h-full flex-col items-center gap-3 rounded-3xl border border-[#d9cbbb]/60 bg-white/85 p-6 text-center shadow-lg shadow-[#ac4e15]/10"
-            >
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#ac4e15]/12 text-[#ac4e15]">
-                {iconMap[channel.label] ?? <ArrowUpRight className="h-5 w-5" />}
-              </div>
-              <span className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80">{channel.label}</span>
-              <p className="break-words text-sm font-semibold text-[#354037]">{channel.value}</p>
-            </div>
-          ))}
+          {contact.channels.map((channel) => {
+            const link = getChannelLink(channel.label, channel.value)
+            const isExternal = link.startsWith("http")
+            
+            return (
+              <a
+                key={channel.label}
+                href={link}
+                target={isExternal ? "_blank" : undefined}
+                rel={isExternal ? "noopener noreferrer" : undefined}
+                className="flex h-full flex-col items-center gap-3 rounded-3xl border border-[#d9cbbb]/60 bg-white/85 p-6 text-center shadow-lg shadow-[#ac4e15]/10 transition-all hover:scale-105 hover:shadow-xl hover:border-[#ac4e15]/30 cursor-pointer group"
+              >
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#ac4e15]/12 text-[#ac4e15] group-hover:bg-[#ac4e15] group-hover:text-white transition-all">
+                  {iconMap[channel.label] ?? <ArrowUpRight className="h-5 w-5" />}
+                </div>
+                <span className="text-xs uppercase tracking-[0.32em] text-[#ac4e15]/80 group-hover:text-[#ac4e15]">{channel.label}</span>
+                <p className="break-words text-sm font-semibold text-[#354037] group-hover:text-[#ac4e15]">{channel.value}</p>
+              </a>
+            )
+          })}
         </div>
 
         <div className="flex flex-col items-center gap-4 md:flex-row md:justify-center">

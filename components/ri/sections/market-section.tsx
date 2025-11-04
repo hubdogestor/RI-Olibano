@@ -89,7 +89,7 @@ function MarketSection({ market }: MarketSectionProps) {
                     className="mb-4 pl-1"
                   >
                     <p className="text-sm opacity-75 italic mb-3">({metric.subtitle})</p>
-                    <p className="text-3xl font-bold mb-1">{metric.value}</p>
+                    <p className="text-5xl font-bold mb-1">{metric.value}</p>
                     <p className="text-lg font-bold opacity-90">{metric.revenue}</p>
                   </motion.div>
                   <p className="text-xs leading-relaxed opacity-85 pl-1 flex-grow">{metric.desc.replace(/^[^:]+:\s*/, "Racional: ")}</p>
