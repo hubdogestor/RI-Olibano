@@ -1,0 +1,51 @@
+/**
+ * Centralized icon exports to reduce bundle size and improve tree-shaking
+ * Import from here instead of directly from lucide-react
+ */
+
+export {
+  ArrowUpRight,
+  Award,
+  Brain,
+  BriefcaseBusiness,
+  Building2,
+  Calendar,
+  CalendarRange,
+  Check,
+  CheckCircle2,
+  ChevronDown,
+  ChevronLeft,
+  ChevronRight,
+  Clock,
+  DollarSign,
+  Download,
+  ExternalLink,
+  FileText,
+  FlaskConical,
+  Globe,
+  Heart,
+  Home,
+  Leaf,
+  Lightbulb,
+  LineChart,
+  MapPin,
+  Maximize2,
+  Menu,
+  Minimize2,
+  Package,
+  Percent,
+  Phone,
+  PieChart,
+  Rocket,
+  Scale,
+  Shield,
+  ShieldCheck,
+  Sparkles,
+  Target,
+  TrendingUp,
+  Users,
+  X,
+  Zap,
+} from "lucide-react"
+
+export type { LucideIcon } from "lucide-react"

@@ -40,7 +40,7 @@ function HeroSection({ data }: HeroSectionProps) {
             {data.headline}
           </motion.h1>
 
-          <motion.p variants={fadeInY} className="max-w-3xl text-base sm:text-lg text-[#4a463f] leading-relaxed">
+          <motion.p variants={fadeInY} className="max-w-3xl text-sm sm:text-base text-[#3a3631] leading-relaxed">
             {data.description}
           </motion.p>
         </motion.div>

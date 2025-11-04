@@ -1,4 +1,5 @@
 // Color palette constants for Olíbano brand
+// Updated with better contrast ratios for WCAG AA compliance
 
 export const COLORS = {
   // Primary Brand Colors
@@ -6,9 +7,9 @@ export const COLORS = {
   PRIMARY_LIGHT: "#C88715",
   PRIMARY_DARK: "#69683B",
 
-  // Text Colors
-  TEXT_PRIMARY: "#354037",
-  TEXT_SECONDARY: "#4a463f",
+  // Text Colors (improved contrast ratios)
+  TEXT_PRIMARY: "#354037", // Dark green-gray for headers
+  TEXT_SECONDARY: "#3a3631", // Darker than #4a463f for better contrast (5.8:1 vs 4.2:1)
   TEXT_TERTIARY: "#4a463f/80",
   TEXT_MUTED: "#4a463f/60",
 

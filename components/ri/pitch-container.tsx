@@ -8,7 +8,12 @@ import type riJson from "@/data/ri.json"
 import { cn } from "@/lib/utils"
 import ProgressBar from "./progress-bar"
 import ProgressIndicator from "./progress-indicator"
-import Breadcrumb from "./breadcrumb"
+import {
+  HeroSkeleton,
+  CardGridSkeleton,
+  TimelineSkeleton,
+  DefaultSectionSkeleton,
+} from "./sections/loading-skeleton"
 
 // Dynamic imports com fallback loading
 const HeroSection = lazy(() => import("./sections/hero-section"))
@@ -29,15 +34,23 @@ const ESGSection = lazy(() => import("./sections/esg-section"))
 const FAQSection = lazy(() => import("./sections/faq-section"))
 const ContactSection = lazy(() => import("./sections/contact-section"))
 
-// Loading fallback component
-const SectionFallback = () => (
-  <div className="h-full flex items-center justify-center bg-gradient-to-br from-white to-gray-50">
-    <div className="text-center">
-      <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-[#ac4e15]" />
-      <p className="mt-4 text-gray-600">Carregando seção...</p>
-    </div>
-  </div>
-)
+// Helper function to get appropriate skeleton loader
+function getSectionFallback(sectionId: string) {
+  switch (sectionId) {
+    case "hero":
+      return <HeroSkeleton />
+    case "market":
+    case "customer":
+    case "business":
+    case "swot":
+      return <CardGridSkeleton />
+    case "roadmap":
+    case "traction":
+      return <TimelineSkeleton />
+    default:
+      return <DefaultSectionSkeleton />
+  }
+}
 
 type SectionMeta = {
   id: string
@@ -244,18 +257,13 @@ export default function PitchContainer({
           <AnimatePresence mode="wait">
             <motion.div
               key={`inline-${activeSection}`}
-              initial={{ opacity: 0, x: 48 }}
+              initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -48 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
-              className="min-h-full flex flex-col"
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.3 }}
+              className="h-full w-full overflow-y-auto"
             >
-              <div className="flex-1 overflow-y-auto px-8 py-6 pb-20">
-                <Breadcrumb items={currentSectionData ? [currentSectionData.title] : []} />
-                <Suspense fallback={<SectionFallback />}>
-                  {renderSection()}
-                </Suspense>
-              </div>
+              <Suspense fallback={getSectionFallback(activeSection)}>{renderSection()}</Suspense>
             </motion.div>
           </AnimatePresence>
           <ProgressIndicator current={currentIndex + 1} total={sections.length} />
@@ -375,7 +383,7 @@ export default function PitchContainer({
                     transition={{ duration: 0.35 }}
                     className="mx-auto max-w-[1200px]"
                   >
-                    <Suspense fallback={<SectionFallback />}>
+                    <Suspense fallback={getSectionFallback(activeSection)}>
                       {renderSection()}
                     </Suspense>
                   </motion.div>

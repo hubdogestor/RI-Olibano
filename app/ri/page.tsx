@@ -6,6 +6,7 @@ import PitchContainer from "@/components/ri/pitch-container"
 import WhatsAppButton from "@/components/whatsapp-button"
 import riData from "@/data/ri.json"
 import { cn } from "@/lib/utils"
+import { StructuredData } from "./structured-data"
 import {
   FileText,
   AlertCircle,
@@ -57,31 +58,34 @@ export default function PitchDeckPage() {
   }
 
   return (
-    <div
-      className={cn(
-        "relative flex min-h-[calc(100vh-var(--header-height))] flex-col bg-transparent transition-colors lg:flex-row",
-        isImmersive && "group/immersive",
-      )}
-    >
-      <Sidebar
-        sections={sections}
-        activeSection={activeSection}
-        onSectionChange={handleSectionChange}
-        isImmersive={isImmersive}
-      />
-
-      <div className={cn("flex-1 transition-[margin] duration-500", isImmersive ? "lg:ml-0" : "lg:ml-72")}>
-        <PitchContainer
-          activeSection={activeSection}
-          data={riData}
+    <>
+      <StructuredData />
+      <div
+        className={cn(
+          "relative flex min-h-[calc(100vh-var(--header-height))] flex-col bg-transparent transition-colors lg:flex-row",
+          isImmersive && "group/immersive",
+        )}
+      >
+        <Sidebar
           sections={sections}
-          onSectionChange={(id) => setActiveSection(id as SectionId)}
+          activeSection={activeSection}
+          onSectionChange={handleSectionChange}
           isImmersive={isImmersive}
-          onToggleImmersive={() => setIsImmersive((prev) => !prev)}
         />
-      </div>
 
-      <WhatsAppButton />
-    </div>
+        <div className={cn("flex-1 transition-[margin] duration-500", isImmersive ? "lg:ml-0" : "lg:ml-72")}>
+          <PitchContainer
+            activeSection={activeSection}
+            data={riData}
+            sections={sections}
+            onSectionChange={(id) => setActiveSection(id as SectionId)}
+            isImmersive={isImmersive}
+            onToggleImmersive={() => setIsImmersive((prev) => !prev)}
+          />
+        </div>
+
+        <WhatsAppButton />
+      </div>
+    </>
   )
 }
