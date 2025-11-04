@@ -50,7 +50,7 @@ function MarketSection({ market }: MarketSectionProps) {
   ]
 
   return (
-    <div className="h-full flex flex-col justify-center p-12 bg-gradient-to-br from-white via-gray-50 to-[#69683B]/3">
+    <div className="h-full flex flex-col justify-center p-12 pb-20 bg-gradient-to-br from-white via-gray-50 to-[#69683B]/3">
       <motion.div variants={containerVariantsStagger.stagger_0_15} initial="hidden" animate="visible" className="max-w-5xl">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

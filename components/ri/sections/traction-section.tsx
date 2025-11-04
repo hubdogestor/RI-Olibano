@@ -26,7 +26,7 @@ const metricIcons = [Users, TrendingUp, Award, CheckCircle2]
 function TractionSection({ traction }: TractionSectionProps) {
 
   return (
-    <section aria-label="Tração e validação de mercado" className="h-full flex flex-col justify-center p-4 sm:p-6 md:p-8 lg:p-12 bg-gradient-to-br from-white via-gray-50 to-[#69683B]/3">
+    <section aria-label="Tração e validação de mercado" className="h-full flex flex-col justify-center p-4 sm:p-6 md:p-8 lg:p-12 pb-20 bg-gradient-to-br from-white via-gray-50 to-[#69683B]/3">
       <motion.div variants={containerVariants} initial="hidden" animate="visible" className="max-w-5xl">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

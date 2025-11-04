@@ -14,7 +14,7 @@ interface SolutionSectionProps {
 
 export default function SolutionSection({ solution }: SolutionSectionProps) {
   return (
-    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#c88715]/10 p-4 sm:p-6 md:p-8 lg:p-12">
+    <div className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#c88715]/10 p-4 sm:p-6 md:p-8 lg:p-12 pb-20">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-5xl space-y-6 sm:space-y-8 md:space-y-10 lg:space-y-12">
         <div className="space-y-2 sm:space-y-3 md:space-y-4">
           <motion.h2

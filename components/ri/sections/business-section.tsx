@@ -23,7 +23,7 @@ interface BusinessSectionProps {
 function BusinessSection({ businessModel }: BusinessSectionProps) {
 
   return (
-    <div className="h-full flex flex-col justify-center p-12 bg-gradient-to-br from-white via-gray-50 to-[#AC4E15]/3">
+    <div className="h-full flex flex-col justify-center p-12 pb-20 bg-gradient-to-br from-white via-gray-50 to-[#AC4E15]/3">
       <motion.div variants={containerVariants} initial="hidden" animate="visible" className="max-w-5xl">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

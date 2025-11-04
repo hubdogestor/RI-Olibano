@@ -44,7 +44,7 @@ export default function InvestmentSection({ investment }: InvestmentSectionProps
   return (
     <section
       aria-label="Detalhes de investimento e rodada de captação"
-      className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#ac4e15]/10 p-4 sm:p-6 md:p-8 lg:p-12"
+      className="flex h-full flex-col justify-center overflow-y-auto bg-gradient-to-br from-white via-[#f5f1ec] to-[#ac4e15]/10 p-4 sm:p-6 md:p-8 lg:p-12 pb-20"
     >
       <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} className="mx-auto max-w-6xl space-y-8 sm:space-y-10 md:space-y-12">
         <div className="space-y-3 sm:space-y-4">
